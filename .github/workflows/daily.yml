@@ -63,6 +63,11 @@ jobs:
   deploy:
     needs: run
     runs-on: ubuntu-latest
+    # Share the Pages concurrency group with deploy-pages.yml so the two never deploy
+    # to the github-pages environment at the same time.
+    concurrency:
+      group: pages
+      cancel-in-progress: false
     environment:
       name: github-pages
       url: ${{ steps.deploy.outputs.page_url }}

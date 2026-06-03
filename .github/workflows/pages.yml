@@ -1,0 +1,50 @@
+name: deploy-pages
+
+# Standalone GitHub Pages publisher for the dashboard (docs/). Runs independently of
+# the data pipeline so the site can go live without the X/Anthropic secrets — it simply
+# deploys whatever is committed under docs/. Triggers on docs changes pushed to main and
+# on manual dispatch. (The daily-pipeline workflow still deploys fresh data after each
+# scheduled run; this one covers immediate/code-driven publishes.)
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "docs/**"
+      - ".github/workflows/pages.yml"
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Serialize Pages deployments across workflows (shared group name).
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Configure Pages
+        # enablement: true turns on Pages (source = GitHub Actions) on first run,
+        # so no manual Settings → Pages step is needed.
+        uses: actions/configure-pages@v5
+        with:
+          enablement: true
+
+      - name: Upload dashboard artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+
+      - name: Deploy to GitHub Pages
+        id: deploy
+        uses: actions/deploy-pages@v4
