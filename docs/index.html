@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>MLB Post-Speed Tracker — RotoWire vs Underdog</title>
+<style>
+  :root {
+    --bg: #0f1419; --panel: #1a2029; --panel2: #222b36; --line: #2d3743;
+    --text: #e6edf3; --muted: #8b98a5; --green: #2ea043; --red: #e5534b;
+    --accent: #4493f8; --chip: #2d3743;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 14px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+  header { padding: 20px 24px 8px; }
+  h1 { font-size: 20px; margin: 0 0 2px; }
+  .sub { color: var(--muted); font-size: 12px; }
+  .wrap { padding: 0 24px 48px; max-width: 1200px; }
+
+  /* KPI cards */
+  .kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin: 16px 0 20px; }
+  .kpi { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; }
+  .kpi .label { color: var(--muted); font-size: 11px; text-transform: uppercase; letter-spacing: .5px; }
+  .kpi .value { font-size: 26px; font-weight: 650; margin-top: 4px; }
+  .kpi .value small { font-size: 13px; color: var(--muted); font-weight: 400; }
+
+  /* tabs */
+  .tabs { display: flex; gap: 4px; border-bottom: 1px solid var(--line); margin-bottom: 16px; }
+  .tab { padding: 9px 14px; cursor: pointer; color: var(--muted); border-bottom: 2px solid transparent; user-select: none; }
+  .tab:hover { color: var(--text); }
+  .tab.active { color: var(--text); border-bottom-color: var(--accent); }
+
+  /* filters */
+  .filters { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 14px; align-items: end; }
+  .filters label { display: flex; flex-direction: column; gap: 3px; font-size: 11px; color: var(--muted); }
+  .filters input, .filters select {
+    background: var(--panel); color: var(--text); border: 1px solid var(--line);
+    border-radius: 6px; padding: 6px 8px; font-size: 13px;
+  }
+
+  #feed-wrap { overflow-x: auto; }
+  table { width: 100%; border-collapse: collapse; }
+  td.story { white-space: normal; min-width: 200px; }
+  th, td { text-align: left; padding: 9px 10px; border-bottom: 1px solid var(--line); white-space: nowrap; }
+  th { color: var(--muted); font-weight: 600; font-size: 12px; cursor: pointer; user-select: none; }
+  th[data-nosort] { cursor: default; }
+  th.sorted::after { content: " ▾"; color: var(--accent); }
+  th.sorted.asc::after { content: " ▴"; }
+  tbody tr:hover { background: var(--panel); }
+  td.num { text-align: right; font-variant-numeric: tabular-nums; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  .badge { display: inline-block; padding: 2px 8px; border-radius: 999px; font-size: 11px; font-weight: 600; }
+  .badge.rw { background: rgba(46,160,67,.15); color: var(--green); }
+  .badge.ud { background: rgba(229,83,75,.15); color: var(--red); }
+  .delta.pos { color: var(--green); } .delta.neg { color: var(--red); }
+  .chip { background: var(--chip); color: var(--muted); padding: 1px 7px; border-radius: 999px; font-size: 11px; }
+  .chip.role-followup { background: rgba(88,166,255,.15); color: var(--accent); }
+  .chip.role-original { background: var(--chip); color: var(--muted); }
+  .status-confirmed { color: var(--green); } .status-rejected { color: var(--red); }
+  .status-merged { color: var(--accent); } .status-pending { color: var(--muted); }
+
+  .empty { color: var(--muted); padding: 40px; text-align: center; border: 1px dashed var(--line); border-radius: 10px; }
+  .panel { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 4px 14px; }
+  .hidden { display: none; }
+
+  /* trend bars */
+  .bars { display: flex; flex-direction: column; gap: 6px; margin: 8px 0 18px; }
+  .bar-row { display: grid; grid-template-columns: 90px 1fr 48px; align-items: center; gap: 10px; font-size: 12px; }
+  .bar-track { background: var(--panel2); border-radius: 5px; height: 16px; overflow: hidden; }
+  .bar-fill { background: var(--green); height: 100%; }
+  .cov { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .cov h3 { font-size: 13px; margin: 0 0 6px; color: var(--muted); }
+  .cov li { margin: 4px 0; }
+</style>
+</head>
+<body>
+<header>
+  <h1>MLB Post-Speed Tracker</h1>
+  <div class="sub">@RotoWireMLB vs @UnderdogMLB — news-speed comparison.
+    <span id="generated"></span></div>
+</header>
+<div class="wrap">
+  <div class="kpis" id="kpis"></div>
+
+  <div class="tabs">
+    <div class="tab active" data-view="feed">Story Feed</div>
+    <div class="tab" data-view="weekly">Weekly</div>
+    <div class="tab" data-view="monthly">Monthly</div>
+    <div class="tab" data-view="gaps">Coverage Gaps</div>
+    <div class="tab" data-view="dups">Duplicates</div>
+  </div>
+
+  <section id="view-feed">
+    <div class="filters">
+      <label>From<input type="date" id="f-from"></label>
+      <label>To<input type="date" id="f-to"></label>
+      <label>Event<select id="f-event"></select></label>
+      <label>Player<input type="text" id="f-player" placeholder="name…"></label>
+      <label>Min confidence<input type="number" id="f-conf" min="0" max="1" step="0.05" style="width:80px"></label>
+      <label>Review<select id="f-status">
+        <option value="">all</option><option>pending</option><option>confirmed</option>
+        <option>rejected</option><option>merged</option></select></label>
+    </div>
+    <div id="feed-wrap"></div>
+  </section>
+
+  <section id="view-weekly" class="hidden"></section>
+  <section id="view-monthly" class="hidden"></section>
+  <section id="view-gaps" class="hidden"></section>
+  <section id="view-dups" class="hidden"></section>
+</div>
+
+<script>
+const state = { stories: [], agg: null, sortKey: "time", sortAsc: false };
+
+async function load() {
+  try {
+    const bust = "?_=" + Date.now();
+    const [s, a] = await Promise.all([
+      fetch("./data/stories.json" + bust, { cache: "no-store" }).then(r => r.json()),
+      fetch("./data/aggregates.json" + bust, { cache: "no-store" }).then(r => r.json()),
+    ]);
+    state.stories = s; state.agg = a;
+  } catch (e) {
+    state.stories = []; state.agg = { summary: {}, weekly: [], monthly: [] };
+  }
+  init();
+}
+
+// ---- formatting helpers ----
+const pad = n => String(n).padStart(2, "0");
+// Central Time (America/Chicago) — Intl handles CDT/CST daylight-saving automatically.
+const _ctFmt = new Intl.DateTimeFormat("en-US", {
+  timeZone: "America/Chicago", month: "numeric", day: "numeric",
+  hour: "2-digit", minute: "2-digit", hour12: false,
+});
+function fmtTime(iso) {
+  if (!iso) return "—";
+  const d = new Date(iso);
+  if (isNaN(+d)) return "—";
+  const p = Object.fromEntries(_ctFmt.formatToParts(d).map(x => [x.type, x.value]));
+  return `${p.month}/${pad(p.day)} ${p.hour}:${p.minute} CT`;
+}
+
+// Tweet links: story sides carry tweet_id + the feed implies the handle.
+const HANDLE = { rotowire: "RotoWireMLB", underdog: "UnderdogMLB" };
+const tweetUrl = (handle, id) => `https://x.com/${handle}/status/${id}`;
+function timeLink(handle, sideObj) {
+  if (!sideObj || !sideObj.created_at) return "—";
+  const label = fmtTime(sideObj.created_at);
+  return sideObj.tweet_id
+    ? `<a href="${tweetUrl(handle, sideObj.tweet_id)}" target="_blank" rel="noopener">${label}</a>`
+    : label;
+}
+// Link arbitrary text to the tweet a story side refers to.
+function textLink(handle, sideObj, text) {
+  const label = esc(text || "—");
+  return (sideObj && sideObj.tweet_id && text)
+    ? `<a href="${tweetUrl(handle, sideObj.tweet_id)}" target="_blank" rel="noopener">${label}</a>`
+    : label;
+}
+const hasMedia = t => /(https?:\/\/|t\.co\/)/.test(t || "");
+// Classify a same-event duplicate as the original headline or a later follow-up,
+// relative to the matched post on the SAME feed. Follow-ups that add a link/clip are
+// flagged accordingly (RotoWire adds a story link; Underdog adds a video).
+function dupRole(s) {
+  const ls = loneSide(s);
+  const m = s.duplicate_of && storyById(s.duplicate_of);
+  const matchedSide = m && (s.status === "rotowire_only" ? m.rotowire : m.underdog);
+  if (!ls || !matchedSide) return { cls: "", label: "duplicate" };
+  // The original is the FIRST post on this feed about the event — comparing against the
+  // matched post AND every other duplicate of it on the same feed (so a 2nd follow-up
+  // isn't mislabeled "original" just because the matched post came later still).
+  const peers = state.stories
+    .filter(x => x.same_event_duplicate && x.duplicate_of === m.story_id && x.status === s.status)
+    .map(x => loneSide(x)?.side).filter(Boolean);
+  const sameFeed = [matchedSide, ...peers];
+  const earliest = sameFeed.reduce((a, b) => new Date(a.created_at) <= new Date(b.created_at) ? a : b);
+  if (ls.side.tweet_id === earliest.tweet_id) return { cls: "role-original", label: "Original (headline)" };
+  const medium = hasMedia(ls.side.text)
+    ? (s.status === "underdog_only" ? " + video" : " + link") : "";
+  return { cls: "role-followup", label: "Follow-up" + medium };
+}
+// The single populated side of a one-sided story (gap or duplicate) + its handle.
+function loneSide(s) {
+  if (s.rotowire) return { handle: HANDLE.rotowire, side: s.rotowire };
+  if (s.underdog) return { handle: HANDLE.underdog, side: s.underdog };
+  return null;
+}
+const storyById = id => state.stories.find(s => s.story_id === id);
+function fmtDelta(sec) {
+  if (sec == null) return "—";
+  const a = Math.abs(sec), m = Math.floor(a/60), s = a%60;
+  const txt = (m ? `${m}m ` : "") + `${s}s`;
+  const cls = sec > 0 ? "pos" : "neg";
+  const sign = sec > 0 ? "+" : "−";
+  return `<span class="delta ${cls}">${sign}${txt}</span>`;
+}
+const fmtPct = r => r == null ? "—" : (r*100).toFixed(0) + "%";
+const fmtNum = n => n == null ? "—" : n.toLocaleString();
+const fmtLead = sec => {
+  if (sec == null) return "—";
+  const a = Math.abs(sec); return (a/60).toFixed(1) + "m";
+};
+function side(s, key) { return (s[key] && s[key].created_at) ? s[key].created_at : null; }
+function storyTime(s) {
+  const ts = [side(s,"rotowire"), side(s,"underdog")].filter(Boolean).map(t => +new Date(t));
+  return ts.length ? Math.min(...ts) : 0;
+}
+
+// ---- KPI header ----
+function renderKpis() {
+  const s = state.agg.summary || {};
+  const cards = [
+    ["RotoWire-first win rate", fmtPct(s.rotowire_first_rate),
+      s.matched ? `${s.rotowire_first}/${s.matched}` : ""],
+    ["Median lead", fmtLead(s.median_lead_seconds), ""],
+    ["Mean lead", fmtLead(s.mean_lead_seconds), ""],
+    ["Matched stories", s.matched ?? 0, ""],
+    ["Coverage gaps", `${s.rotowire_only ?? 0} / ${s.underdog_only ?? 0}`, "RW-only / UD-only"],
+    ["Same-event dups", `${(s.rotowire_duplicate ?? 0) + (s.underdog_duplicate ?? 0)}`, "RW + UD"],
+  ];
+  document.getElementById("kpis").innerHTML = cards.map(([l,v,sub]) =>
+    `<div class="kpi"><div class="label">${l}</div>
+     <div class="value">${v} <small>${sub||""}</small></div></div>`).join("");
+}
+
+// ---- feed ----
+const COLS = [
+  ["time", "Date", s => fmtTime(storyTimeIso(s)), false],
+  ["player", "Player", s => esc(s.player), false],
+  ["team", "Team", s => esc(s.team || "—"), false],
+  ["event_class", "Event", s => `<span class="chip">${esc(s.event_class||"—")}</span>`, false],
+  ["canonical_label", "Story", s => esc(s.canonical_label || "—"), false],
+  ["rw_time", "RotoWire", s => timeLink(HANDLE.rotowire, s.rotowire), false],
+  ["ud_time", "Underdog", s => timeLink(HANDLE.underdog, s.underdog), false],
+  ["time_delta_seconds", "Δ lead", s => fmtDelta(s.time_delta_seconds), true],
+  ["winner", "Winner", s => winnerBadge(s), false],
+  ["rw_impr", "RW impr", s => fmtNum(s.rotowire?.impression_count), true],
+  ["ud_impr", "UD impr", s => fmtNum(s.underdog?.impression_count), true],
+  ["match_confidence", "Conf", s => s.match_confidence!=null ? s.match_confidence.toFixed(2) : "—", true],
+  ["review_status", "Review", s => `<span class="status-${s.review_status}">${s.review_status}</span>`, false],
+];
+function storyTimeIso(s){ const t = storyTime(s); return t ? new Date(t).toISOString() : null; }
+function winnerBadge(s) {
+  if (s.status === "rotowire_only") return `<span class="chip">RW only</span>`;
+  if (s.status === "underdog_only") return `<span class="chip">UD only</span>`;
+  if (s.rotowire_first == null) return "—";
+  return s.rotowire_first ? `<span class="badge rw">RotoWire</span>` : `<span class="badge ud">Underdog</span>`;
+}
+function esc(v){ return v==null ? "" : String(v).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c])); }
+
+function sortVal(s, key) {
+  switch (key) {
+    case "time": return storyTime(s);
+    case "rw_time": return +new Date(side(s,"rotowire")||0);
+    case "ud_time": return +new Date(side(s,"underdog")||0);
+    case "rw_impr": return s.rotowire?.impression_count ?? -1;
+    case "ud_impr": return s.underdog?.impression_count ?? -1;
+    case "winner": return s.rotowire_first ? 1 : 0;
+    default: return s[key] ?? "";
+  }
+}
+
+function filteredStories() {
+  const from = val("f-from"), to = val("f-to"), ev = val("f-event"),
+        pl = val("f-player").toLowerCase(), conf = parseFloat(val("f-conf")),
+        st = val("f-status");
+  return state.stories.filter(s => {
+    if (s.same_event_duplicate) return false;  // duplicates live on their own tab
+    const t = storyTime(s);
+    if (from && t < +new Date(from)) return false;
+    if (to && t > +new Date(to) + 86400000) return false;
+    if (ev && s.event_class !== ev) return false;
+    if (pl && !(s.player||"").toLowerCase().includes(pl)) return false;
+    if (!isNaN(conf) && (s.match_confidence ?? 0) < conf) return false;
+    if (st && s.review_status !== st) return false;
+    return true;
+  });
+}
+const val = id => document.getElementById(id).value;
+
+function renderFeed() {
+  const rows = filteredStories().sort((a,b) => {
+    const va = sortVal(a, state.sortKey), vb = sortVal(b, state.sortKey);
+    const cmp = va < vb ? -1 : va > vb ? 1 : 0;
+    return state.sortAsc ? cmp : -cmp;
+  });
+  const wrap = document.getElementById("feed-wrap");
+  if (!rows.length) { wrap.innerHTML = `<div class="empty">No stories match. Once matching (Phase 3) writes stories.jsonl, rows appear here.</div>`; return; }
+  const head = COLS.map(([k,label,,num]) => {
+    const cls = (k===state.sortKey ? "sorted "+(state.sortAsc?"asc":"") : "");
+    return `<th class="${cls}" data-key="${k}" ${num?'style="text-align:right"':''}>${label}</th>`;
+  }).join("");
+  const body = rows.map(s => "<tr>" + COLS.map(([k,,fn,num]) =>
+    `<td class="${num?'num':''}${k==='canonical_label'?' story':''}">${fn(s)}</td>`).join("") + "</tr>").join("");
+  wrap.innerHTML = `<table><thead><tr>${head}</tr></thead><tbody>${body}</tbody></table>`;
+  wrap.querySelectorAll("th[data-key]").forEach(th => th.onclick = () => {
+    const k = th.dataset.key;
+    if (state.sortKey === k) state.sortAsc = !state.sortAsc;
+    else { state.sortKey = k; state.sortAsc = false; }
+    renderFeed();
+  });
+}
+
+// ---- rollup views ----
+function renderRollup(el, rows, periodLabel) {
+  if (!rows.length) { el.innerHTML = `<div class="empty">No ${periodLabel} data yet.</div>`; return; }
+  const bars = rows.map(r => {
+    const pct = (r.rotowire_first_rate ?? 0) * 100;
+    return `<div class="bar-row"><span>${r.period}</span>
+      <div class="bar-track"><div class="bar-fill" style="width:${pct}%"></div></div>
+      <span>${fmtPct(r.rotowire_first_rate)}</span></div>`;
+  }).join("");
+  const body = rows.map(r => `<tr>
+    <td>${r.period}</td><td class="num">${r.matched}</td>
+    <td class="num">${fmtPct(r.rotowire_first_rate)}</td>
+    <td class="num">${fmtLead(r.median_lead_seconds)}</td>
+    <td class="num">${fmtLead(r.mean_lead_seconds)}</td>
+    <td class="num">${r.rotowire_only}</td><td class="num">${r.underdog_only}</td></tr>`).join("");
+  el.innerHTML = `<div class="panel"><h3 style="color:var(--muted)">RotoWire-first win rate by ${periodLabel}</h3>
+    <div class="bars">${bars}</div></div>
+    <table><thead><tr><th data-nosort>Period</th><th data-nosort style="text-align:right">Matched</th>
+    <th data-nosort style="text-align:right">RW win rate</th><th data-nosort style="text-align:right">Median Δ</th>
+    <th data-nosort style="text-align:right">Mean Δ</th><th data-nosort style="text-align:right">RW-only</th>
+    <th data-nosort style="text-align:right">UD-only</th></tr></thead><tbody>${body}</tbody></table>`;
+}
+
+// Feed label = which account actually posted this one-sided story.
+const feedOf = s => s.status === "rotowire_only" ? "RotoWire" : "Underdog";
+
+function renderGaps() {
+  const all = state.stories
+    .filter(s => (s.status === "rotowire_only" || s.status === "underdog_only")
+                 && !s.same_event_duplicate && s.review_status !== "rejected")
+    .sort((a,b) => storyTime(a) - storyTime(b));
+  const rw = all.filter(s => s.status === "rotowire_only").length;
+  const ud = all.length - rw;
+
+  const sel = state.gapFeed || "";  // "", "RotoWire", or "Underdog"
+  const rows = sel ? all.filter(s => feedOf(s) === sel) : all;
+  const filters = `<div class="filters"><label>Feed<select id="f-gap-feed">
+      <option value="">both (${all.length})</option>
+      <option value="RotoWire"${sel==="RotoWire"?" selected":""}>RotoWire-only (${rw})</option>
+      <option value="Underdog"${sel==="Underdog"?" selected":""}>Underdog-only (${ud})</option>
+    </select></label></div>`;
+
+  const body = rows.map(s => {
+    const ls = loneSide(s);
+    return `<tr>
+      <td>${ls ? fmtTime(ls.side.created_at) : "—"}</td>
+      <td>${esc(s.player||"?")}</td>
+      <td><span class="chip">${esc(s.event_class||"—")}</span></td>
+      <td><span class="chip">${feedOf(s)}</span></td>
+      <td class="story">${ls ? textLink(ls.handle, ls.side, ls.side.text) : "—"}</td></tr>`;
+  }).join("");
+  const intro = `<p style="color:var(--muted);font-size:13px;margin:0 0 12px">
+       News one feed posted and the other never matched — ${rw} RotoWire-only,
+       ${ud} Underdog-only. The Story links to the tweet.</p>`;
+  const table = rows.length
+    ? `<table><thead><tr><th data-nosort>Date</th><th data-nosort>Player</th>
+       <th data-nosort>Event</th><th data-nosort>Feed</th>
+       <th data-nosort>Story</th></tr></thead><tbody>${body}</tbody></table>`
+    : `<div class="empty">No coverage gaps for this feed.</div>`;
+  document.getElementById("view-gaps").innerHTML = all.length
+    ? intro + filters + table
+    : `<div class="empty">No coverage gaps.</div>`;
+
+  const fsel = document.getElementById("f-gap-feed");
+  if (fsel) fsel.onchange = () => { state.gapFeed = fsel.value; renderGaps(); };
+}
+
+function renderDups() {
+  // Same-event duplicates: posts that matched an event already counted elsewhere, so
+  // they lost the strict 1-to-1 match. Shown here (not in the feed or coverage gaps).
+  const dups = state.stories
+    .filter(s => s.same_event_duplicate && s.review_status !== "rejected")
+    .sort((a,b) => storyTime(a) - storyTime(b));
+  const body = dups.map(s => {
+    const ls = loneSide(s);
+    const m = s.duplicate_of && storyById(s.duplicate_of);
+    const matchedSide = m && (s.status === "rotowire_only" ? m.rotowire : m.underdog);
+    const matchedText = m ? (m.canonical_label || `${m.player||""} ${m.event_class||""}`.trim() || s.duplicate_of) : null;
+    const matchedHandle = ls && ls.handle;  // same feed as the duplicate
+    const role = dupRole(s);
+    return `<tr>
+      <td>${ls ? fmtTime(ls.side.created_at) : "—"}</td>
+      <td>${esc(s.player||"?")}</td>
+      <td><span class="chip">${esc(s.event_class||"—")}</span></td>
+      <td><span class="chip">${feedOf(s)}</span></td>
+      <td><span class="chip ${role.cls}">${esc(role.label)}</span></td>
+      <td class="story">${ls ? textLink(ls.handle, ls.side, ls.side.text) : "—"}</td>
+      <td class="story">${matchedSide ? textLink(matchedHandle, matchedSide, matchedText) : esc(matchedText || "—")}</td></tr>`;
+  }).join("");
+  document.getElementById("view-dups").innerHTML = dups.length
+    ? `<p style="color:var(--muted);font-size:13px;margin:0 0 12px">
+         Extra posts about an event already matched in the feed — excluded from the
+         1-to-1 grid and from coverage-gap counts. <b>Type</b> flags whether this post is
+         the original headline or a later follow-up (RotoWire adds a story link; Underdog
+         adds a video). Story and Matched-story link to their tweets.</p>
+       <table><thead><tr><th data-nosort>Date</th><th data-nosort>Player</th>
+       <th data-nosort>Event</th><th data-nosort>Feed</th><th data-nosort>Type</th>
+       <th data-nosort>Story</th><th data-nosort>Matched story</th></tr></thead>
+       <tbody>${body}</tbody></table>`
+    : `<div class="empty">No same-event duplicates.</div>`;
+}
+
+// ---- tabs + init ----
+function showView(name) {
+  document.querySelectorAll(".tab").forEach(t => t.classList.toggle("active", t.dataset.view===name));
+  ["feed","weekly","monthly","gaps","dups"].forEach(v =>
+    document.getElementById("view-"+v).classList.toggle("hidden", v!==name));
+}
+
+function init() {
+  const gen = state.agg.generated_at;
+  document.getElementById("generated").textContent =
+    gen ? "Updated " + fmtTime(gen) : "";
+  renderKpis();
+
+  // event filter options
+  const events = [...new Set(state.stories.map(s => s.event_class).filter(Boolean))].sort();
+  document.getElementById("f-event").innerHTML =
+    `<option value="">all</option>` + events.map(e => `<option>${e}</option>`).join("");
+  ["f-from","f-to","f-event","f-player","f-conf","f-status"].forEach(id =>
+    document.getElementById(id).addEventListener("input", renderFeed));
+
+  document.querySelectorAll(".tab").forEach(t => t.onclick = () => showView(t.dataset.view));
+
+  renderFeed();
+  renderRollup(document.getElementById("view-weekly"), state.agg.weekly || [], "week");
+  renderRollup(document.getElementById("view-monthly"), state.agg.monthly || [], "month");
+  renderGaps();
+  renderDups();
+}
+
+load();
+</script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+from __future__ import annotations
+
+from datetime import datetime, timedelta, timezone
+
+import pytest
+
+from src import collect as collect_mod
+from src.store import load_jsonl, load_state
+
+
+def _ts(hours_ago: float) -> str:
+    dt = datetime.now(timezone.utc) - timedelta(hours=hours_ago)
+    return dt.strftime("%Y-%m-%dT%H:%M:%S.000Z")
+
+
+def _tweet(tid: str, hours_ago: float, impressions: int) -> dict:
+    return {
+        "id": tid,
+        "created_at": _ts(hours_ago),
+        "text": f"post {tid}",
+        "lang": "en",
+        "public_metrics": {"impression_count": impressions, "like_count": 0},
+    }
+
+
+class FakeClient:
+    def __init__(self, tweets_by_user: dict[str, list[dict]], metrics: dict[str, dict] | None = None):
+        self.tweets_by_user = tweets_by_user
+        self.metrics = metrics or {}
+        self.metrics_calls: list[list[str]] = []
+
+    def user_tweets(
+        self, user_id, since_id=None, start_time=None, exclude=None, max_pages=None, page_size=100
+    ):
+        for t in self.tweets_by_user.get(user_id, []):
+            if since_id and int(t["id"]) <= int(since_id):
+                continue
+            yield t
+
+    def tweets_metrics(self, ids):
+        self.metrics_calls.append(list(ids))
+        return {i: self.metrics[i] for i in ids if i in self.metrics}
+
+
+CFG = {
+    "accounts": {
+        "rotowire": {"handle": "RotoWireMLB", "user_id": "111"},
+        "underdog": {"handle": "UnderdogMLB", "user_id": "222"},
+    },
+    "collection": {"backfill_start_date": "2026-05-29", "exclude": ["retweets", "replies"]},
+    "impressions": {"freeze_hours": 12},
+}
+
+
+@pytest.fixture(autouse=True)
+def _patch_config(monkeypatch):
+    monkeypatch.setattr(collect_mod, "load_config", lambda: CFG)
+
+
+def test_dedupe_and_since_id(tmp_path, monkeypatch):
+    client = FakeClient({"111": [_tweet("1005", 1, 100), _tweet("1003", 2, 50)], "222": []})
+    collect_mod.collect(client=client, data_dir=tmp_path)
+
+    rows = load_jsonl(tmp_path / "tweets.jsonl")
+    assert {r["id"] for r in rows} == {"1005", "1003"}
+    assert all(r["account"] == "RotoWireMLB" for r in rows)
+
+    state = load_state(tmp_path)
+    assert state["accounts"]["rotowire"]["since_id"] == "1005"
+
+    # Second run: only a newer post should be added; no duplicates.
+    client2 = FakeClient({"111": [_tweet("1009", 0.5, 200), _tweet("1005", 1, 100)], "222": []})
+    collect_mod.collect(client=client2, data_dir=tmp_path)
+    rows = load_jsonl(tmp_path / "tweets.jsonl")
+    assert {r["id"] for r in rows} == {"1003", "1005", "1009"}
+    assert load_state(tmp_path)["accounts"]["rotowire"]["since_id"] == "1009"
+
+
+def test_freeze_after_cutoff(tmp_path):
+    # 13h-old post should freeze; 1h-old post should stay open.
+    client = FakeClient({"111": [_tweet("1010", 13, 500), _tweet("1011", 1, 10)], "222": []})
+    collect_mod.collect(client=client, data_dir=tmp_path)
+
+    rows = {r["id"]: r for r in load_jsonl(tmp_path / "tweets.jsonl")}
+    assert rows["1010"]["metrics_frozen"] is True
+    assert rows["1010"]["metrics_frozen_at"] is not None
+    assert rows["1011"]["metrics_frozen"] is False
+
+
+def test_non_frozen_metrics_refresh(tmp_path):
+    # First run stores a fresh (1h-old) post.
+    client = FakeClient({"111": [_tweet("1020", 1, 10)], "222": []})
+    collect_mod.collect(client=client, data_dir=tmp_path)
+
+    # Second run: no new posts, but the stored post's metrics moved. It is not
+    # frozen and was not re-fetched via timeline, so it must be refreshed.
+    client2 = FakeClient({"111": [], "222": []}, metrics={"1020": {"impression_count": 999}})
+    collect_mod.collect(client=client2, data_dir=tmp_path)
+
+    rows = {r["id"]: r for r in load_jsonl(tmp_path / "tweets.jsonl")}
+    assert rows["1020"]["public_metrics"]["impression_count"] == 999
+    assert client2.metrics_calls == [["1020"]]
+
+
+def test_frozen_metrics_not_refreshed(tmp_path):
+    client = FakeClient({"111": [_tweet("1030", 13, 500)], "222": []})
+    collect_mod.collect(client=client, data_dir=tmp_path)  # freezes 1030
+
+    client2 = FakeClient({"111": [], "222": []}, metrics={"1030": {"impression_count": 999}})
+    collect_mod.collect(client=client2, data_dir=tmp_path)
+    rows = {r["id"]: r for r in load_jsonl(tmp_path / "tweets.jsonl")}
+    assert rows["1030"]["public_metrics"]["impression_count"] == 500  # unchanged
+    assert client2.metrics_calls == []  # nothing to refresh

@@ -1,0 +1,72 @@
+name: daily-pipeline
+
+# Scheduled production run (PRD Phase B / section 15):
+#   collect -> classify (LLM) -> match -> resolve -> build aggregates, then commit
+#   refreshed data/ + docs/data/ back to the repo and publish docs/ to GitHub Pages.
+# NEVER touches reviews.jsonl (human-owned).
+
+on:
+  schedule:
+    - cron: "0 11 * * *"   # 11:00 UTC daily; bump frequency later within rate limits
+  workflow_dispatch: {}      # allow manual runs from the Actions tab
+
+permissions:
+  contents: write            # commit refreshed artifacts back to the repo
+  pages: write               # deploy to GitHub Pages
+  id-token: write            # required by the Pages deploy action
+
+concurrency:
+  group: daily-pipeline
+  cancel-in-progress: false  # never interrupt a run mid-commit
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    outputs:
+      page_artifact: ${{ steps.upload.outputs.artifact_id }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run pipeline
+        env:
+          X_BEARER_TOKEN: ${{ secrets.X_BEARER_TOKEN }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python -m src.pipeline
+
+      - name: Commit refreshed data + dashboard JSON
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          # Stage pipeline artifacts only — never reviews.jsonl (human-owned).
+          git add data/tweets.jsonl data/classifications.jsonl data/candidates.jsonl data/verdicts.jsonl data/stories.jsonl data/state.json docs/data/ || true
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "chore: daily pipeline refresh [skip ci]"
+            git push
+          fi
+
+      - name: Upload Pages artifact
+        id: upload
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+
+  deploy:
+    needs: run
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deploy
+        uses: actions/deploy-pages@v4

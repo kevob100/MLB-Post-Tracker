@@ -1,0 +1,33 @@
+accounts:
+  rotowire:
+    handle: RotoWireMLB
+    user_id: '2426328866'
+  underdog:
+    handle: UnderdogMLB
+    user_id: '1449055868880818178'
+matching:
+  time_window_minutes: 90
+  min_match_confidence: 0.75
+  compatible_event_classes:
+    injury:
+    - injury_il
+    - injury_dtd
+    - scratch
+    - return
+    transaction:
+    - transaction_callup
+    - transaction_option
+    - transaction_dfa
+    - transaction_trade
+    - transaction_sign_release
+    role:
+    - role_change
+impressions:
+  freeze_hours: 12
+collection:
+  backfill_start_date: '2026-05-29'
+  exclude:
+  - retweets
+  - replies
+llm:
+  model: claude-sonnet-4-6
