@@ -2980,3 +2980,5 @@
 {"id": "2067062411878715500", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-06-17T03:19:08.196390+00:00"}
 {"id": "2067067185173045466", "is_news": false, "player": "Aaron Ashby", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-06-17T03:19:10.405567+00:00"}
 {"id": "2067068648821317785", "is_news": true, "player": "Kodai Senga", "team": "New York Mets", "event_class": "role_change", "excluded_reason": null, "classified_at": "2026-06-17T03:19:11.875074+00:00"}
+{"id": "2067084252349427916", "is_news": false, "player": "Pete Crow-Armstrong", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-06-17T03:50:39.461030+00:00"}
+{"id": "2067089460739608655", "is_news": true, "player": "Colt Keith", "team": null, "event_class": "injury_dtd", "excluded_reason": null, "classified_at": "2026-06-17T03:50:40.876437+00:00"}
