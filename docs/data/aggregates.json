@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-06-21T17:03:00.475008+00:00",
+  "generated_at": "2026-06-22T21:30:28.794988+00:00",
   "summary": {
-    "matched": 160,
-    "rotowire_first": 20,
-    "rotowire_first_rate": 0.125,
-    "median_lead_seconds": -289.5,
-    "mean_lead_seconds": -417.4,
-    "rotowire_only": 384,
-    "underdog_only": 87,
+    "matched": 163,
+    "rotowire_first": 21,
+    "rotowire_first_rate": 0.1288,
+    "median_lead_seconds": -290,
+    "mean_lead_seconds": -426.5,
+    "rotowire_only": 399,
+    "underdog_only": 90,
     "rotowire_duplicate": 17,
     "underdog_duplicate": 15
   },
@@ -50,15 +50,27 @@
     },
     {
       "period": "2026-W25",
-      "matched": 50,
+      "matched": 51,
       "rotowire_first": 10,
-      "rotowire_first_rate": 0.2,
-      "median_lead_seconds": -218.0,
-      "mean_lead_seconds": -375.9,
-      "rotowire_only": 95,
-      "underdog_only": 18,
+      "rotowire_first_rate": 0.1961,
+      "median_lead_seconds": -219,
+      "mean_lead_seconds": -392.4,
+      "rotowire_only": 101,
+      "underdog_only": 19,
       "rotowire_duplicate": 2,
       "underdog_duplicate": 2
+    },
+    {
+      "period": "2026-W26",
+      "matched": 2,
+      "rotowire_first": 1,
+      "rotowire_first_rate": 0.5,
+      "median_lead_seconds": -759.5,
+      "mean_lead_seconds": -759.5,
+      "rotowire_only": 9,
+      "underdog_only": 2,
+      "rotowire_duplicate": 0,
+      "underdog_duplicate": 0
     }
   ],
   "monthly": [
@@ -76,13 +88,13 @@
     },
     {
       "period": "2026-06",
-      "matched": 133,
-      "rotowire_first": 15,
-      "rotowire_first_rate": 0.1128,
-      "median_lead_seconds": -290,
-      "mean_lead_seconds": -406.7,
-      "rotowire_only": 319,
-      "underdog_only": 69,
+      "matched": 136,
+      "rotowire_first": 16,
+      "rotowire_first_rate": 0.1176,
+      "median_lead_seconds": -297.5,
+      "mean_lead_seconds": -417.9,
+      "rotowire_only": 334,
+      "underdog_only": 72,
       "rotowire_duplicate": 13,
       "underdog_duplicate": 11
     }
