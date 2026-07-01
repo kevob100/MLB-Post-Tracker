@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-06-30T17:35:44.276473+00:00",
+  "generated_at": "2026-07-01T18:27:47.899414+00:00",
   "summary": {
-    "matched": 217,
+    "matched": 223,
     "rotowire_first": 30,
-    "rotowire_first_rate": 0.1382,
+    "rotowire_first_rate": 0.1345,
     "median_lead_seconds": -273,
-    "mean_lead_seconds": -398.3,
-    "rotowire_only": 506,
-    "underdog_only": 113,
+    "mean_lead_seconds": -403.2,
+    "rotowire_only": 526,
+    "underdog_only": 116,
     "rotowire_duplicate": 22,
-    "underdog_duplicate": 20
+    "underdog_duplicate": 22
   },
   "weekly": [
     {
@@ -74,15 +74,15 @@
     },
     {
       "period": "2026-W27",
-      "matched": 13,
+      "matched": 19,
       "rotowire_first": 3,
-      "rotowire_first_rate": 0.2308,
-      "median_lead_seconds": -53,
-      "mean_lead_seconds": -139.2,
-      "rotowire_only": 16,
-      "underdog_only": 6,
+      "rotowire_first_rate": 0.1579,
+      "median_lead_seconds": -151,
+      "mean_lead_seconds": -278.4,
+      "rotowire_only": 36,
+      "underdog_only": 9,
       "rotowire_duplicate": 2,
-      "underdog_duplicate": 0
+      "underdog_duplicate": 2
     }
   ],
   "monthly": [
@@ -100,15 +100,27 @@
     },
     {
       "period": "2026-06",
-      "matched": 190,
+      "matched": 193,
       "rotowire_first": 25,
-      "rotowire_first_rate": 0.1316,
-      "median_lead_seconds": -274.5,
-      "mean_lead_seconds": -388.1,
-      "rotowire_only": 441,
-      "underdog_only": 95,
+      "rotowire_first_rate": 0.1295,
+      "median_lead_seconds": -273,
+      "mean_lead_seconds": -388.6,
+      "rotowire_only": 448,
+      "underdog_only": 96,
       "rotowire_duplicate": 18,
-      "underdog_duplicate": 16
+      "underdog_duplicate": 18
+    },
+    {
+      "period": "2026-07",
+      "matched": 3,
+      "rotowire_first": 0,
+      "rotowire_first_rate": 0.0,
+      "median_lead_seconds": -277,
+      "mean_lead_seconds": -740,
+      "rotowire_only": 13,
+      "underdog_only": 2,
+      "rotowire_duplicate": 0,
+      "underdog_duplicate": 0
     }
   ]
 }
