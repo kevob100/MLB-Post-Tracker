@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-08T20:09:48.178210+00:00",
+  "generated_at": "2026-07-08T20:12:16.521078+00:00",
   "sports": [
     {
       "key": "mlb",
@@ -36,15 +36,6 @@
         "underdog": "UnderdogWNBA"
       },
       "generated_at": "2026-07-08T20:08:08.709098+00:00"
-    },
-    {
-      "key": "golf",
-      "label": "Golf",
-      "handles": {
-        "rotowire": "RotoWireGolf",
-        "underdog": "UnderdogGolf"
-      },
-      "generated_at": "2026-07-08T20:09:48.175559+00:00"
     }
   ]
 }

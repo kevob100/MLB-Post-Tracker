@@ -44,7 +44,7 @@ sports:
         user_id: '1577742107929968640'
   golf:
     label: Golf
-    active: true
+    active: false
     backfill_start_date: '2026-07-06'
     accounts:
       rotowire:
