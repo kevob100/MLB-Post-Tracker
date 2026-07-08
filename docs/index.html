@@ -165,8 +165,9 @@ async function boot() {
   }
   state.sportsIndex = index.sports || [];
   const keys = [ALL, ...state.sportsIndex.map(s => s.key)];
-  const wanted = (location.hash || "").replace(/^#/, "")
-    || localStorage.getItem("sport") || ALL;   // ALL is the default landing view
+  // Opening the bare page always lands on ALL; an explicit #sport link (e.g. shared)
+  // is still honored. We intentionally do NOT remember the last-viewed sport.
+  const wanted = (location.hash || "").replace(/^#/, "") || ALL;
   const chosen = keys.includes(wanted) ? wanted : ALL;
   await select(chosen);
 }
@@ -184,7 +185,6 @@ function renderSwitcher() {
 // Route to either the ALL overview or a single sport.
 async function select(key) {
   state.sport = key;
-  localStorage.setItem("sport", key);
   history.replaceState(null, "", "#" + key);
   if (key === ALL) { await loadAll(); }
   else { await loadSport(key); }
@@ -209,19 +209,20 @@ async function loadSport(sport) {
   init();
 }
 
-// Fetch every sport's aggregate summary for the ALL overview.
+// Fetch every sport's stories for the ALL overview (stories, not just aggregates, so
+// the date filter can recompute each sport's totals over an arbitrary range).
 async function loadAll() {
   const bust = "?_=" + Date.now();
   const rows = await Promise.all(state.sportsIndex.map(async s => {
     try {
-      const a = await fetch(`./data/${s.key}/aggregates.json` + bust, { cache: "no-store" })
+      const stories = await fetch(`./data/${s.key}/stories.json` + bust, { cache: "no-store" })
         .then(r => r.json());
-      return { key: s.key, label: s.label, summary: a.summary || {}, generated_at: a.generated_at };
+      return { key: s.key, label: s.label, stories, generated_at: s.generated_at };
     } catch (e) {
-      return { key: s.key, label: s.label, summary: {}, generated_at: null };
+      return { key: s.key, label: s.label, stories: [], generated_at: s.generated_at };
     }
   }));
-  state.allSummaries = rows;
+  state.allStories = rows;
   setMode(true);
   renderAll();
 }
@@ -518,53 +519,93 @@ function renderDups() {
 }
 
 // ---- ALL overview ----
+const medianOf = xs => {
+  if (!xs.length) return null;
+  const a = [...xs].sort((x,y) => x-y), m = a.length >> 1;
+  return a.length % 2 ? a[m] : (a[m-1] + a[m]) / 2;
+};
+const meanOf = xs => xs.length ? xs.reduce((p,c) => p+c, 0) / xs.length : null;
+
+// Compute a sport's headline metrics from its stories over an optional [from,to] range.
+// Mirrors src/aggregate.py::_summary (active = not rejected/merged; gaps exclude dups).
+function summarize(stories, fromT, toT) {
+  const inRange = s => {
+    const t = storyTime(s);
+    if (fromT && t < fromT) return false;
+    if (toT && t > toT) return false;
+    return true;
+  };
+  const isDup = s => !!s.same_event_duplicate;
+  const active = stories.filter(s =>
+    s.review_status !== "rejected" && s.review_status !== "merged" && inRange(s));
+  const matched = active.filter(s => s.status === "matched");
+  const deltas = matched.map(s => s.time_delta_seconds).filter(v => v != null);
+  const rwFirst = matched.filter(s => s.rotowire_first).length;
+  const count = (st, dup) => active.filter(s => s.status === st && isDup(s) === dup).length;
+  return {
+    matched: matched.length,
+    rotowire_first: rwFirst,
+    rotowire_first_rate: matched.length ? rwFirst / matched.length : null,
+    median_lead_seconds: medianOf(deltas),
+    mean_lead_seconds: meanOf(deltas),
+    rotowire_only: count("rotowire_only", false),
+    underdog_only: count("underdog_only", false),
+    dups: count("rotowire_only", true) + count("underdog_only", true),
+  };
+}
+
 function renderAll() {
-  const rows = state.allSummaries || [];
+  const rows = state.allStories || [];
   const gen = rows.map(r => r.generated_at).filter(Boolean).sort().pop();
   document.getElementById("subtitle").innerHTML =
     `RotoWire vs Underdog — all sports. ` +
     `<span id="generated">${gen ? "Updated " + esc(fmtTime(gen)) : ""}</span>`;
 
-  // Totals across sports. Counts sum; the win rate pools; lead is a matched-weighted mean
-  // (a true cross-sport median needs the raw deltas, so the total shows the mean).
-  const t = { matched:0, rw_first:0, rw_only:0, ud_only:0, dups:0, leadNum:0, leadDen:0 };
-  rows.forEach(({summary:s}) => {
-    t.matched += s.matched || 0;
-    t.rw_first += s.rotowire_first || 0;
-    t.rw_only += s.rotowire_only || 0;
-    t.ud_only += s.underdog_only || 0;
-    t.dups += (s.rotowire_duplicate || 0) + (s.underdog_duplicate || 0);
-    if (s.mean_lead_seconds != null && s.matched) { t.leadNum += s.mean_lead_seconds * s.matched; t.leadDen += s.matched; }
-  });
-  const totalRate = t.matched ? t.rw_first / t.matched : null;
-  const totalLead = t.leadDen ? t.leadNum / t.leadDen : null;
+  // Static shell: a date-range filter (persisted in state) + a table container that
+  // renderAllTable() refreshes. Rendering the shell once keeps the date pickers stable.
+  document.getElementById("view-all").innerHTML =
+    `<div class="all-title">Every sport at a glance — the top line totals all sports; each row is one sport. Filter by date to compare a window.</div>
+     <div class="filters">
+       <label>From<input type="date" id="all-from" value="${state.allFrom || ""}"></label>
+       <label>To<input type="date" id="all-to" value="${state.allTo || ""}"></label>
+       <label>&nbsp;<button id="all-clear" class="sport-btn" style="padding:6px 12px">Clear</button></label>
+     </div>
+     <div id="all-wrap"></div>`;
 
-  const cell = (v, cls) => `<td class="num${cls?(" "+cls):""}">${v}</td>`;
-  const dataRow = (r, isTotal) => {
-    const s = r.summary || {};
-    const cls = isTotal ? "total-row" : "sport-row";
-    const nameCell = isTotal
+  const fromEl = document.getElementById("all-from"), toEl = document.getElementById("all-to");
+  fromEl.onchange = () => { state.allFrom = fromEl.value; renderAllTable(); };
+  toEl.onchange = () => { state.allTo = toEl.value; renderAllTable(); };
+  document.getElementById("all-clear").onclick = () => {
+    state.allFrom = ""; state.allTo = ""; fromEl.value = ""; toEl.value = ""; renderAllTable();
+  };
+  renderAllTable();
+}
+
+function renderAllTable() {
+  const rows = state.allStories || [];
+  const fromT = state.allFrom ? +new Date(state.allFrom) : null;
+  // Include the whole "to" day (mirrors the feed's date filter).
+  const toT = state.allTo ? +new Date(state.allTo) + 86400000 : null;
+
+  const perSport = rows.map(r => ({ ...r, summary: summarize(r.stories, fromT, toT) }));
+  const totalSummary = summarize(rows.flatMap(r => r.stories), fromT, toT);
+
+  const cell = v => `<td class="num">${v}</td>`;
+  const dataRow = (label, s, key) => {
+    const isTotal = !key;
+    const name = isTotal
       ? `<td class="sport-name">All sports</td>`
-      : `<td class="sport-name">${esc(r.label)} <span class="go">view →</span></td>`;
-    const rate = isTotal ? totalRate : s.rotowire_first_rate;
-    const rwf = isTotal ? t.rw_first : (s.rotowire_first ?? 0);
-    const matched = isTotal ? t.matched : (s.matched ?? 0);
-    const lead = isTotal ? totalLead : s.median_lead_seconds;
-    const mean = isTotal ? totalLead : s.mean_lead_seconds;
-    const rwOnly = isTotal ? t.rw_only : (s.rotowire_only ?? 0);
-    const udOnly = isTotal ? t.ud_only : (s.underdog_only ?? 0);
-    const dups = isTotal ? t.dups : ((s.rotowire_duplicate||0)+(s.underdog_duplicate||0));
-    const leadLabel = isTotal ? fmtLead(mean) : fmtLead(lead);   // total = mean; sport = median
-    return `<tr class="${cls}" ${isTotal?"":`data-go="${r.key}"`}>
-      ${nameCell}
-      ${cell(fmtNum(matched))}
-      ${cell(fmtPct(rate))}
-      ${cell(matched ? rwf+"/"+matched : "—")}
-      ${cell(leadLabel)}
-      ${cell(fmtLead(mean))}
-      ${cell(rwOnly)}
-      ${cell(udOnly)}
-      ${cell(dups)}
+      : `<td class="sport-name">${esc(label)} <span class="go">view →</span></td>`;
+    return `<tr class="${isTotal ? "total-row" : "sport-row"}"${key ? ` data-go="${key}"` : ""}>
+      ${name}
+      ${cell(fmtNum(s.matched))}
+      ${cell(fmtPct(s.rotowire_first_rate))}
+      ${cell(s.matched ? s.rotowire_first + "/" + s.matched : "—")}
+      ${cell(fmtLead(s.median_lead_seconds))}
+      ${cell(fmtLead(s.mean_lead_seconds))}
+      ${cell(s.rotowire_only)}
+      ${cell(s.underdog_only)}
+      ${cell(s.dups)}
     </tr>`;
   };
 
@@ -573,15 +614,15 @@ function renderAll() {
     <th data-nosort style="text-align:right">Matched</th>
     <th data-nosort style="text-align:right">RW-first rate</th>
     <th data-nosort style="text-align:right">RW / matched</th>
-    <th data-nosort style="text-align:right">Lead</th>
+    <th data-nosort style="text-align:right">Median lead</th>
     <th data-nosort style="text-align:right">Mean lead</th>
     <th data-nosort style="text-align:right">RW-only</th>
     <th data-nosort style="text-align:right">UD-only</th>
     <th data-nosort style="text-align:right">Dups</th></tr>`;
-  const body = dataRow({label:"", summary:{}}, true) + rows.map(r => dataRow(r, false)).join("");
-  document.getElementById("view-all").innerHTML =
-    `<div class="all-title">Every sport at a glance — the top line totals all sports; each row is one sport. Lead shows median per sport, mean for the total.</div>
-     <div id="all-wrap"><table><thead>${head}</thead><tbody>${body}</tbody></table></div>`;
+  const body = dataRow("", totalSummary, null)
+    + perSport.map(r => dataRow(r.label, r.summary, r.key)).join("");
+  document.getElementById("all-wrap").innerHTML =
+    `<table><thead>${head}</thead><tbody>${body}</tbody></table>`;
 
   // Click a sport row to jump into its full view.
   document.querySelectorAll("#view-all tr.sport-row").forEach(tr =>
