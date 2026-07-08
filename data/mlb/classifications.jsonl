@@ -6488,3 +6488,17 @@
 {"id": "2074954623534916045", "is_news": false, "player": null, "team": "Cleveland Guardians", "event_class": "other", "excluded_reason": "lineup_card", "classified_at": "2026-07-08T20:37:39.382205+00:00"}
 {"id": "2074954700877898010", "is_news": false, "player": null, "team": "Cardinals", "event_class": "other", "excluded_reason": "lineup_card", "classified_at": "2026-07-08T20:37:40.651038+00:00"}
 {"id": "2074955665529803131", "is_news": true, "player": "JJ Wetherholt", "team": null, "event_class": "status_change", "excluded_reason": null, "classified_at": "2026-07-08T20:37:41.963099+00:00"}
+{"id": "2074956383678546418", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-07-08T21:05:04.578843+00:00"}
+{"id": "2074956667632935200", "is_news": true, "player": "Bailey Ober", "team": null, "event_class": "role_change", "excluded_reason": null, "classified_at": "2026-07-08T21:05:06.027947+00:00"}
+{"id": "2074957973256863943", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "no_player", "classified_at": "2026-07-08T21:05:07.318827+00:00"}
+{"id": "2074959072655466604", "is_news": true, "player": "Mike Trout", "team": "Los Angeles Angels", "event_class": "roster_move", "excluded_reason": null, "classified_at": "2026-07-08T21:05:08.804086+00:00"}
+{"id": "2074959146156474764", "is_news": false, "player": null, "team": "Los Angeles Angels", "event_class": "other", "excluded_reason": "lineup_card", "classified_at": "2026-07-08T21:05:10.329817+00:00"}
+{"id": "2074959336904818982", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "lineup_card", "classified_at": "2026-07-08T21:05:12.785228+00:00"}
+{"id": "2074959453657432435", "is_news": true, "player": "Mike Trout", "team": "Los Angeles Angels", "event_class": "status_change", "excluded_reason": null, "classified_at": "2026-07-08T21:05:14.074746+00:00"}
+{"id": "2074959853378810058", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "lineup_card", "classified_at": "2026-07-08T21:05:16.082414+00:00"}
+{"id": "2074959893514322347", "is_news": false, "player": null, "team": "Minnesota Twins", "event_class": "other", "excluded_reason": "lineup_card", "classified_at": "2026-07-08T21:05:17.434366+00:00"}
+{"id": "2074959962338660366", "is_news": false, "player": null, "team": "Milwaukee Brewers", "event_class": "other", "excluded_reason": "lineup_card", "classified_at": "2026-07-08T21:05:18.839192+00:00"}
+{"id": "2074960384453198331", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "lineup_card", "classified_at": "2026-07-08T21:05:20.118515+00:00"}
+{"id": "2074960689852981431", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-07-08T21:05:21.272543+00:00"}
+{"id": "2074961832893096009", "is_news": true, "player": "Brice Turang", "team": null, "event_class": "status_change", "excluded_reason": null, "classified_at": "2026-07-08T21:05:22.494174+00:00"}
+{"id": "2074962303288520884", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-07-08T21:05:23.677740+00:00"}
