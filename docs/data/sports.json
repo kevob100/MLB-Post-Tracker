@@ -1,15 +1,6 @@
 {
-  "generated_at": "2026-07-08T20:37:43.673598+00:00",
+  "generated_at": "2026-07-08T20:42:47.774615+00:00",
   "sports": [
-    {
-      "key": "mlb",
-      "label": "MLB",
-      "handles": {
-        "rotowire": "RotoWireMLB",
-        "underdog": "UnderdogMLB"
-      },
-      "generated_at": "2026-07-08T20:37:42.384452+00:00"
-    },
     {
       "key": "nfl",
       "label": "NFL",
@@ -18,6 +9,15 @@
         "underdog": "UnderdogNFL"
       },
       "generated_at": "2026-07-08T20:37:42.889111+00:00"
+    },
+    {
+      "key": "mlb",
+      "label": "MLB",
+      "handles": {
+        "rotowire": "RotoWireMLB",
+        "underdog": "UnderdogMLB"
+      },
+      "generated_at": "2026-07-08T20:37:42.384452+00:00"
     },
     {
       "key": "nba",

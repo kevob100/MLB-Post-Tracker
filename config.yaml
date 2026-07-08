@@ -1,14 +1,4 @@
 sports:
-  mlb:
-    label: MLB
-    active: true
-    accounts:
-      rotowire:
-        handle: RotoWireMLB
-        user_id: '2426328866'
-      underdog:
-        handle: UnderdogMLB
-        user_id: '1449055868880818178'
   nfl:
     label: NFL
     active: true
@@ -20,6 +10,16 @@ sports:
       underdog:
         handle: UnderdogNFL
         user_id: '1449054490062110725'
+  mlb:
+    label: MLB
+    active: true
+    accounts:
+      rotowire:
+        handle: RotoWireMLB
+        user_id: '2426328866'
+      underdog:
+        handle: UnderdogMLB
+        user_id: '1449055868880818178'
   nba:
     label: NBA
     active: true

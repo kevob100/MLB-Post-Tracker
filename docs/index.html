@@ -51,7 +51,7 @@
     border-radius: 6px; padding: 6px 8px; font-size: 13px;
   }
 
-  #feed-wrap { overflow-x: auto; }
+  #feed-wrap, #all-wrap { overflow-x: auto; }
   table { width: 100%; border-collapse: collapse; }
   td.story { white-space: normal; min-width: 200px; }
   th, td { text-align: left; padding: 9px 10px; border-bottom: 1px solid var(--line); white-space: nowrap; }
@@ -86,6 +86,18 @@
   .cov { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
   .cov h3 { font-size: 13px; margin: 0 0 6px; color: var(--muted); }
   .cov li { margin: 4px 0; }
+
+  /* ALL overview */
+  .all-title { font-size: 15px; margin: 4px 0 12px; color: var(--muted); }
+  #view-all table tbody tr.sport-row { cursor: pointer; }
+  #view-all table tbody tr.sport-row:hover { background: var(--panel); }
+  #view-all td.sport-name { font-weight: 650; }
+  #view-all tr.total-row td {
+    border-top: 2px solid var(--accent); border-bottom: 2px solid var(--line);
+    font-weight: 700; background: var(--panel);
+  }
+  #view-all tr.total-row td.sport-name { color: var(--accent); }
+  .go { color: var(--muted); font-size: 11px; }
 </style>
 </head>
 <body>
@@ -96,9 +108,13 @@
   <div class="sports" id="sport-switcher"></div>
 </header>
 <div class="wrap">
+  <!-- ALL-sports overview (shown when the ALL pill is selected) -->
+  <section id="view-all" class="hidden"></section>
+
+  <!-- Per-sport views (shown when a single sport is selected) -->
   <div class="kpis" id="kpis"></div>
 
-  <div class="tabs">
+  <div class="tabs" id="tabs">
     <div class="tab active" data-view="feed">Story Feed</div>
     <div class="tab" data-view="weekly">Weekly</div>
     <div class="tab" data-view="monthly">Monthly</div>
@@ -127,14 +143,16 @@
 </div>
 
 <script>
+const ALL = "all";
 const state = {
   stories: [], agg: null, sortKey: "time", sortAsc: false,
   sport: null, sportMeta: null, sportsIndex: [],
+  allSummaries: null,   // [{key,label,summary}] when the ALL overview is loaded
   // Default handles; overridden per-sport from sports.json.
   handles: { rotowire: "RotoWireMLB", underdog: "UnderdogMLB" },
 };
 
-// Bootstrap: read the sports index, build the switcher, then load the chosen sport.
+// Bootstrap: read the sports index, build the switcher, then load the chosen view.
 async function boot() {
   const bust = "?_=" + Date.now();
   let index;
@@ -146,32 +164,36 @@ async function boot() {
       handles: { rotowire: "RotoWireMLB", underdog: "UnderdogMLB" } }] };
   }
   state.sportsIndex = index.sports || [];
-  const keys = state.sportsIndex.map(s => s.key);
+  const keys = [ALL, ...state.sportsIndex.map(s => s.key)];
   const wanted = (location.hash || "").replace(/^#/, "")
-    || localStorage.getItem("sport") || keys[0];
-  const chosen = keys.includes(wanted) ? wanted : keys[0];
-  renderSwitcher();
-  await loadSport(chosen);
+    || localStorage.getItem("sport") || ALL;   // ALL is the default landing view
+  const chosen = keys.includes(wanted) ? wanted : ALL;
+  await select(chosen);
 }
 
 function renderSwitcher() {
   const el = document.getElementById("sport-switcher");
   if (!el) return;
-  // Hide the switcher entirely when there is only one sport.
-  if (state.sportsIndex.length <= 1) { el.innerHTML = ""; return; }
-  el.innerHTML = state.sportsIndex.map(s =>
-    `<div class="sport-btn${s.key === state.sport ? " active" : ""}" data-sport="${s.key}">${esc(s.label)}</div>`
-  ).join("");
+  const pill = (key, label) =>
+    `<div class="sport-btn${key === state.sport ? " active" : ""}" data-sport="${key}">${esc(label)}</div>`;
+  el.innerHTML = pill(ALL, "ALL") + state.sportsIndex.map(s => pill(s.key, s.label)).join("");
   el.querySelectorAll(".sport-btn").forEach(btn =>
-    btn.onclick = () => { if (btn.dataset.sport !== state.sport) loadSport(btn.dataset.sport); });
+    btn.onclick = () => { if (btn.dataset.sport !== state.sport) select(btn.dataset.sport); });
+}
+
+// Route to either the ALL overview or a single sport.
+async function select(key) {
+  state.sport = key;
+  localStorage.setItem("sport", key);
+  history.replaceState(null, "", "#" + key);
+  if (key === ALL) { await loadAll(); }
+  else { await loadSport(key); }
+  renderSwitcher();
 }
 
 async function loadSport(sport) {
-  state.sport = sport;
   state.sportMeta = state.sportsIndex.find(s => s.key === sport) || null;
   if (state.sportMeta && state.sportMeta.handles) state.handles = state.sportMeta.handles;
-  localStorage.setItem("sport", sport);
-  history.replaceState(null, "", "#" + sport);
   try {
     const bust = "?_=" + Date.now();
     const base = `./data/${sport}/`;
@@ -183,8 +205,38 @@ async function loadSport(sport) {
   } catch (e) {
     state.stories = []; state.agg = { summary: {}, weekly: [], monthly: [] };
   }
-  renderSwitcher();
+  setMode(false);
   init();
+}
+
+// Fetch every sport's aggregate summary for the ALL overview.
+async function loadAll() {
+  const bust = "?_=" + Date.now();
+  const rows = await Promise.all(state.sportsIndex.map(async s => {
+    try {
+      const a = await fetch(`./data/${s.key}/aggregates.json` + bust, { cache: "no-store" })
+        .then(r => r.json());
+      return { key: s.key, label: s.label, summary: a.summary || {}, generated_at: a.generated_at };
+    } catch (e) {
+      return { key: s.key, label: s.label, summary: {}, generated_at: null };
+    }
+  }));
+  state.allSummaries = rows;
+  setMode(true);
+  renderAll();
+}
+
+// Toggle between the ALL overview and the per-sport views.
+function setMode(isAll) {
+  document.getElementById("view-all").classList.toggle("hidden", !isAll);
+  document.getElementById("kpis").classList.toggle("hidden", isAll);
+  document.getElementById("tabs").classList.toggle("hidden", isAll);
+  if (isAll) {
+    ["feed","weekly","monthly","gaps","dups"].forEach(v =>
+      document.getElementById("view-" + v).classList.add("hidden"));
+  } else {
+    showView(state.view || "feed");   // restore the active tab, one visible at a time
+  }
 }
 
 // ---- formatting helpers ----
@@ -465,8 +517,80 @@ function renderDups() {
     : `<div class="empty">No same-event duplicates.</div>`;
 }
 
+// ---- ALL overview ----
+function renderAll() {
+  const rows = state.allSummaries || [];
+  const gen = rows.map(r => r.generated_at).filter(Boolean).sort().pop();
+  document.getElementById("subtitle").innerHTML =
+    `RotoWire vs Underdog — all sports. ` +
+    `<span id="generated">${gen ? "Updated " + esc(fmtTime(gen)) : ""}</span>`;
+
+  // Totals across sports. Counts sum; the win rate pools; lead is a matched-weighted mean
+  // (a true cross-sport median needs the raw deltas, so the total shows the mean).
+  const t = { matched:0, rw_first:0, rw_only:0, ud_only:0, dups:0, leadNum:0, leadDen:0 };
+  rows.forEach(({summary:s}) => {
+    t.matched += s.matched || 0;
+    t.rw_first += s.rotowire_first || 0;
+    t.rw_only += s.rotowire_only || 0;
+    t.ud_only += s.underdog_only || 0;
+    t.dups += (s.rotowire_duplicate || 0) + (s.underdog_duplicate || 0);
+    if (s.mean_lead_seconds != null && s.matched) { t.leadNum += s.mean_lead_seconds * s.matched; t.leadDen += s.matched; }
+  });
+  const totalRate = t.matched ? t.rw_first / t.matched : null;
+  const totalLead = t.leadDen ? t.leadNum / t.leadDen : null;
+
+  const cell = (v, cls) => `<td class="num${cls?(" "+cls):""}">${v}</td>`;
+  const dataRow = (r, isTotal) => {
+    const s = r.summary || {};
+    const cls = isTotal ? "total-row" : "sport-row";
+    const nameCell = isTotal
+      ? `<td class="sport-name">All sports</td>`
+      : `<td class="sport-name">${esc(r.label)} <span class="go">view →</span></td>`;
+    const rate = isTotal ? totalRate : s.rotowire_first_rate;
+    const rwf = isTotal ? t.rw_first : (s.rotowire_first ?? 0);
+    const matched = isTotal ? t.matched : (s.matched ?? 0);
+    const lead = isTotal ? totalLead : s.median_lead_seconds;
+    const mean = isTotal ? totalLead : s.mean_lead_seconds;
+    const rwOnly = isTotal ? t.rw_only : (s.rotowire_only ?? 0);
+    const udOnly = isTotal ? t.ud_only : (s.underdog_only ?? 0);
+    const dups = isTotal ? t.dups : ((s.rotowire_duplicate||0)+(s.underdog_duplicate||0));
+    const leadLabel = isTotal ? fmtLead(mean) : fmtLead(lead);   // total = mean; sport = median
+    return `<tr class="${cls}" ${isTotal?"":`data-go="${r.key}"`}>
+      ${nameCell}
+      ${cell(fmtNum(matched))}
+      ${cell(fmtPct(rate))}
+      ${cell(matched ? rwf+"/"+matched : "—")}
+      ${cell(leadLabel)}
+      ${cell(fmtLead(mean))}
+      ${cell(rwOnly)}
+      ${cell(udOnly)}
+      ${cell(dups)}
+    </tr>`;
+  };
+
+  const head = `<tr>
+    <th data-nosort>Sport</th>
+    <th data-nosort style="text-align:right">Matched</th>
+    <th data-nosort style="text-align:right">RW-first rate</th>
+    <th data-nosort style="text-align:right">RW / matched</th>
+    <th data-nosort style="text-align:right">Lead</th>
+    <th data-nosort style="text-align:right">Mean lead</th>
+    <th data-nosort style="text-align:right">RW-only</th>
+    <th data-nosort style="text-align:right">UD-only</th>
+    <th data-nosort style="text-align:right">Dups</th></tr>`;
+  const body = dataRow({label:"", summary:{}}, true) + rows.map(r => dataRow(r, false)).join("");
+  document.getElementById("view-all").innerHTML =
+    `<div class="all-title">Every sport at a glance — the top line totals all sports; each row is one sport. Lead shows median per sport, mean for the total.</div>
+     <div id="all-wrap"><table><thead>${head}</thead><tbody>${body}</tbody></table></div>`;
+
+  // Click a sport row to jump into its full view.
+  document.querySelectorAll("#view-all tr.sport-row").forEach(tr =>
+    tr.onclick = () => select(tr.dataset.go));
+}
+
 // ---- tabs + init ----
 function showView(name) {
+  state.view = name;
   document.querySelectorAll(".tab").forEach(t => t.classList.toggle("active", t.dataset.view===name));
   ["feed","weekly","monthly","gaps","dups"].forEach(v =>
     document.getElementById("view-"+v).classList.toggle("hidden", v!==name));
