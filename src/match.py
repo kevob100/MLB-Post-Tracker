@@ -34,7 +34,7 @@ from __future__ import annotations
 
 from pathlib import Path
 
-from .config import DATA_DIR, load_config
+from .config import DATA_DIR, load_config, sport_accounts
 from .store import append_jsonl, load_jsonl, now_iso, parse_dt, write_jsonl
 
 
@@ -74,12 +74,15 @@ def _side(post: dict) -> dict:
     }
 
 
-def generate_candidates(data_dir: Path = DATA_DIR) -> list[dict]:
+def generate_candidates(
+    data_dir: Path = DATA_DIR, sport: str = "mlb", accounts: dict | None = None
+) -> list[dict]:
     cfg = load_config()
     window_s = cfg["matching"]["time_window_minutes"] * 60
     group_map = _event_group_map(cfg)
-    rw_handle = cfg["accounts"]["rotowire"]["handle"]
-    ud_handle = cfg["accounts"]["underdog"]["handle"]
+    accounts = accounts if accounts is not None else sport_accounts(cfg, sport)
+    rw_handle = accounts["rotowire"]["handle"]
+    ud_handle = accounts["underdog"]["handle"]
 
     tweets_path = data_dir / "tweets.jsonl"
     news = [r for r in load_jsonl(tweets_path) if r.get("is_news")]
@@ -245,6 +248,8 @@ def resolve_stories(
     min_confidence: float | None = None,
     method: str = "llm",
     cache: bool = True,
+    sport: str = "mlb",
+    accounts: dict | None = None,
 ) -> list[dict]:
     """Build data/stories.jsonl: matched (two-sided) + one-sided coverage gaps.
 
@@ -253,8 +258,9 @@ def resolve_stories(
     `cache` controls whether verdicts are persisted (stand-ins pass False).
     """
     cfg = load_config()
-    rw_handle = cfg["accounts"]["rotowire"]["handle"]
-    ud_handle = cfg["accounts"]["underdog"]["handle"]
+    accounts = accounts if accounts is not None else sport_accounts(cfg, sport)
+    rw_handle = accounts["rotowire"]["handle"]
+    ud_handle = accounts["underdog"]["handle"]
 
     news = [r for r in load_jsonl(data_dir / "tweets.jsonl") if r.get("is_news")]
     by_id = {r["id"]: r for r in news}
@@ -368,19 +374,23 @@ def resolve_stories(
 if __name__ == "__main__":
     import argparse
 
+    from .config import sport_data_dir
+
     ap = argparse.ArgumentParser(description="Matching pipeline (candidates / adjudicate / resolve).")
     ap.add_argument("--resolve", action="store_true",
                     help="Run Stage 2+3 (LLM adjudication -> stories.jsonl). Requires ANTHROPIC_API_KEY.")
+    ap.add_argument("--sport", default="mlb", help="Sport key from config (default: mlb).")
     args = ap.parse_args()
+    data_dir = sport_data_dir(args.sport)
 
-    cands = generate_candidates()
-    print(f"Generated {len(cands)} candidate pair(s) -> data/candidates.jsonl")
+    cands = generate_candidates(data_dir=data_dir, sport=args.sport)
+    print(f"Generated {len(cands)} candidate pair(s) -> {data_dir}/candidates.jsonl")
     for c in cands:
         lead = "RotoWire" if c["rotowire_first"] else "Underdog"
         print(f"  {c['player']} ({c['rotowire']['event_class']}/{c['underdog']['event_class']}): "
               f"{lead} first by {abs(c['time_delta_seconds'])}s")
 
     if args.resolve:
-        stories = resolve_stories()
+        stories = resolve_stories(data_dir=data_dir, sport=args.sport)
         matched = sum(1 for s in stories if s["status"] == "matched")
-        print(f"Resolved {len(stories)} story(ies) ({matched} matched) -> data/stories.jsonl")
+        print(f"Resolved {len(stories)} story(ies) ({matched} matched) -> {data_dir}/stories.jsonl")

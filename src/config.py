@@ -33,3 +33,41 @@ def env(name: str, required: bool = True) -> str | None:
     if required and not val:
         raise RuntimeError(f"Missing required environment variable: {name} (add it to .env)")
     return val
+
+
+# --------------------------------------------------------------------------- #
+# Sport helpers
+#
+# The tracker runs the same RotoWire-vs-Underdog head-to-head for every sport.
+# A "sport" is a config entry under `sports:` plus its own data partition
+# (data/<sport>/ and docs/data/<sport>/); the rest of the pipeline is unchanged.
+# --------------------------------------------------------------------------- #
+
+def sports(cfg: dict, active_only: bool = True) -> list[str]:
+    """Sport keys in config order (mlb, nfl, ...). By default only active ones."""
+    out = []
+    for key, meta in (cfg.get("sports") or {}).items():
+        if active_only and not meta.get("active", True):
+            continue
+        out.append(key)
+    return out
+
+
+def sport_meta(cfg: dict, sport: str) -> dict:
+    meta = (cfg.get("sports") or {}).get(sport)
+    if meta is None:
+        raise KeyError(f"Unknown sport {sport!r} (known: {list((cfg.get('sports') or {}))})")
+    return meta
+
+
+def sport_accounts(cfg: dict, sport: str) -> dict:
+    """The {rotowire, underdog} account pair for a sport."""
+    return sport_meta(cfg, sport)["accounts"]
+
+
+def sport_data_dir(sport: str) -> Path:
+    return DATA_DIR / sport
+
+
+def sport_docs_dir(sport: str) -> Path:
+    return DOCS_DATA_DIR / sport

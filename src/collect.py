@@ -16,13 +16,16 @@ from __future__ import annotations
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
-from .config import DATA_DIR, load_config
+from .config import DATA_DIR, load_config, sport_accounts
 from .store import load_jsonl, load_state, now_iso, parse_dt, save_state, write_jsonl
 from .xapi import XClient
 
 
-def _backfill_start_time(cfg: dict) -> str:
-    return f"{cfg['collection']['backfill_start_date']}T00:00:00Z"
+def _backfill_start_time(cfg: dict, sport: str | None = None) -> str:
+    """First-run backfill start. A sport may override the global collection date."""
+    meta = (cfg.get("sports") or {}).get(sport or "", {}) or {}
+    date = meta.get("backfill_start_date") or cfg["collection"]["backfill_start_date"]
+    return f"{date}T00:00:00Z"
 
 
 def _new_record(tweet: dict, account_handle: str) -> dict:
@@ -48,12 +51,15 @@ def collect(
     client: XClient | None = None,
     data_dir: Path = DATA_DIR,
     per_account_limit: int | None = None,
+    sport: str = "mlb",
+    accounts: dict | None = None,
 ) -> dict:
     cfg = load_config()
     client = client or XClient()
     state = load_state(data_dir)
     state.setdefault("accounts", {})
 
+    accounts = accounts if accounts is not None else sport_accounts(cfg, sport)
     exclude = cfg["collection"].get("exclude")
     freeze_hours = cfg["impressions"]["freeze_hours"]
     tweets_path = data_dir / "tweets.jsonl"
@@ -61,7 +67,7 @@ def collect(
     by_id = {r["id"]: r for r in load_jsonl(tweets_path)}
     fetched_this_run: set[str] = set()
 
-    for key, account in cfg["accounts"].items():
+    for key, account in accounts.items():
         handle = account["handle"]
         user_id = account.get("user_id")
         if not user_id:
@@ -69,7 +75,7 @@ def collect(
 
         acct_state = state["accounts"].setdefault(key, {"since_id": None, "last_run": None})
         since_id = acct_state.get("since_id")
-        start_time = None if since_id else _backfill_start_time(cfg)
+        start_time = None if since_id else _backfill_start_time(cfg, sport)
 
         newest_id = since_id
         new_count = 0
@@ -148,6 +154,8 @@ def _refresh_and_freeze(
 if __name__ == "__main__":
     import argparse
 
+    from .config import sport_data_dir
+
     parser = argparse.ArgumentParser(description="Collect posts from both accounts.")
     parser.add_argument(
         "--limit",
@@ -155,5 +163,6 @@ if __name__ == "__main__":
         default=None,
         help="Cap reads to N most-recent posts per account (for cheap test runs).",
     )
+    parser.add_argument("--sport", default="mlb", help="Sport key from config (default: mlb).")
     args = parser.parse_args()
-    collect(per_account_limit=args.limit)
+    collect(per_account_limit=args.limit, sport=args.sport, data_dir=sport_data_dir(args.sport))

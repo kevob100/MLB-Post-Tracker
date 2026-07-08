@@ -1,25 +1,68 @@
-accounts:
-  rotowire:
-    handle: RotoWireMLB
-    user_id: '2426328866'
-  underdog:
-    handle: UnderdogMLB
-    user_id: '1449055868880818178'
+sports:
+  mlb:
+    label: MLB
+    active: true
+    accounts:
+      rotowire:
+        handle: RotoWireMLB
+        user_id: '2426328866'
+      underdog:
+        handle: UnderdogMLB
+        user_id: '1449055868880818178'
+  nfl:
+    label: NFL
+    active: true
+    backfill_start_date: '2026-07-06'
+    accounts:
+      rotowire:
+        handle: RotoWireNFL
+        user_id: '2542083714'
+      underdog:
+        handle: UnderdogNFL
+        user_id: '1449054490062110725'
+  nba:
+    label: NBA
+    active: true
+    backfill_start_date: '2026-07-06'
+    accounts:
+      rotowire:
+        handle: RotoWireNBA
+        user_id: '2291803664'
+      underdog:
+        handle: UnderdogNBA
+        user_id: '1448762998840074240'
+  wnba:
+    label: WNBA
+    active: true
+    backfill_start_date: '2026-07-06'
+    accounts:
+      rotowire:
+        handle: RotoWireWNBA
+        user_id: '1136446644822642688'
+      underdog:
+        handle: UnderdogWNBA
+        user_id: '1577742107929968640'
+  golf:
+    label: Golf
+    active: true
+    backfill_start_date: '2026-07-06'
+    accounts:
+      rotowire:
+        handle: RotoWireGolf
+        user_id: '758773982753587204'
+      underdog:
+        handle: UnderdogGolf
+        user_id: '1550241147787829250'
 matching:
   time_window_minutes: 90
   min_match_confidence: 0.75
   compatible_event_classes:
     injury:
-    - injury_il
-    - injury_dtd
-    - scratch
-    - return
+    - injury
+    status:
+    - status_change
     transaction:
-    - transaction_callup
-    - transaction_option
-    - transaction_dfa
-    - transaction_trade
-    - transaction_sign_release
+    - roster_move
     role:
     - role_change
 impressions:

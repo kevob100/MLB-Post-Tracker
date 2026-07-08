@@ -8,9 +8,15 @@ from src import match as match_mod
 from src.store import load_jsonl, write_jsonl
 
 CFG = {
-    "accounts": {
-        "rotowire": {"handle": "RotoWireMLB", "user_id": "111"},
-        "underdog": {"handle": "UnderdogMLB", "user_id": "222"},
+    "sports": {
+        "mlb": {
+            "label": "MLB",
+            "active": True,
+            "accounts": {
+                "rotowire": {"handle": "RotoWireMLB", "user_id": "111"},
+                "underdog": {"handle": "UnderdogMLB", "user_id": "222"},
+            },
+        },
     },
     "matching": {
         "time_window_minutes": 30,

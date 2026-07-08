@@ -19,9 +19,9 @@ from .config import env, load_config
 
 SYSTEM_PROMPT = (
     "You decide whether two short social-media posts describe the SAME real-world "
-    "MLB news event about the SAME player (e.g. both report the same injury, roster "
+    "sports news event about the SAME player (e.g. both report the same injury, roster "
     "move, or status change). Different events about the same player (an AM scratch "
-    "vs a PM IL move) are NOT the same story. "
+    "vs a PM injury designation) are NOT the same story. "
     "IMPORTANT — name matching: the two posts may name the player differently. Treat "
     "names as the same player when they plausibly refer to the same individual despite "
     "accents/diacritics (Eury Perez = Eury Pérez), spelling variants or typos, "

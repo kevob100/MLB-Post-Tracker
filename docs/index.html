@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>MLB Post-Speed Tracker — RotoWire vs Underdog</title>
+<title>Post-Speed Tracker — RotoWire vs Underdog</title>
 <style>
   :root {
     --bg: #0f1419; --panel: #1a2029; --panel2: #222b36; --line: #2d3743;
@@ -18,6 +18,16 @@
   header { padding: 20px 24px 8px; }
   h1 { font-size: 20px; margin: 0 0 2px; }
   .sub { color: var(--muted); font-size: 12px; }
+
+  /* sport switcher */
+  .sports { display: flex; gap: 6px; margin: 12px 0 4px; flex-wrap: wrap; }
+  .sport-btn {
+    background: var(--panel); color: var(--muted); border: 1px solid var(--line);
+    border-radius: 999px; padding: 6px 14px; font-size: 13px; font-weight: 600;
+    cursor: pointer; user-select: none;
+  }
+  .sport-btn:hover { color: var(--text); }
+  .sport-btn.active { background: var(--accent); border-color: var(--accent); color: #fff; }
   .wrap { padding: 0 24px 48px; max-width: 1200px; }
 
   /* KPI cards */
@@ -80,9 +90,10 @@
 </head>
 <body>
 <header>
-  <h1>MLB Post-Speed Tracker</h1>
-  <div class="sub">@RotoWireMLB vs @UnderdogMLB — news-speed comparison.
+  <h1>Post-Speed Tracker</h1>
+  <div class="sub" id="subtitle">RotoWire vs Underdog — news-speed comparison.
     <span id="generated"></span></div>
+  <div class="sports" id="sport-switcher"></div>
 </header>
 <div class="wrap">
   <div class="kpis" id="kpis"></div>
@@ -116,19 +127,63 @@
 </div>
 
 <script>
-const state = { stories: [], agg: null, sortKey: "time", sortAsc: false };
+const state = {
+  stories: [], agg: null, sortKey: "time", sortAsc: false,
+  sport: null, sportMeta: null, sportsIndex: [],
+  // Default handles; overridden per-sport from sports.json.
+  handles: { rotowire: "RotoWireMLB", underdog: "UnderdogMLB" },
+};
 
-async function load() {
+// Bootstrap: read the sports index, build the switcher, then load the chosen sport.
+async function boot() {
+  const bust = "?_=" + Date.now();
+  let index;
+  try {
+    index = await fetch("./data/sports.json" + bust, { cache: "no-store" }).then(r => r.json());
+  } catch (e) {
+    // Fallback for a single-sport (pre-index) deployment: assume MLB.
+    index = { sports: [{ key: "mlb", label: "MLB",
+      handles: { rotowire: "RotoWireMLB", underdog: "UnderdogMLB" } }] };
+  }
+  state.sportsIndex = index.sports || [];
+  const keys = state.sportsIndex.map(s => s.key);
+  const wanted = (location.hash || "").replace(/^#/, "")
+    || localStorage.getItem("sport") || keys[0];
+  const chosen = keys.includes(wanted) ? wanted : keys[0];
+  renderSwitcher();
+  await loadSport(chosen);
+}
+
+function renderSwitcher() {
+  const el = document.getElementById("sport-switcher");
+  if (!el) return;
+  // Hide the switcher entirely when there is only one sport.
+  if (state.sportsIndex.length <= 1) { el.innerHTML = ""; return; }
+  el.innerHTML = state.sportsIndex.map(s =>
+    `<div class="sport-btn${s.key === state.sport ? " active" : ""}" data-sport="${s.key}">${esc(s.label)}</div>`
+  ).join("");
+  el.querySelectorAll(".sport-btn").forEach(btn =>
+    btn.onclick = () => { if (btn.dataset.sport !== state.sport) loadSport(btn.dataset.sport); });
+}
+
+async function loadSport(sport) {
+  state.sport = sport;
+  state.sportMeta = state.sportsIndex.find(s => s.key === sport) || null;
+  if (state.sportMeta && state.sportMeta.handles) state.handles = state.sportMeta.handles;
+  localStorage.setItem("sport", sport);
+  history.replaceState(null, "", "#" + sport);
   try {
     const bust = "?_=" + Date.now();
+    const base = `./data/${sport}/`;
     const [s, a] = await Promise.all([
-      fetch("./data/stories.json" + bust, { cache: "no-store" }).then(r => r.json()),
-      fetch("./data/aggregates.json" + bust, { cache: "no-store" }).then(r => r.json()),
+      fetch(base + "stories.json" + bust, { cache: "no-store" }).then(r => r.json()),
+      fetch(base + "aggregates.json" + bust, { cache: "no-store" }).then(r => r.json()),
     ]);
     state.stories = s; state.agg = a;
   } catch (e) {
     state.stories = []; state.agg = { summary: {}, weekly: [], monthly: [] };
   }
+  renderSwitcher();
   init();
 }
 
@@ -148,7 +203,7 @@ function fmtTime(iso) {
 }
 
 // Tweet links: story sides carry tweet_id + the feed implies the handle.
-const HANDLE = { rotowire: "RotoWireMLB", underdog: "UnderdogMLB" };
+// Handles are per-sport, sourced from sports.json into state.handles.
 const tweetUrl = (handle, id) => `https://x.com/${handle}/status/${id}`;
 function timeLink(handle, sideObj) {
   if (!sideObj || !sideObj.created_at) return "—";
@@ -188,8 +243,8 @@ function dupRole(s) {
 }
 // The single populated side of a one-sided story (gap or duplicate) + its handle.
 function loneSide(s) {
-  if (s.rotowire) return { handle: HANDLE.rotowire, side: s.rotowire };
-  if (s.underdog) return { handle: HANDLE.underdog, side: s.underdog };
+  if (s.rotowire) return { handle: state.handles.rotowire, side: s.rotowire };
+  if (s.underdog) return { handle: state.handles.underdog, side: s.underdog };
   return null;
 }
 const storyById = id => state.stories.find(s => s.story_id === id);
@@ -237,8 +292,8 @@ const COLS = [
   ["team", "Team", s => esc(s.team || "—"), false],
   ["event_class", "Event", s => `<span class="chip">${esc(s.event_class||"—")}</span>`, false],
   ["canonical_label", "Story", s => esc(s.canonical_label || "—"), false],
-  ["rw_time", "RotoWire", s => timeLink(HANDLE.rotowire, s.rotowire), false],
-  ["ud_time", "Underdog", s => timeLink(HANDLE.underdog, s.underdog), false],
+  ["rw_time", "RotoWire", s => timeLink(state.handles.rotowire, s.rotowire), false],
+  ["ud_time", "Underdog", s => timeLink(state.handles.underdog, s.underdog), false],
   ["time_delta_seconds", "Δ lead", s => fmtDelta(s.time_delta_seconds), true],
   ["winner", "Winner", s => winnerBadge(s), false],
   ["rw_impr", "RW impr", s => fmtNum(s.rotowire?.impression_count), true],
@@ -419,18 +474,24 @@ function showView(name) {
 
 function init() {
   const gen = state.agg.generated_at;
-  document.getElementById("generated").textContent =
-    gen ? "Updated " + fmtTime(gen) : "";
+  const label = state.sportMeta ? state.sportMeta.label : "";
+  document.getElementById("subtitle").innerHTML =
+    `@${esc(state.handles.rotowire)} vs @${esc(state.handles.underdog)}` +
+    (label ? ` — ${esc(label)} news-speed comparison. ` : " news-speed comparison. ") +
+    `<span id="generated">${gen ? "Updated " + esc(fmtTime(gen)) : ""}</span>`;
   renderKpis();
 
   // event filter options
   const events = [...new Set(state.stories.map(s => s.event_class).filter(Boolean))].sort();
   document.getElementById("f-event").innerHTML =
     `<option value="">all</option>` + events.map(e => `<option>${e}</option>`).join("");
-  ["f-from","f-to","f-event","f-player","f-conf","f-status"].forEach(id =>
-    document.getElementById(id).addEventListener("input", renderFeed));
-
-  document.querySelectorAll(".tab").forEach(t => t.onclick = () => showView(t.dataset.view));
+  // Wire input/tab handlers once — init() re-runs on every sport switch.
+  if (!state.wired) {
+    ["f-from","f-to","f-event","f-player","f-conf","f-status"].forEach(id =>
+      document.getElementById(id).addEventListener("input", renderFeed));
+    document.querySelectorAll(".tab").forEach(t => t.onclick = () => showView(t.dataset.view));
+    state.wired = true;
+  }
 
   renderFeed();
   renderRollup(document.getElementById("view-weekly"), state.agg.weekly || [], "week");
@@ -439,7 +500,7 @@ function init() {
   renderDups();
 }
 
-load();
+boot();
 </script>
 </body>
 </html>

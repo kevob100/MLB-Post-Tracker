@@ -1,0 +1,16 @@
+{
+  "generated_at": "2026-07-08T19:53:34.052476+00:00",
+  "summary": {
+    "matched": 0,
+    "rotowire_first": 0,
+    "rotowire_first_rate": null,
+    "median_lead_seconds": null,
+    "mean_lead_seconds": null,
+    "rotowire_only": 0,
+    "underdog_only": 0,
+    "rotowire_duplicate": 0,
+    "underdog_duplicate": 0
+  },
+  "weekly": [],
+  "monthly": []
+}

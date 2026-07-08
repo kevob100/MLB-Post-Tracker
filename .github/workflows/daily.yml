@@ -57,8 +57,10 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          # Stage pipeline artifacts only — never reviews.jsonl (human-owned).
-          git add data/tweets.jsonl data/classifications.jsonl data/candidates.jsonl data/verdicts.jsonl data/stories.jsonl data/state.json docs/data/ || true
+          # Stage all per-sport pipeline artifacts + dashboard JSON, then unstage any
+          # reviews.jsonl (human-owned, must never be committed by CI).
+          git add data docs/data || true
+          git reset -q -- ':(glob)data/**/reviews.jsonl' 'data/reviews.jsonl' 2>/dev/null || true
           if git diff --cached --quiet; then
             echo "No changes to commit."
           else
