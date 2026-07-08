@@ -39,7 +39,19 @@ jobs:
         env:
           X_BEARER_TOKEN: ${{ secrets.X_BEARER_TOKEN }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-        run: python -m src.pipeline
+        # The pipeline is idempotent (since_id state + classification/verdict caches),
+        # so retrying is safe and cheap — it absorbs transient X/Anthropic API hiccups
+        # (rate limits, 5xx) that would otherwise fail the whole scheduled run.
+        run: |
+          for attempt in 1 2 3; do
+            if python -m src.pipeline; then
+              exit 0
+            fi
+            echo "::warning::pipeline attempt $attempt failed; retrying in 30s"
+            sleep 30
+          done
+          echo "::error::pipeline failed after 3 attempts"
+          exit 1
 
       - name: Commit refreshed data + dashboard JSON
         run: |
@@ -70,8 +82,18 @@ jobs:
       cancel-in-progress: false
     environment:
       name: github-pages
-      url: ${{ steps.deploy.outputs.page_url }}
+      url: ${{ steps.deploy2.outputs.page_url || steps.deploy.outputs.page_url }}
     steps:
+      # GitHub Pages deploys occasionally return a transient "Deployment failed, try
+      # again later". Attempt 1 is allowed to fail; if it does, wait and retry once.
       - name: Deploy to GitHub Pages
         id: deploy
+        uses: actions/deploy-pages@v5
+        continue-on-error: true
+      - name: Wait before retry
+        if: steps.deploy.outcome == 'failure'
+        run: sleep 45
+      - name: Deploy to GitHub Pages (retry)
+        id: deploy2
+        if: steps.deploy.outcome == 'failure'
         uses: actions/deploy-pages@v5
