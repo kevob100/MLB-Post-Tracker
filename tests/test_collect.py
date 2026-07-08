@@ -43,9 +43,15 @@ class FakeClient:
 
 
 CFG = {
-    "accounts": {
-        "rotowire": {"handle": "RotoWireMLB", "user_id": "111"},
-        "underdog": {"handle": "UnderdogMLB", "user_id": "222"},
+    "sports": {
+        "mlb": {
+            "label": "MLB",
+            "active": True,
+            "accounts": {
+                "rotowire": {"handle": "RotoWireMLB", "user_id": "111"},
+                "underdog": {"handle": "UnderdogMLB", "user_id": "222"},
+            },
+        },
     },
     "collection": {"backfill_start_date": "2026-05-29", "exclude": ["retweets", "replies"]},
     "impressions": {"freeze_hours": 12},

@@ -1,0 +1,62 @@
+{"id": "2073925633399275827", "is_news": false, "player": "Zac Blair", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-08T20:08:10.845237+00:00"}
+{"id": "2073927415982673997", "is_news": false, "player": "Christiaan Bezuidenhout", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-08T20:08:12.172695+00:00"}
+{"id": "2073929977507062214", "is_news": false, "player": "Blades Brown", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-08T20:08:13.504702+00:00"}
+{"id": "2073932885917057168", "is_news": false, "player": "Tyler Duncan", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-08T20:08:15.040995+00:00"}
+{"id": "2073934650519527902", "is_news": false, "player": "Eric Cole", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-08T20:08:17.087912+00:00"}
+{"id": "2074125048009355723", "is_news": true, "player": "Nico Echavarria", "team": null, "event_class": "field_change", "excluded_reason": null, "classified_at": "2026-07-08T20:08:18.419642+00:00"}
+{"id": "2074127543267991913", "is_news": true, "player": "Patrick Rodgers", "team": null, "event_class": "field_change", "excluded_reason": null, "classified_at": "2026-07-08T20:08:20.569603+00:00"}
+{"id": "2074128140964687904", "is_news": true, "player": "Sam Stevens", "team": null, "event_class": "field_change", "excluded_reason": null, "classified_at": "2026-07-08T20:08:21.863292+00:00"}
+{"id": "2074129318456816060", "is_news": false, "player": "Jacob Bridgeman", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-08T20:08:23.801504+00:00"}
+{"id": "2074139748000526827", "is_news": false, "player": "Kevin Yu", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-08T20:08:25.459323+00:00"}
+{"id": "2074141141583167733", "is_news": false, "player": "Stephan Jaeger", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-08T20:08:27.020260+00:00"}
+{"id": "2074142383806071120", "is_news": false, "player": "Matt Kuchar", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-08T20:08:28.343893+00:00"}
+{"id": "2074147477490381303", "is_news": false, "player": "J.T. Poston", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-08T20:08:29.683036+00:00"}
+{"id": "2074149455016681793", "is_news": false, "player": "Rickie Fowler", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-08T20:08:31.393026+00:00"}
+{"id": "2074151536318468253", "is_news": false, "player": "Ben Griffin", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-08T20:08:32.858954+00:00"}
+{"id": "2074151630635671791", "is_news": false, "player": "Chandler Phillips", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-08T20:08:34.480584+00:00"}
+{"id": "2074153343136497852", "is_news": false, "player": "Preston Stout", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-08T20:08:35.839574+00:00"}
+{"id": "2074154458569662709", "is_news": true, "player": "Tony Finau", "team": null, "event_class": "withdrawal", "excluded_reason": null, "classified_at": "2026-07-08T20:08:38.492684+00:00"}
+{"id": "2074155497008095703", "is_news": true, "player": "Michael Hollick", "team": null, "event_class": "withdrawal", "excluded_reason": null, "classified_at": "2026-07-08T20:08:40.947542+00:00"}
+{"id": "2074156289232429125", "is_news": true, "player": "Marcus Armitage", "team": null, "event_class": "field_change", "excluded_reason": null, "classified_at": "2026-07-08T20:08:42.483460+00:00"}
+{"id": "2074157000368283813", "is_news": true, "player": "Chandler Phillips", "team": null, "event_class": "field_change", "excluded_reason": null, "classified_at": "2026-07-08T20:08:43.949453+00:00"}
+{"id": "2074157917935153439", "is_news": true, "player": "Chandler Phillips", "team": null, "event_class": "field_change", "excluded_reason": null, "classified_at": "2026-07-08T20:08:45.146207+00:00"}
+{"id": "2074158090870493532", "is_news": false, "player": "Keith Mitchell", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-08T20:08:47.296962+00:00"}
+{"id": "2074158826744410342", "is_news": false, "player": "Pierceson Coody", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-08T20:08:48.607231+00:00"}
+{"id": "2074159298326802510", "is_news": true, "player": "Emiliano Grillo", "team": null, "event_class": "withdrawal", "excluded_reason": null, "classified_at": "2026-07-08T20:08:50.261812+00:00"}
+{"id": "2074160801301037160", "is_news": false, "player": "Jordan Spieth", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-08T20:08:51.700503+00:00"}
+{"id": "2074161186413724109", "is_news": true, "player": "Austin Cook", "team": null, "event_class": "field_change", "excluded_reason": null, "classified_at": "2026-07-08T20:08:53.113992+00:00"}
+{"id": "2074161891635519958", "is_news": true, "player": "Will Gordon", "team": null, "event_class": "field_change", "excluded_reason": null, "classified_at": "2026-07-08T20:08:54.328980+00:00"}
+{"id": "2074165831240495238", "is_news": false, "player": "Harry Higgs", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-08T20:08:55.538551+00:00"}
+{"id": "2074166309391126862", "is_news": false, "player": "Sungjae Im", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-08T20:08:56.925157+00:00"}
+{"id": "2074167421594648817", "is_news": false, "player": "Tom Kim", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-08T20:08:58.459315+00:00"}
+{"id": "2074168267640394100", "is_news": false, "player": "Zecheng Dou", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-08T20:08:59.998037+00:00"}
+{"id": "2074168597035815394", "is_news": false, "player": "Andrew Putnam", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-08T20:09:01.328748+00:00"}
+{"id": "2074169407798989278", "is_news": false, "player": "David Lipsky", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-08T20:09:03.988168+00:00"}
+{"id": "2074171354568425734", "is_news": false, "player": "Troy Merritt", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-08T20:09:05.290871+00:00"}
+{"id": "2074173326159712523", "is_news": false, "player": "Keegan Bradley", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-08T20:09:07.571982+00:00"}
+{"id": "2074175896861225037", "is_news": false, "player": "Davis Thompson", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-08T20:09:08.901227+00:00"}
+{"id": "2074184135770362008", "is_news": false, "player": "Chris Gotterup", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-08T20:09:10.266597+00:00"}
+{"id": "2074241322777448458", "is_news": true, "player": "Karl Vilips", "team": null, "event_class": "field_change", "excluded_reason": null, "classified_at": "2026-07-08T20:09:11.668240+00:00"}
+{"id": "2074242226335498449", "is_news": true, "player": "Scott Piercy", "team": null, "event_class": "field_change", "excluded_reason": null, "classified_at": "2026-07-08T20:09:12.896638+00:00"}
+{"id": "2074318576123527539", "is_news": false, "player": "Austin Smotherman", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-08T20:09:14.434986+00:00"}
+{"id": "2074322755609124921", "is_news": false, "player": "Tom Hoge", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-08T20:09:15.766175+00:00"}
+{"id": "2074325641931981141", "is_news": false, "player": "Zach Bauchou", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-08T20:09:17.226093+00:00"}
+{"id": "2074493638797582513", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "promo", "classified_at": "2026-07-08T20:09:18.436560+00:00"}
+{"id": "2074530315658235933", "is_news": false, "player": "Pontus Nyholm", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-08T20:09:19.757973+00:00"}
+{"id": "2074531534611128572", "is_news": false, "player": "Erik van Rooyen", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-08T20:09:21.090541+00:00"}
+{"id": "2074533569934864776", "is_news": false, "player": "William Mouw", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-08T20:09:22.673559+00:00"}
+{"id": "2074536282512834720", "is_news": false, "player": "Matt Wallace", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-08T20:09:24.776749+00:00"}
+{"id": "2074539992408301811", "is_news": false, "player": "Michael Brennan", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-08T20:09:26.072761+00:00"}
+{"id": "2074541534267982313", "is_news": true, "player": "Patrick Rodgers", "team": null, "event_class": "withdrawal", "excluded_reason": null, "classified_at": "2026-07-08T20:09:27.436631+00:00"}
+{"id": "2074542708673126575", "is_news": true, "player": "William McGirt", "team": null, "event_class": "field_change", "excluded_reason": null, "classified_at": "2026-07-08T20:09:28.666509+00:00"}
+{"id": "2074545315764441491", "is_news": false, "player": "Nick Dunlap", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-08T20:09:30.508640+00:00"}
+{"id": "2074547089489498182", "is_news": false, "player": "Davis Chatfield", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-08T20:09:31.887945+00:00"}
+{"id": "2074548393712533641", "is_news": false, "player": "David Skinns", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-08T20:09:33.496740+00:00"}
+{"id": "2074551333781168620", "is_news": false, "player": "Lanto Griffin", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-08T20:09:35.116638+00:00"}
+{"id": "2074553376109371677", "is_news": false, "player": "Trace Crowe", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-08T20:09:36.459818+00:00"}
+{"id": "2074565472943485022", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "promo", "classified_at": "2026-07-08T20:09:37.779571+00:00"}
+{"id": "2074606902684586361", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "promo", "classified_at": "2026-07-08T20:09:39.111081+00:00"}
+{"id": "2074637090294264205", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "promo", "classified_at": "2026-07-08T20:09:40.725309+00:00"}
+{"id": "2074908910981468272", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "promo", "classified_at": "2026-07-08T20:09:42.079542+00:00"}
+{"id": "2074916449013936449", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "promo", "classified_at": "2026-07-08T20:09:43.411215+00:00"}
+{"id": "2074927768911880695", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "promo", "classified_at": "2026-07-08T20:09:48.116929+00:00"}

@@ -16,7 +16,7 @@ import argparse
 from pathlib import Path
 
 from .aggregate import apply_reviews, build_aggregates
-from .config import DATA_DIR, DOCS_DATA_DIR
+from .config import DATA_DIR, DOCS_DATA_DIR, sport_data_dir, sport_docs_dir
 from .store import append_jsonl, load_jsonl, now_iso
 
 DECISIONS = ("confirm", "reject", "merge")
@@ -157,12 +157,18 @@ def run_review(
 
 def main() -> None:
     ap = argparse.ArgumentParser(description="Manual review for matched stories (local only).")
+    ap.add_argument("--sport", default="mlb", help="Sport key from config (default: mlb).")
     ap.add_argument("--min-confidence", type=float, default=None,
                     help="Only review pending matches below this confidence.")
     ap.add_argument("--no-rebuild", action="store_true",
                     help="Do not regenerate docs/data after reviewing.")
     args = ap.parse_args()
-    run_review(min_confidence=args.min_confidence, rebuild=not args.no_rebuild)
+    run_review(
+        data_dir=sport_data_dir(args.sport),
+        docs_data_dir=sport_docs_dir(args.sport),
+        min_confidence=args.min_confidence,
+        rebuild=not args.no_rebuild,
+    )
 
 
 if __name__ == "__main__":

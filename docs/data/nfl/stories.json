@@ -1,0 +1,26 @@
+[
+  {
+    "story_id": "st_2074581006930067698",
+    "canonical_label": null,
+    "player": "David Montgomery",
+    "player_key": "david montgomery",
+    "team": null,
+    "event_class": "role_change",
+    "status": "rotowire_only",
+    "same_event_duplicate": false,
+    "duplicate_of": null,
+    "rotowire": {
+      "tweet_id": "2074581006930067698",
+      "created_at": "2026-07-07T19:47:10.000Z",
+      "impression_count": 3281,
+      "text": "David Montgomery: Viewed as three-down back https://t.co/LwRgehrOP1"
+    },
+    "underdog": null,
+    "time_delta_seconds": null,
+    "rotowire_first": null,
+    "match_confidence": null,
+    "match_method": "none",
+    "computed_at": "2026-07-08T19:59:40.533688+00:00",
+    "review_status": "pending"
+  }
+]

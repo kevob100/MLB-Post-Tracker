@@ -10,12 +10,26 @@ from src.store import load_jsonl, write_jsonl
 def test_parse_plain_json_news():
     c = parse_classification(
         '{"is_news": true, "player": "Christian Yelich", "team": "Brewers", '
-        '"event_class": "injury_il", "excluded_reason": null}'
+        '"event_class": "injury", "excluded_reason": null}'
     )
     assert c["is_news"] is True
     assert c["player"] == "Christian Yelich"
-    assert c["event_class"] == "injury_il"
+    assert c["event_class"] == "injury"
     assert c["excluded_reason"] is None
+
+
+def test_parse_remaps_legacy_event_classes():
+    # Cached MLB verdicts use the old baseball-specific classes; they must remap to the
+    # generic cross-sport taxonomy on read.
+    assert parse_classification(
+        '{"is_news": true, "player": "X", "event_class": "injury_il"}'
+    )["event_class"] == "injury"
+    assert parse_classification(
+        '{"is_news": true, "player": "X", "event_class": "transaction_trade"}'
+    )["event_class"] == "roster_move"
+    assert parse_classification(
+        '{"is_news": true, "player": "X", "event_class": "return"}'
+    )["event_class"] == "status_change"
 
 
 def test_parse_strips_code_fences():
@@ -28,9 +42,9 @@ def test_parse_strips_code_fences():
 def test_parse_recovers_embedded_object():
     c = parse_classification(
         'Sure: {"is_news": true, "player": "Eury Perez", "team": "Marlins", '
-        '"event_class": "return", "excluded_reason": null} done'
+        '"event_class": "status_change", "excluded_reason": null} done'
     )
-    assert c["is_news"] is True and c["event_class"] == "return"
+    assert c["is_news"] is True and c["event_class"] == "status_change"
 
 
 def test_parse_garbage_is_safe():
@@ -46,9 +60,44 @@ def test_parse_unknown_event_class_falls_back_to_other_and_not_news():
     assert c["event_class"] == "other" and c["is_news"] is False
 
 
+def test_classifier_builds_valid_prompt_per_sport():
+    # The prompt contains literal JSON braces, so interpolation must not use str.format.
+    # A real Classifier is constructed here (client injected) to exercise __init__.
+    for sport, label in [("mlb", "MLB"), ("golf", "Golf"), ("nfl", "NFL")]:
+        c = classify.Classifier(client=object(), sport=sport, sport_label=label)
+        assert "{sport}" not in c.system_prompt      # placeholder filled
+        assert label in c.system_prompt
+        assert '{"is_news"' in c.system_prompt        # JSON schema intact
+    golf = classify.Classifier(client=object(), sport="golf", sport_label="Golf")
+    assert golf.event_classes == ("withdrawal", "field_change", "other")
+
+
+def test_parse_golf_taxonomy():
+    from src.classify import GOLF_EVENT_CLASSES
+
+    wd = parse_classification(
+        '{"is_news": true, "player": "Scottie Scheffler", "event_class": "withdrawal"}',
+        GOLF_EVENT_CLASSES,
+    )
+    assert wd["is_news"] is True and wd["event_class"] == "withdrawal"
+
+    fc = parse_classification(
+        '{"is_news": true, "player": "Nick Dunlap", "event_class": "field_change"}',
+        GOLF_EVENT_CLASSES,
+    )
+    assert fc["is_news"] is True and fc["event_class"] == "field_change"
+
+    # A roster-sport class is out of vocab for golf -> collapses to "other" (not news).
+    ros = parse_classification(
+        '{"is_news": true, "player": "X", "event_class": "roster_move"}',
+        GOLF_EVENT_CLASSES,
+    )
+    assert ros["event_class"] == "other" and ros["is_news"] is False
+
+
 def test_parse_news_requires_a_player():
     c = parse_classification(
-        '{"is_news": true, "player": null, "event_class": "injury_il", "excluded_reason": null}'
+        '{"is_news": true, "player": null, "event_class": "injury", "excluded_reason": null}'
     )
     assert c["is_news"] is False and c["excluded_reason"] == "no_player"
 
@@ -97,6 +146,8 @@ def test_classify_file_enriches_and_caches(tmp_path):
     rows = {r["id"]: r for r in load_jsonl(tmp_path / "tweets.jsonl")}
     assert rows["1"]["is_news"] is True
     assert rows["1"]["player"] == "Christian Yelich"
+    # The classifier returned a legacy class; it is remapped to the generic taxonomy.
+    assert rows["1"]["event_class"] == "injury"
     assert rows["1"]["player_key"] == "christian yelich"
     assert rows["1"]["players"][0]["player_key"] == "christian yelich"
     assert rows["2"]["is_news"] is False and rows["2"]["excluded_reason"] == "promo"

@@ -1,0 +1,197 @@
+{"id": "2073921370476380587", "is_news": true, "player": "Alissa Pili", "team": null, "event_class": "injury", "excluded_reason": null, "classified_at": "2026-07-08T20:02:07.235411+00:00"}
+{"id": "2073921995771650478", "is_news": true, "player": "Kate Martin", "team": null, "event_class": "status_change", "excluded_reason": null, "classified_at": "2026-07-08T20:02:08.561932+00:00"}
+{"id": "2073922468822089766", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-07-08T20:02:09.893169+00:00"}
+{"id": "2073924564942266605", "is_news": true, "player": "Taina Mair", "team": null, "event_class": "status_change", "excluded_reason": null, "classified_at": "2026-07-08T20:02:11.433750+00:00"}
+{"id": "2073965694014632185", "is_news": false, "player": "Kelsey Mitchell", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-08T20:02:12.731953+00:00"}
+{"id": "2073966749175652676", "is_news": false, "player": "Aliyah Boston", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-08T20:02:14.186308+00:00"}
+{"id": "2073968714030964818", "is_news": false, "player": "Sophie Cunningham", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-08T20:02:15.629103+00:00"}
+{"id": "2073972590863904905", "is_news": false, "player": "Jewell Loyd", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-08T20:02:16.848760+00:00"}
+{"id": "2073973368341028930", "is_news": false, "player": "Jackie Young", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-08T20:02:18.274044+00:00"}
+{"id": "2073974611490807839", "is_news": false, "player": "Cheyenne Parker-Tyus", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-08T20:02:20.338071+00:00"}
+{"id": "2074133183331717143", "is_news": true, "player": "Miela Sowah", "team": null, "event_class": "injury", "excluded_reason": null, "classified_at": "2026-07-08T20:02:22.149292+00:00"}
+{"id": "2074133835277541779", "is_news": true, "player": "Ashten Prechtel", "team": null, "event_class": "injury", "excluded_reason": null, "classified_at": "2026-07-08T20:02:23.720602+00:00"}
+{"id": "2074134438481449340", "is_news": true, "player": "Hailey Van Lith", "team": null, "event_class": "injury", "excluded_reason": null, "classified_at": "2026-07-08T20:02:25.652037+00:00"}
+{"id": "2074140535388823882", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "lineup_card", "classified_at": "2026-07-08T20:02:26.911485+00:00"}
+{"id": "2074156117718917588", "is_news": true, "player": "Kate Martin", "team": "Los Angeles Sparks", "event_class": "roster_move", "excluded_reason": null, "classified_at": "2026-07-08T20:02:28.091628+00:00"}
+{"id": "2074156922547077130", "is_news": true, "player": "Ta'Niya Latson", "team": "Los Angeles Sparks", "event_class": "roster_move", "excluded_reason": null, "classified_at": "2026-07-08T20:02:29.453227+00:00"}
+{"id": "2074157744890802642", "is_news": true, "player": "Kate Martin", "team": null, "event_class": "roster_move", "excluded_reason": null, "classified_at": "2026-07-08T20:02:30.784282+00:00"}
+{"id": "2074158339932471456", "is_news": true, "player": "Ta'Niya Latson", "team": "Los Angeles Sparks", "event_class": "roster_move", "excluded_reason": null, "classified_at": "2026-07-08T20:02:32.179196+00:00"}
+{"id": "2074172901427671372", "is_news": true, "player": "Olivia Miles", "team": null, "event_class": "injury", "excluded_reason": null, "classified_at": "2026-07-08T20:02:33.719919+00:00"}
+{"id": "2074174161232998681", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "promo", "classified_at": "2026-07-08T20:02:36.826971+00:00"}
+{"id": "2074174351797067906", "is_news": true, "player": "Olivia Miles", "team": null, "event_class": "status_change", "excluded_reason": null, "classified_at": "2026-07-08T20:02:38.952954+00:00"}
+{"id": "2074174726797140101", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-07-08T20:02:40.255937+00:00"}
+{"id": "2074186061048426595", "is_news": true, "player": "Skylar Diggins-Smith", "team": null, "event_class": "role_change", "excluded_reason": null, "classified_at": "2026-07-08T20:02:41.585065+00:00"}
+{"id": "2074200583964348630", "is_news": true, "player": "Leonie Fiebich", "team": null, "event_class": "injury", "excluded_reason": null, "classified_at": "2026-07-08T20:02:43.790700+00:00"}
+{"id": "2074201305300521105", "is_news": true, "player": "Leonie Fiebich", "team": null, "event_class": "injury", "excluded_reason": null, "classified_at": "2026-07-08T20:02:45.140684+00:00"}
+{"id": "2074205023861342345", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-07-08T20:02:46.656552+00:00"}
+{"id": "2074216802859598150", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "promo", "classified_at": "2026-07-08T20:02:48.192915+00:00"}
+{"id": "2074226291633459667", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "promo", "classified_at": "2026-07-08T20:02:49.634773+00:00"}
+{"id": "2074237052842131681", "is_news": true, "player": "Satou Sabally", "team": null, "event_class": "injury", "excluded_reason": null, "classified_at": "2026-07-08T20:02:51.051644+00:00"}
+{"id": "2074237951278473662", "is_news": true, "player": "Satou Sabally", "team": null, "event_class": "status_change", "excluded_reason": null, "classified_at": "2026-07-08T20:02:52.288922+00:00"}
+{"id": "2074238322000409024", "is_news": true, "player": "Marine Fauthoux", "team": null, "event_class": "status_change", "excluded_reason": null, "classified_at": "2026-07-08T20:02:57.550813+00:00"}
+{"id": "2074238557690921452", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-07-08T20:02:58.944817+00:00"}
+{"id": "2074238822653567428", "is_news": true, "player": "Anneli Maley", "team": null, "event_class": "status_change", "excluded_reason": null, "classified_at": "2026-07-08T20:03:00.451332+00:00"}
+{"id": "2074239129991127314", "is_news": true, "player": "Costanza Verona", "team": null, "event_class": "injury", "excluded_reason": null, "classified_at": "2026-07-08T20:03:01.585216+00:00"}
+{"id": "2074239291656470713", "is_news": true, "player": "Haley Jones", "team": null, "event_class": "status_change", "excluded_reason": null, "classified_at": "2026-07-08T20:03:04.666926+00:00"}
+{"id": "2074251737976954907", "is_news": true, "player": "Skylar Diggins-Smith", "team": null, "event_class": "role_change", "excluded_reason": null, "classified_at": "2026-07-08T20:03:05.989072+00:00"}
+{"id": "2074259654528339968", "is_news": true, "player": "Sonia Citron", "team": null, "event_class": "injury", "excluded_reason": null, "classified_at": "2026-07-08T20:03:07.544904+00:00"}
+{"id": "2074261224137646190", "is_news": true, "player": "Sonia Citron", "team": null, "event_class": "status_change", "excluded_reason": null, "classified_at": "2026-07-08T20:03:09.079923+00:00"}
+{"id": "2074261872316997853", "is_news": true, "player": "Darianna Littlepage-Buggs", "team": null, "event_class": "status_change", "excluded_reason": null, "classified_at": "2026-07-08T20:03:10.274893+00:00"}
+{"id": "2074262003841929320", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-07-08T20:03:11.982426+00:00"}
+{"id": "2074267209765904783", "is_news": true, "player": "Dorka Juhasz", "team": null, "event_class": "injury", "excluded_reason": null, "classified_at": "2026-07-08T20:03:13.464430+00:00"}
+{"id": "2074267523722235907", "is_news": false, "player": null, "team": "Golden State Valkyries", "event_class": "other", "excluded_reason": "lineup_card", "classified_at": "2026-07-08T20:03:15.071014+00:00"}
+{"id": "2074268551880257788", "is_news": true, "player": "Dorka Juhász", "team": null, "event_class": "status_change", "excluded_reason": null, "classified_at": "2026-07-08T20:03:16.382027+00:00"}
+{"id": "2074269242627637322", "is_news": true, "player": "Ashlon Jackson", "team": null, "event_class": "status_change", "excluded_reason": null, "classified_at": "2026-07-08T20:03:18.316470+00:00"}
+{"id": "2074269862482882624", "is_news": true, "player": "Hailey Van Lith", "team": null, "event_class": "status_change", "excluded_reason": null, "classified_at": "2026-07-08T20:03:19.723837+00:00"}
+{"id": "2074270007077265752", "is_news": false, "player": null, "team": "Washington Mystics", "event_class": "other", "excluded_reason": "lineup_card", "classified_at": "2026-07-08T20:03:21.667879+00:00"}
+{"id": "2074272319317373383", "is_news": false, "player": null, "team": "Minnesota Lynx", "event_class": "other", "excluded_reason": "lineup_card", "classified_at": "2026-07-08T20:03:23.306751+00:00"}
+{"id": "2074272841189544423", "is_news": false, "player": "Maya Caldwell", "team": null, "event_class": "other", "excluded_reason": "lineup_card", "classified_at": "2026-07-08T20:03:24.635902+00:00"}
+{"id": "2074273554439303299", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-07-08T20:03:26.316144+00:00"}
+{"id": "2074275693270065227", "is_news": true, "player": "Chloe Bibby", "team": null, "event_class": "injury", "excluded_reason": null, "classified_at": "2026-07-08T20:03:27.645800+00:00"}
+{"id": "2074277436347326872", "is_news": true, "player": "Maddy Westbeld", "team": null, "event_class": "injury", "excluded_reason": null, "classified_at": "2026-07-08T20:03:28.852560+00:00"}
+{"id": "2074278820098548059", "is_news": false, "player": null, "team": "Sun", "event_class": "other", "excluded_reason": "lineup_card", "classified_at": "2026-07-08T20:03:30.379355+00:00"}
+{"id": "2074282430719045878", "is_news": true, "player": "Noemie Brochant", "team": null, "event_class": "injury", "excluded_reason": null, "classified_at": "2026-07-08T20:03:31.675716+00:00"}
+{"id": "2074282640300015822", "is_news": true, "player": "Noemie Brochant", "team": null, "event_class": "status_change", "excluded_reason": null, "classified_at": "2026-07-08T20:03:33.059757+00:00"}
+{"id": "2074283135060107521", "is_news": true, "player": "Shay Ciezki", "team": null, "event_class": "injury", "excluded_reason": null, "classified_at": "2026-07-08T20:03:34.405989+00:00"}
+{"id": "2074283423477166445", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-07-08T20:03:36.028504+00:00"}
+{"id": "2074294480664981698", "is_news": true, "player": "Alissa Pili", "team": null, "event_class": "status_change", "excluded_reason": null, "classified_at": "2026-07-08T20:03:37.538374+00:00"}
+{"id": "2074305414544359559", "is_news": false, "player": null, "team": "Seattle Storm", "event_class": "other", "excluded_reason": "lineup_card", "classified_at": "2026-07-08T20:03:38.922223+00:00"}
+{"id": "2074308824450613468", "is_news": false, "player": null, "team": "Los Angeles Sparks", "event_class": "other", "excluded_reason": "lineup_card", "classified_at": "2026-07-08T20:03:40.644699+00:00"}
+{"id": "2074492589735092599", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "lineup_card", "classified_at": "2026-07-08T20:03:41.937106+00:00"}
+{"id": "2074499648660570300", "is_news": false, "player": "Kaitlyn Chen", "team": "Golden State", "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-08T20:03:43.173874+00:00"}
+{"id": "2074501463816933626", "is_news": false, "player": "Gabby Williams", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-08T20:03:44.602823+00:00"}
+{"id": "2074503702560247969", "is_news": false, "player": "Shakira Austin", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-08T20:03:45.979086+00:00"}
+{"id": "2074504841590673844", "is_news": false, "player": "Kiki Iriafen", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-08T20:03:47.570935+00:00"}
+{"id": "2074505587203674583", "is_news": true, "player": "Leonie Fiebich", "team": null, "event_class": "injury", "excluded_reason": null, "classified_at": "2026-07-08T20:03:48.936616+00:00"}
+{"id": "2074506052012323121", "is_news": false, "player": "Brittney Griner", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-08T20:03:50.197479+00:00"}
+{"id": "2074506249178103938", "is_news": true, "player": "Leonie Fiebich", "team": null, "event_class": "status_change", "excluded_reason": null, "classified_at": "2026-07-08T20:03:52.028034+00:00"}
+{"id": "2074507146276786312", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-07-08T20:03:53.511406+00:00"}
+{"id": "2074508976264184143", "is_news": false, "player": "Leila Lacan", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-08T20:03:54.843243+00:00"}
+{"id": "2074510250321838327", "is_news": false, "player": "Courtney Williams", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-08T20:03:59.492879+00:00"}
+{"id": "2074516612560925151", "is_news": false, "player": "Kayla McBride", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-08T20:04:00.780014+00:00"}
+{"id": "2074518741925163333", "is_news": false, "player": "Flau'jae Johnson", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-08T20:04:02.799702+00:00"}
+{"id": "2074520350658798040", "is_news": false, "player": "Natisha Hiedeman", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-08T20:04:04.065026+00:00"}
+{"id": "2074521439525302291", "is_news": false, "player": "Nneka Ogwumike", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-08T20:04:05.353167+00:00"}
+{"id": "2074523015853830352", "is_news": false, "player": "Dearica Hamby", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-08T20:04:06.770823+00:00"}
+{"id": "2074524978947473473", "is_news": true, "player": "Justine Pissott", "team": "Las Vegas Aces", "event_class": "roster_move", "excluded_reason": null, "classified_at": "2026-07-08T20:04:08.455419+00:00"}
+{"id": "2074525748073750760", "is_news": true, "player": "Justine Pissott", "team": "Las Vegas Aces", "event_class": "roster_move", "excluded_reason": null, "classified_at": "2026-07-08T20:04:09.995059+00:00"}
+{"id": "2074547387322843258", "is_news": true, "player": "Temi Fagbenle", "team": null, "event_class": "injury", "excluded_reason": null, "classified_at": "2026-07-08T20:04:11.532234+00:00"}
+{"id": "2074549241096101976", "is_news": true, "player": "Temi Fagbenle", "team": null, "event_class": "status_change", "excluded_reason": null, "classified_at": "2026-07-08T20:04:13.026920+00:00"}
+{"id": "2074549496504054058", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-07-08T20:04:14.278475+00:00"}
+{"id": "2074549759004626954", "is_news": true, "player": "Justine Pissott", "team": "Indiana Fever", "event_class": "roster_move", "excluded_reason": null, "classified_at": "2026-07-08T20:04:15.729694+00:00"}
+{"id": "2074550745739702552", "is_news": true, "player": "Indya Nivar", "team": "Atlanta Dream", "event_class": "roster_move", "excluded_reason": null, "classified_at": "2026-07-08T20:04:17.163932+00:00"}
+{"id": "2074552541094851019", "is_news": true, "player": "Indya Nivar", "team": "Atlanta Dream", "event_class": "roster_move", "excluded_reason": null, "classified_at": "2026-07-08T20:04:18.498258+00:00"}
+{"id": "2074556872716104015", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "promo", "classified_at": "2026-07-08T20:04:20.645311+00:00"}
+{"id": "2074558091413074102", "is_news": true, "player": "Shatori Walker-Kimbrough", "team": "Atlanta Dream", "event_class": "roster_move", "excluded_reason": null, "classified_at": "2026-07-08T20:04:22.828341+00:00"}
+{"id": "2074558713143206058", "is_news": true, "player": "Shatori Walker-Kimbrough", "team": "Atlanta Dream", "event_class": "roster_move", "excluded_reason": null, "classified_at": "2026-07-08T20:04:24.229941+00:00"}
+{"id": "2074566551341011073", "is_news": false, "player": "Tiffany Hayes", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-08T20:04:25.664568+00:00"}
+{"id": "2074567003549925612", "is_news": false, "player": "Erica Wheeler", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-08T20:04:27.294747+00:00"}
+{"id": "2074567079957524927", "is_news": false, "player": "Kiah Stokes", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-08T20:04:28.715012+00:00"}
+{"id": "2074567447835734269", "is_news": false, "player": "Kaila Charles", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-08T20:04:30.169434+00:00"}
+{"id": "2074567581189501403", "is_news": false, "player": "Rae Burrell", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-08T20:04:31.490257+00:00"}
+{"id": "2074568077623050740", "is_news": false, "player": "Lauren Betts", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-08T20:04:33.137776+00:00"}
+{"id": "2074568838599868915", "is_news": false, "player": "Michaela Onyenwere", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-08T20:04:34.429909+00:00"}
+{"id": "2074569029629378665", "is_news": false, "player": "Ariel Atkins", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-08T20:04:35.699530+00:00"}
+{"id": "2074569770234527923", "is_news": false, "player": "Jade Melbourne", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-08T20:04:37.014108+00:00"}
+{"id": "2074570266047361207", "is_news": true, "player": "Jordan Horston", "team": null, "event_class": "injury", "excluded_reason": null, "classified_at": "2026-07-08T20:04:38.975172+00:00"}
+{"id": "2074570989078204822", "is_news": false, "player": "Nia Coffey", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-08T20:04:40.360089+00:00"}
+{"id": "2074571933534851108", "is_news": false, "player": "Olivia Nelson-Ododa", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-08T20:04:41.795706+00:00"}
+{"id": "2074572543990677644", "is_news": true, "player": "Antonia Delaere", "team": null, "event_class": "role_change", "excluded_reason": null, "classified_at": "2026-07-08T20:04:43.211460+00:00"}
+{"id": "2074572622654747086", "is_news": false, "player": "Diamond Miller", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-08T20:04:44.539020+00:00"}
+{"id": "2074573150252077083", "is_news": true, "player": "Natasha Howard", "team": null, "event_class": "injury", "excluded_reason": null, "classified_at": "2026-07-08T20:04:45.896856+00:00"}
+{"id": "2074574174421401877", "is_news": false, "player": "Kennedy Burke", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-08T20:04:47.643697+00:00"}
+{"id": "2074577821372977414", "is_news": true, "player": "Caitlin Clark", "team": "Indiana Fever", "event_class": "injury", "excluded_reason": null, "classified_at": "2026-07-08T20:04:49.317655+00:00"}
+{"id": "2074596118642438645", "is_news": true, "player": "Aneesah Morrow", "team": null, "event_class": "status_change", "excluded_reason": null, "classified_at": "2026-07-08T20:04:50.617429+00:00"}
+{"id": "2074596834480124093", "is_news": true, "player": "Olivia Miles", "team": null, "event_class": "injury", "excluded_reason": null, "classified_at": "2026-07-08T20:04:52.736318+00:00"}
+{"id": "2074597737664840040", "is_news": true, "player": "Aneesah Morrow", "team": null, "event_class": "status_change", "excluded_reason": null, "classified_at": "2026-07-08T20:04:54.282558+00:00"}
+{"id": "2074597881286205509", "is_news": true, "player": "Hailey Van Lith", "team": null, "event_class": "status_change", "excluded_reason": null, "classified_at": "2026-07-08T20:04:55.693415+00:00"}
+{"id": "2074598041126846861", "is_news": true, "player": "Ashlon Jackson", "team": null, "event_class": "injury", "excluded_reason": null, "classified_at": "2026-07-08T20:04:56.938034+00:00"}
+{"id": "2074599126252056989", "is_news": true, "player": "Olivia Miles", "team": null, "event_class": "injury", "excluded_reason": null, "classified_at": "2026-07-08T20:04:58.194024+00:00"}
+{"id": "2074599448110346272", "is_news": true, "player": "Julie Allemand", "team": null, "event_class": "injury", "excluded_reason": null, "classified_at": "2026-07-08T20:04:59.660407+00:00"}
+{"id": "2074600181136310525", "is_news": true, "player": "Chennedy Carter", "team": "Las Vegas Aces", "event_class": "roster_move", "excluded_reason": null, "classified_at": "2026-07-08T20:05:01.195222+00:00"}
+{"id": "2074600783497117698", "is_news": true, "player": "Julie Allemand", "team": null, "event_class": "injury", "excluded_reason": null, "classified_at": "2026-07-08T20:05:03.243046+00:00"}
+{"id": "2074601260955681195", "is_news": true, "player": "Chennedy Carter", "team": "Las Vegas Aces", "event_class": "roster_move", "excluded_reason": null, "classified_at": "2026-07-08T20:05:04.958484+00:00"}
+{"id": "2074601482444312977", "is_news": true, "player": "Liatu King", "team": "Minnesota Lynx", "event_class": "roster_move", "excluded_reason": null, "classified_at": "2026-07-08T20:05:06.523615+00:00"}
+{"id": "2074602191793365303", "is_news": true, "player": "Liatu King", "team": null, "event_class": "roster_move", "excluded_reason": null, "classified_at": "2026-07-08T20:05:07.977135+00:00"}
+{"id": "2074602638415479220", "is_news": true, "player": "Justine Pissott", "team": "Las Vegas Aces", "event_class": "roster_move", "excluded_reason": null, "classified_at": "2026-07-08T20:05:09.489101+00:00"}
+{"id": "2074604156606660608", "is_news": false, "player": "Chennedy Carter", "team": "Las Vegas Aces", "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-08T20:05:10.780501+00:00"}
+{"id": "2074606196678398326", "is_news": true, "player": "Quionche Carter", "team": "Phoenix Mercury", "event_class": "roster_move", "excluded_reason": null, "classified_at": "2026-07-08T20:05:11.988781+00:00"}
+{"id": "2074608132056080528", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-08T20:05:13.268032+00:00"}
+{"id": "2074609274014106020", "is_news": false, "player": null, "team": "Dallas Wings", "event_class": "other", "excluded_reason": "promo", "classified_at": "2026-07-08T20:05:14.817101+00:00"}
+{"id": "2074631681395274164", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-07-08T20:05:16.148616+00:00"}
+{"id": "2074637970330517818", "is_news": false, "player": null, "team": "Dallas Wings", "event_class": "other", "excluded_reason": "lineup_card", "classified_at": "2026-07-08T20:05:20.881861+00:00"}
+{"id": "2074638527757770984", "is_news": false, "player": null, "team": "Liberty", "event_class": "other", "excluded_reason": "lineup_card", "classified_at": "2026-07-08T20:05:22.335806+00:00"}
+{"id": "2074638801553514811", "is_news": true, "player": "Rebekah Gardner", "team": null, "event_class": "role_change", "excluded_reason": null, "classified_at": "2026-07-08T20:05:25.340639+00:00"}
+{"id": "2074639082794131739", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "lineup_card", "classified_at": "2026-07-08T20:05:26.796319+00:00"}
+{"id": "2074639713571316081", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-07-08T20:05:28.207449+00:00"}
+{"id": "2074643807019172184", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-07-08T20:05:29.835349+00:00"}
+{"id": "2074644721230549119", "is_news": true, "player": "Caitlin Clark", "team": null, "event_class": "injury", "excluded_reason": null, "classified_at": "2026-07-08T20:05:31.311017+00:00"}
+{"id": "2074644747478503471", "is_news": true, "player": "Aliyah Boston", "team": null, "event_class": "injury", "excluded_reason": null, "classified_at": "2026-07-08T20:05:32.837313+00:00"}
+{"id": "2074645279530217535", "is_news": true, "player": "Caitlin Clark", "team": null, "event_class": "injury", "excluded_reason": null, "classified_at": "2026-07-08T20:05:34.389918+00:00"}
+{"id": "2074645991966343496", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-07-08T20:05:35.782347+00:00"}
+{"id": "2074646633795420363", "is_news": true, "player": "Alissa Pili", "team": null, "event_class": "injury", "excluded_reason": null, "classified_at": "2026-07-08T20:05:37.035683+00:00"}
+{"id": "2074646824925659397", "is_news": true, "player": "Aliyah Boston", "team": null, "event_class": "injury", "excluded_reason": null, "classified_at": "2026-07-08T20:05:38.469869+00:00"}
+{"id": "2074652244767580328", "is_news": true, "player": "Skylar Diggins-Smith", "team": null, "event_class": "injury", "excluded_reason": null, "classified_at": "2026-07-08T20:05:39.949030+00:00"}
+{"id": "2074653301342101679", "is_news": true, "player": "Skylar Diggins-Smith", "team": null, "event_class": "status_change", "excluded_reason": null, "classified_at": "2026-07-08T20:05:41.201022+00:00"}
+{"id": "2074654189221777527", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-07-08T20:05:42.462492+00:00"}
+{"id": "2074654926567825559", "is_news": true, "player": "Maddy Westbeld", "team": null, "event_class": "status_change", "excluded_reason": null, "classified_at": "2026-07-08T20:05:44.280121+00:00"}
+{"id": "2074655263873749353", "is_news": true, "player": "Chloe Bibby", "team": null, "event_class": "status_change", "excluded_reason": null, "classified_at": "2026-07-08T20:05:46.047862+00:00"}
+{"id": "2074659633445122441", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-08T20:05:47.129830+00:00"}
+{"id": "2074663582235566580", "is_news": true, "player": "Noemie Brochant", "team": null, "event_class": "injury", "excluded_reason": null, "classified_at": "2026-07-08T20:05:48.360251+00:00"}
+{"id": "2074664224802869703", "is_news": true, "player": "Noemie Brochant", "team": null, "event_class": "status_change", "excluded_reason": null, "classified_at": "2026-07-08T20:05:50.812488+00:00"}
+{"id": "2074665044726383011", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-07-08T20:05:52.273658+00:00"}
+{"id": "2074665060924817896", "is_news": true, "player": "Shay Ciezki", "team": null, "event_class": "status_change", "excluded_reason": null, "classified_at": "2026-07-08T20:05:53.699679+00:00"}
+{"id": "2074667771904827503", "is_news": false, "player": null, "team": "Chicago Sky", "event_class": "other", "excluded_reason": "lineup_card", "classified_at": "2026-07-08T20:05:55.062806+00:00"}
+{"id": "2074667877198643317", "is_news": false, "player": null, "team": "Phoenix Mercury", "event_class": "other", "excluded_reason": "lineup_card", "classified_at": "2026-07-08T20:05:56.372651+00:00"}
+{"id": "2074668695423521108", "is_news": true, "player": "Noemie Brochant", "team": null, "event_class": "role_change", "excluded_reason": null, "classified_at": "2026-07-08T20:05:57.853961+00:00"}
+{"id": "2074669197636866085", "is_news": true, "player": "Marta Suarez", "team": null, "event_class": "status_change", "excluded_reason": null, "classified_at": "2026-07-08T20:05:59.360873+00:00"}
+{"id": "2074670204362047919", "is_news": true, "player": "Natasha Cloud", "team": null, "event_class": "role_change", "excluded_reason": null, "classified_at": "2026-07-08T20:06:00.862565+00:00"}
+{"id": "2074670553244287340", "is_news": true, "player": "Courtney Vandersloot", "team": null, "event_class": "role_change", "excluded_reason": null, "classified_at": "2026-07-08T20:06:02.256346+00:00"}
+{"id": "2074671080040444117", "is_news": true, "player": "Gabriela Jaquez", "team": null, "event_class": "role_change", "excluded_reason": null, "classified_at": "2026-07-08T20:06:03.763277+00:00"}
+{"id": "2074677456376602961", "is_news": true, "player": "Rebecca Allen", "team": null, "event_class": "injury", "excluded_reason": null, "classified_at": "2026-07-08T20:06:04.975103+00:00"}
+{"id": "2074677598882607452", "is_news": false, "player": "Jessica Shepard", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-08T20:06:06.731943+00:00"}
+{"id": "2074679302705369377", "is_news": false, "player": "Jessica Shepard", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-08T20:06:08.164839+00:00"}
+{"id": "2074680438078001195", "is_news": false, "player": "Jessica Shepard", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-08T20:06:10.011031+00:00"}
+{"id": "2074680457631871382", "is_news": false, "player": "Breanna Stewart", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-08T20:06:11.255061+00:00"}
+{"id": "2074696059725512871", "is_news": true, "player": "Alyssa Thomas", "team": null, "event_class": "injury", "excluded_reason": null, "classified_at": "2026-07-08T20:06:12.771316+00:00"}
+{"id": "2074698652853903565", "is_news": true, "player": "Alyssa Thomas", "team": null, "event_class": "injury", "excluded_reason": null, "classified_at": "2026-07-08T20:06:14.228948+00:00"}
+{"id": "2074700792565489864", "is_news": true, "player": "Alyssa Thomas", "team": null, "event_class": "injury", "excluded_reason": null, "classified_at": "2026-07-08T20:06:15.641714+00:00"}
+{"id": "2074700983188214268", "is_news": true, "player": "Alyssa Thomas", "team": null, "event_class": "status_change", "excluded_reason": null, "classified_at": "2026-07-08T20:06:17.075195+00:00"}
+{"id": "2074701455261372601", "is_news": true, "player": "Alyssa Thomas", "team": null, "event_class": "status_change", "excluded_reason": null, "classified_at": "2026-07-08T20:06:18.638955+00:00"}
+{"id": "2074702742929432919", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-07-08T20:06:20.454457+00:00"}
+{"id": "2074705052237730027", "is_news": false, "player": "Jonquel Jones", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-08T20:06:21.682244+00:00"}
+{"id": "2074706781016633720", "is_news": false, "player": "Sabrina Ionescu", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-08T20:06:23.014624+00:00"}
+{"id": "2074708565978165283", "is_news": false, "player": "Kahleah Copper", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-08T20:06:24.550259+00:00"}
+{"id": "2074710510365253815", "is_news": false, "player": "Marine Johannes", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-08T20:06:25.947537+00:00"}
+{"id": "2074712175294193917", "is_news": false, "player": "Paige Bueckers", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-08T20:06:27.520294+00:00"}
+{"id": "2074713801862029690", "is_news": false, "player": "Awak Kuier", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-08T20:06:28.887546+00:00"}
+{"id": "2074715533048439157", "is_news": false, "player": "Azura Stevens", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-08T20:06:30.491833+00:00"}
+{"id": "2074716213419069695", "is_news": false, "player": "Sydney Taylor", "team": "Chicago Sky", "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-08T20:06:31.960289+00:00"}
+{"id": "2074717035720790470", "is_news": false, "player": "Courtney Vandersloot", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-08T20:06:33.254562+00:00"}
+{"id": "2074717980747874516", "is_news": true, "player": "Natasha Cloud", "team": null, "event_class": "role_change", "excluded_reason": null, "classified_at": "2026-07-08T20:06:34.808664+00:00"}
+{"id": "2074720864495431926", "is_news": false, "player": "DeWanna Bonner", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-08T20:06:36.745302+00:00"}
+{"id": "2074854187830009915", "is_news": true, "player": "Betnijah Laney-Hamilton", "team": null, "event_class": "roster_move", "excluded_reason": null, "classified_at": "2026-07-08T20:06:38.066909+00:00"}
+{"id": "2074854232746844588", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "no_player", "classified_at": "2026-07-08T20:06:39.808141+00:00"}
+{"id": "2074854515992596586", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "lineup_card", "classified_at": "2026-07-08T20:06:41.004140+00:00"}
+{"id": "2074895930193481824", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "promo", "classified_at": "2026-07-08T20:06:42.367247+00:00"}
+{"id": "2074910706416132513", "is_news": false, "player": "Alanna Smith", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-08T20:06:44.200028+00:00"}
+{"id": "2074910730281714009", "is_news": false, "player": "Valeriane Ayayi", "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-07-08T20:06:45.703291+00:00"}
+{"id": "2074911519364567467", "is_news": true, "player": "Alexa Held", "team": null, "event_class": "role_change", "excluded_reason": null, "classified_at": "2026-07-08T20:06:46.973567+00:00"}
+{"id": "2074911605863625098", "is_news": false, "player": "Odyssey Sims", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-08T20:06:48.274064+00:00"}
+{"id": "2074912233566478519", "is_news": false, "player": "Elizabeth Williams", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-08T20:06:49.740100+00:00"}
+{"id": "2074912234577219919", "is_news": false, "player": "Aziaha James", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-08T20:06:51.301922+00:00"}
+{"id": "2074912868047216972", "is_news": false, "player": "Rachel Banham", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-08T20:06:52.661756+00:00"}
+{"id": "2074913493451477064", "is_news": false, "player": "Aicha Coulibaly", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-08T20:06:54.111522+00:00"}
+{"id": "2074913818421940711", "is_news": false, "player": "Pauline Astier", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-08T20:06:55.577057+00:00"}
+{"id": "2074914470405579135", "is_news": false, "player": "Betnijah Laney-Hamilton", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-08T20:06:58.905300+00:00"}
+{"id": "2074914928796835977", "is_news": false, "player": "Jacy Sheldon", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-08T20:07:00.275249+00:00"}
+{"id": "2074914992055324848", "is_news": false, "player": "Han Xu", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-08T20:07:01.810772+00:00"}
+{"id": "2074915453957190043", "is_news": true, "player": "Raquel Carrera", "team": null, "event_class": "role_change", "excluded_reason": null, "classified_at": "2026-07-08T20:07:03.059906+00:00"}
+{"id": "2074917463234597044", "is_news": true, "player": "Jessica Shepard", "team": "Unrivaled", "event_class": "roster_move", "excluded_reason": null, "classified_at": "2026-07-08T20:07:04.803201+00:00"}
+{"id": "2074933741903069242", "is_news": true, "player": "Caitlin Clark", "team": "Indiana Fever", "event_class": "injury", "excluded_reason": null, "classified_at": "2026-07-08T20:07:06.668207+00:00"}
+{"id": "2074933895867596893", "is_news": true, "player": "Aliyah Boston", "team": null, "event_class": "injury", "excluded_reason": null, "classified_at": "2026-07-08T20:07:08.098267+00:00"}
+{"id": "2074935417132941562", "is_news": true, "player": "Caitlin Clark", "team": null, "event_class": "status_change", "excluded_reason": null, "classified_at": "2026-07-08T20:07:09.504502+00:00"}
+{"id": "2074936087680524370", "is_news": true, "player": "Aliyah Boston", "team": null, "event_class": "status_change", "excluded_reason": null, "classified_at": "2026-07-08T20:07:10.834859+00:00"}
+{"id": "2074942961029132637", "is_news": true, "player": "Olivia Miles", "team": null, "event_class": "injury", "excluded_reason": null, "classified_at": "2026-07-08T20:07:12.268284+00:00"}
+{"id": "2074943382686691718", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "promo", "classified_at": "2026-07-08T20:07:13.784596+00:00"}
+{"id": "2074943732265157045", "is_news": true, "player": "Olivia Miles", "team": null, "event_class": "status_change", "excluded_reason": null, "classified_at": "2026-07-08T20:07:15.275349+00:00"}

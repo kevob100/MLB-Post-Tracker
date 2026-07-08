@@ -34,41 +34,113 @@ from pathlib import Path
 from .config import DATA_DIR, env, load_config
 from .store import append_jsonl, load_jsonl, normalize_name, now_iso, write_jsonl
 
-EVENT_CLASSES = (
-    "injury_il",
-    "injury_dtd",
-    "scratch",
-    "return",
-    "transaction_callup",
-    "transaction_option",
-    "transaction_dfa",
-    "transaction_trade",
-    "transaction_sign_release",
+# Default cross-sport taxonomy (roster sports: MLB, NFL, NBA, WNBA).
+DEFAULT_EVENT_CLASSES = (
+    "injury",
+    "status_change",
+    "roster_move",
     "role_change",
     "other",
 )
 
+# Golf is an individual sport with no roster: the only in-scope events are a player
+# withdrawing from a tournament and changes to a tournament's field.
+GOLF_EVENT_CLASSES = ("withdrawal", "field_change", "other")
+
+# Per-sport taxonomy overrides; sports absent here use DEFAULT_EVENT_CLASSES.
+SPORT_EVENT_CLASSES = {
+    "golf": GOLF_EVENT_CLASSES,
+}
+
+# Backward-compatible alias (the generic taxonomy).
+EVENT_CLASSES = DEFAULT_EVENT_CLASSES
+
 EXCLUDED_REASONS = ("no_player", "lineup_card", "promo", "recap", "not_news")
 
-SYSTEM_PROMPT = (
-    "You classify a single social-media post from an MLB news account. Decide whether it "
-    "is an in-scope NEWS item about a SPECIFIC player: an injury, IL move, day-to-day "
-    "status, scratch, return/activation, roster transaction (call-up, option, DFA, trade, "
-    "signing/release), or role change. The following are NOT news: starting-lineup cards, "
-    "promos/betting/advertisements, and game recaps or stat lines (home runs, strikeouts, "
-    "box-score performance). "
+# Legacy (baseball-specific) classes -> generic cross-sport taxonomy. Applied when
+# reading cached MLB classifications so the whole dashboard is uniform without paying
+# to re-classify existing posts.
+LEGACY_EVENT_MAP = {
+    "injury_il": "injury",
+    "injury_dtd": "injury",
+    "scratch": "status_change",
+    "return": "status_change",
+    "transaction_callup": "roster_move",
+    "transaction_option": "roster_move",
+    "transaction_dfa": "roster_move",
+    "transaction_trade": "roster_move",
+    "transaction_sign_release": "roster_move",
+    "role_change": "role_change",
+}
+
+
+def event_classes_for(sport: str | None) -> tuple[str, ...]:
+    return SPORT_EVENT_CLASSES.get(sport or "", DEFAULT_EVENT_CLASSES)
+
+
+def _canonical_event(event: str | None, valid: tuple[str, ...] = DEFAULT_EVENT_CLASSES) -> str:
+    """Coerce an event_class to the sport's taxonomy; remap legacy values; default 'other'."""
+    if event in valid:
+        return event
+    mapped = LEGACY_EVENT_MAP.get(event)
+    if mapped and mapped in valid:
+        return mapped
+    return "other"
+
+
+DEFAULT_PROMPT = (
+    "You classify a single social-media post from a {sport} news account. Decide whether "
+    "it is an in-scope NEWS item about a SPECIFIC player: an injury or injury-status "
+    "update, a status change (scratch/inactive, return/activation), a roster move "
+    "(call-up/assignment, option/demotion, waiver/release, trade, signing), or a role "
+    "change (starter/depth-chart/usage). The following are NOT news: starting-lineup "
+    "cards, promos/betting/advertisements, and game recaps or stat lines (box-score "
+    "performance). "
     "Identify the player by their canonical full name; normalize accents/diacritics, "
     "spelling variants, abbreviations, suffixes (Jr./Sr./II), and nicknames to the real "
     "name. If no single specific player is the subject, set player to null. "
     "Pick exactly one event_class from this list: "
-    "injury_il, injury_dtd, scratch, return, transaction_callup, transaction_option, "
-    "transaction_dfa, transaction_trade, transaction_sign_release, role_change, other. "
+    "injury, status_change, roster_move, role_change, other. "
     "When is_news is false, give excluded_reason as one of: no_player, lineup_card, promo, "
     "recap, not_news. "
     "Respond with JSON ONLY — no prose, no markdown fences. Schema: "
     '{"is_news": <bool>, "player": "<full name or null>", "team": "<team or null>", '
     '"event_class": "<class>", "excluded_reason": "<reason or null>"}'
 )
+
+# Golf: only two in-scope events — a withdrawal or a field change.
+GOLF_PROMPT = (
+    "You classify a single social-media post from a {sport} news account. Decide whether "
+    "it is an in-scope NEWS item about a SPECIFIC golfer, limited to exactly TWO kinds of "
+    "event: a WITHDRAWAL (the golfer withdraws from or is forced out of a tournament — WD, "
+    "pulls out before or during play, or is disqualified/forced out mid-event), or a FIELD "
+    "CHANGE (a change to a tournament's field: the golfer commits to or is added to the "
+    "field, enters as or is replaced by an alternate, gets in via Monday qualifier or "
+    "sponsor exemption, or is removed from the field). "
+    "The following are NOT news: leaderboards, round recaps, scores, tee times, pairings, "
+    "course/weather notes, promos/betting/advertisements, and general commentary. "
+    "Identify the golfer by their canonical full name; normalize accents/diacritics, "
+    "spelling variants, abbreviations, suffixes (Jr./Sr./II), and nicknames to the real "
+    "name. If no single specific golfer is the subject, set player to null. "
+    "Pick exactly one event_class from this list: withdrawal, field_change, other. "
+    "When is_news is false, give excluded_reason as one of: no_player, lineup_card, promo, "
+    "recap, not_news. "
+    "Respond with JSON ONLY — no prose, no markdown fences. Schema: "
+    '{"is_news": <bool>, "player": "<full name or null>", "team": "<team or null>", '
+    '"event_class": "<class>", "excluded_reason": "<reason or null>"}'
+)
+
+# Per-sport prompt overrides; sports absent here use DEFAULT_PROMPT.
+SPORT_PROMPTS = {
+    "golf": GOLF_PROMPT,
+}
+
+# Backward-compatible alias.
+SYSTEM_PROMPT = DEFAULT_PROMPT
+
+
+def prompt_for(sport: str | None) -> str:
+    return SPORT_PROMPTS.get(sport or "", DEFAULT_PROMPT)
 
 
 def _bad_classification() -> dict:
@@ -82,8 +154,13 @@ def _bad_classification() -> dict:
     }
 
 
-def parse_classification(raw: str | None) -> dict:
-    """Defensively parse the model's JSON classification. Never raises."""
+def parse_classification(
+    raw: str | None, event_classes: tuple[str, ...] = DEFAULT_EVENT_CLASSES
+) -> dict:
+    """Defensively parse the model's JSON classification. Never raises.
+
+    `event_classes` is the sport's valid taxonomy; an out-of-vocab class collapses to
+    'other' (and legacy MLB classes remap into the generic taxonomy)."""
     text = (raw or "").strip()
     if text.startswith("```"):
         text = text.strip("`").strip()
@@ -101,9 +178,7 @@ def parse_classification(raw: str | None) -> dict:
     if not isinstance(data, dict):
         return _bad_classification()
 
-    event = data.get("event_class")
-    if event not in EVENT_CLASSES:
-        event = "other"
+    event = _canonical_event(data.get("event_class"), event_classes)
     player = data.get("player") or None
     is_news = bool(data.get("is_news")) and player is not None and event != "other"
     reason = data.get("excluded_reason")
@@ -127,10 +202,14 @@ def _user_prompt(text: str) -> str:
 class Classifier:
     """Thin Anthropic wrapper. Inject `client` in tests to avoid network/key."""
 
-    def __init__(self, client=None, model: str | None = None, max_tokens: int = 300):
+    def __init__(self, client=None, model: str | None = None, max_tokens: int = 300,
+                 sport: str = "mlb", sport_label: str = "MLB"):
         self._client = client
         self.model = model or load_config()["llm"]["model"]
         self.max_tokens = max_tokens
+        self.event_classes = event_classes_for(sport)
+        # replace (not str.format): the prompt contains literal JSON braces.
+        self.system_prompt = prompt_for(sport).replace("{sport}", sport_label)
 
     def client(self):
         if self._client is None:
@@ -143,17 +222,18 @@ class Classifier:
         resp = self.client().messages.create(
             model=self.model,
             max_tokens=self.max_tokens,
-            system=SYSTEM_PROMPT,
+            system=self.system_prompt,
             messages=[{"role": "user", "content": _user_prompt(text)}],
         )
-        return parse_classification(resp.content[0].text)
+        return parse_classification(resp.content[0].text, self.event_classes)
 
 
-def _apply(record: dict, c: dict) -> dict:
+def _apply(record: dict, c: dict, event_classes: tuple[str, ...] = DEFAULT_EVENT_CLASSES) -> dict:
     """Write a classification onto a tweet record (raw fields preserved)."""
     player = c.get("player")
     record["is_news"] = bool(c.get("is_news"))
-    record["event_class"] = c.get("event_class") or "other"
+    # Coerce any cached/legacy event_class into the sport's taxonomy on read.
+    record["event_class"] = _canonical_event(c.get("event_class"), event_classes)
     record["excluded_reason"] = c.get("excluded_reason")
     record["player"] = player
     record["team"] = c.get("team")
@@ -166,11 +246,20 @@ def _apply(record: dict, c: dict) -> dict:
     return record
 
 
+def _sport_label(sport: str) -> str:
+    """Human-readable label for the classifier prompt; robust if config lacks the sport."""
+    try:
+        return (load_config().get("sports", {}).get(sport, {}) or {}).get("label") or sport.upper()
+    except Exception:
+        return sport.upper()
+
+
 def classify_file(
     data_dir: Path = DATA_DIR,
     classifier: Classifier | None = None,
     cache: bool = True,
     llm: bool = True,
+    sport: str = "mlb",
 ) -> dict:
     """Classify every post in tweets.jsonl in place. Returns a small summary.
 
@@ -184,6 +273,7 @@ def classify_file(
     """
     path = data_dir / "tweets.jsonl"
     records = load_jsonl(path)
+    valid = event_classes_for(sport)
 
     cls_path = data_dir / "classifications.jsonl"
     cached = {r["id"]: r for r in load_jsonl(cls_path)} if cache else {}
@@ -193,16 +283,16 @@ def classify_file(
         c = cached.get(tid)
         if c is None:
             if not llm:
-                _apply(r, _bad_classification())
+                _apply(r, _bad_classification(), valid)
                 continue
             if classifier is None:
-                classifier = Classifier()
+                classifier = Classifier(sport=sport, sport_label=_sport_label(sport))
             verdict = classifier.classify(r.get("text", ""))
             c = {"id": tid, **verdict, "classified_at": now_iso()}
             if cache:
                 append_jsonl(cls_path, c)
                 cached[tid] = c
-        _apply(r, c)
+        _apply(r, c, valid)
 
     records.sort(key=lambda r: (r["created_at"], r["id"]))
     write_jsonl(path, records)
@@ -216,6 +306,13 @@ def classify_file(
 
 
 if __name__ == "__main__":
-    summary = classify_file()
+    import argparse
+
+    from .config import sport_data_dir
+
+    ap = argparse.ArgumentParser(description="Classify posts for one sport.")
+    ap.add_argument("--sport", default="mlb", help="Sport key from config (default: mlb).")
+    args = ap.parse_args()
+    summary = classify_file(data_dir=sport_data_dir(args.sport), sport=args.sport)
     print(f"Classified {summary['total']} posts: {summary['news']} news, "
           f"excluded {summary['excluded']}")
