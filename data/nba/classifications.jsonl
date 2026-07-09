@@ -77,3 +77,4 @@
 {"id": "2074942806326739317", "is_news": false, "player": null, "team": null, "event_class": "roster_move", "excluded_reason": "no_player", "classified_at": "2026-07-08T20:01:52.588571+00:00"}
 {"id": "2074960098586189952", "is_news": true, "player": "Micah Potter", "team": "Indiana Pacers", "event_class": "roster_move", "excluded_reason": null, "classified_at": "2026-07-08T21:05:27.995165+00:00"}
 {"id": "2074961076588851712", "is_news": true, "player": "Jonas Valanciunas", "team": "Denver Nuggets", "event_class": "roster_move", "excluded_reason": null, "classified_at": "2026-07-08T21:05:29.261035+00:00"}
+{"id": "2075007477003735260", "is_news": true, "player": "Mohamed Bamba", "team": "Utah Jazz", "event_class": "roster_move", "excluded_reason": null, "classified_at": "2026-07-09T13:50:57.718355+00:00"}

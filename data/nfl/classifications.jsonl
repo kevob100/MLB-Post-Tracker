@@ -6,3 +6,5 @@
 {"id": "2074568792730993072", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "promo", "classified_at": "2026-07-08T19:59:37.318109+00:00"}
 {"id": "2074570141476540763", "is_news": false, "player": "Saquon Barkley", "team": null, "event_class": "other", "excluded_reason": "promo", "classified_at": "2026-07-08T19:59:39.236982+00:00"}
 {"id": "2074581006930067698", "is_news": true, "player": "David Montgomery", "team": null, "event_class": "role_change", "excluded_reason": null, "classified_at": "2026-07-08T19:59:40.487529+00:00"}
+{"id": "2074996255139275095", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "promo", "classified_at": "2026-07-09T13:48:29.775859+00:00"}
+{"id": "2075203330976932317", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "promo", "classified_at": "2026-07-09T13:48:31.054805+00:00"}
