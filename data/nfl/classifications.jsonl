@@ -9,3 +9,7 @@
 {"id": "2074996255139275095", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "promo", "classified_at": "2026-07-09T13:48:29.775859+00:00"}
 {"id": "2075203330976932317", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "promo", "classified_at": "2026-07-09T13:48:31.054805+00:00"}
 {"id": "2075228799688409316", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "promo", "classified_at": "2026-07-10T13:10:17.199157+00:00"}
+{"id": "2075591485831917768", "is_news": true, "player": "Terrion Arnold", "team": null, "event_class": "roster_move", "excluded_reason": null, "classified_at": "2026-07-11T11:50:35.284977+00:00"}
+{"id": "2075592049517064449", "is_news": false, "player": "Chris Olave", "team": null, "event_class": "other", "excluded_reason": "promo", "classified_at": "2026-07-11T11:50:36.544468+00:00"}
+{"id": "2075675891795935335", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "promo", "classified_at": "2026-07-11T11:50:37.851178+00:00"}
+{"id": "2075722385114710492", "is_news": false, "player": "Courtland Sutton", "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-07-11T11:50:39.079204+00:00"}
