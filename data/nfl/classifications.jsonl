@@ -13,3 +13,6 @@
 {"id": "2075592049517064449", "is_news": false, "player": "Chris Olave", "team": null, "event_class": "other", "excluded_reason": "promo", "classified_at": "2026-07-11T11:50:36.544468+00:00"}
 {"id": "2075675891795935335", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "promo", "classified_at": "2026-07-11T11:50:37.851178+00:00"}
 {"id": "2075722385114710492", "is_news": false, "player": "Courtland Sutton", "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-07-11T11:50:39.079204+00:00"}
+{"id": "2076074063835869514", "is_news": false, "player": null, "team": "Seattle Seahawks", "event_class": "other", "excluded_reason": "no_player", "classified_at": "2026-07-12T11:58:07.311089+00:00"}
+{"id": "2076077356121207103", "is_news": true, "player": "Derek Carr", "team": null, "event_class": "roster_move", "excluded_reason": null, "classified_at": "2026-07-12T11:58:08.340796+00:00"}
+{"id": "2076147112367083875", "is_news": true, "player": "Brock Bowers", "team": "Las Vegas Raiders", "event_class": "injury", "excluded_reason": null, "classified_at": "2026-07-12T11:58:09.678045+00:00"}
