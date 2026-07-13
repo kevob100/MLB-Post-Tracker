@@ -20,7 +20,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-12T11:58:09.693362+00:00",
+    "computed_at": "2026-07-13T13:21:50.423739+00:00",
     "review_status": "pending"
   },
   {
@@ -44,7 +44,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-12T11:58:09.693400+00:00",
+    "computed_at": "2026-07-13T13:21:50.423770+00:00",
     "review_status": "pending"
   },
   {
@@ -68,7 +68,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-12T11:58:09.693422+00:00",
+    "computed_at": "2026-07-13T13:21:50.423819+00:00",
     "review_status": "pending"
   },
   {
@@ -84,7 +84,7 @@
     "rotowire": {
       "tweet_id": "2076147112367083875",
       "created_at": "2026-07-12T03:30:19.000Z",
-      "impression_count": 818,
+      "impression_count": 1109,
       "text": "Brock Bowers: Fully healthy ahead of camp https://t.co/J9OAlJFmUE"
     },
     "underdog": null,
@@ -92,7 +92,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-12T11:58:09.693444+00:00",
+    "computed_at": "2026-07-13T13:21:50.423845+00:00",
     "review_status": "pending"
   }
 ]
