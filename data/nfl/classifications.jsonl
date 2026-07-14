@@ -17,3 +17,16 @@
 {"id": "2076077356121207103", "is_news": true, "player": "Derek Carr", "team": null, "event_class": "roster_move", "excluded_reason": null, "classified_at": "2026-07-12T11:58:08.340796+00:00"}
 {"id": "2076147112367083875", "is_news": true, "player": "Brock Bowers", "team": "Las Vegas Raiders", "event_class": "injury", "excluded_reason": null, "classified_at": "2026-07-12T11:58:09.678045+00:00"}
 {"id": "2076652876298928167", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "promo", "classified_at": "2026-07-13T13:21:50.408909+00:00"}
+{"id": "2076670535371530635", "is_news": true, "player": "Jonathan Taylor", "team": null, "event_class": "role_change", "excluded_reason": null, "classified_at": "2026-07-14T12:10:10.332163+00:00"}
+{"id": "2076670660189794590", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "no_player", "classified_at": "2026-07-14T12:10:11.372950+00:00"}
+{"id": "2076680226336084103", "is_news": false, "player": "Adam Schefter", "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-07-14T12:10:12.769340+00:00"}
+{"id": "2076680656122184129", "is_news": true, "player": "Tua Tagovailoa", "team": "Miami Dolphins", "event_class": "role_change", "excluded_reason": null, "classified_at": "2026-07-14T12:10:14.097280+00:00"}
+{"id": "2076680669577527585", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "no_player", "classified_at": "2026-07-14T12:10:15.464078+00:00"}
+{"id": "2076680685461410231", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-07-14T12:10:17.856116+00:00"}
+{"id": "2076681271778975763", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "promo", "classified_at": "2026-07-14T12:10:19.867858+00:00"}
+{"id": "2076685082417377689", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-07-14T12:10:21.549379+00:00"}
+{"id": "2076717224832729320", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "promo", "classified_at": "2026-07-14T12:10:22.820550+00:00"}
+{"id": "2076717293979963613", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-07-14T12:10:24.619308+00:00"}
+{"id": "2076783654211064247", "is_news": true, "player": "Cam Skattebo", "team": null, "event_class": "role_change", "excluded_reason": null, "classified_at": "2026-07-14T12:10:26.595567+00:00"}
+{"id": "2076789527293592029", "is_news": true, "player": "Malik Nabers", "team": "New York Giants", "event_class": "injury", "excluded_reason": null, "classified_at": "2026-07-14T12:10:27.970036+00:00"}
+{"id": "2076822564484124978", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "promo", "classified_at": "2026-07-14T12:10:31.634714+00:00"}
