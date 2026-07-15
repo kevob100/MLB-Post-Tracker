@@ -7260,3 +7260,21 @@
 {"id": "2076863599453384802", "is_news": false, "player": "Jordan Walker", "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-07-14T12:11:26.838665+00:00"}
 {"id": "2076955492920733890", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "lineup_card", "classified_at": "2026-07-14T12:11:28.283892+00:00"}
 {"id": "2076985067860087077", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "no_player", "classified_at": "2026-07-14T12:11:29.520291+00:00"}
+{"id": "2077049460816056715", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-07-15T12:13:40.534547+00:00"}
+{"id": "2077112160170226111", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "promo", "classified_at": "2026-07-15T12:13:42.006711+00:00"}
+{"id": "2077121572343521327", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "promo", "classified_at": "2026-07-15T12:13:43.436618+00:00"}
+{"id": "2077134367080734852", "is_news": true, "player": "Willson Contreras", "team": "Boston Red Sox", "event_class": "roster_move", "excluded_reason": null, "classified_at": "2026-07-15T12:13:44.765381+00:00"}
+{"id": "2077135588885721341", "is_news": false, "player": "Munetaka Murakami", "team": "Chicago White Sox", "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-07-15T12:13:45.927830+00:00"}
+{"id": "2077136946841976909", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-07-15T12:13:47.208612+00:00"}
+{"id": "2077199951990497488", "is_news": true, "player": "Junior Caminero", "team": null, "event_class": "injury", "excluded_reason": null, "classified_at": "2026-07-15T12:14:02.374932+00:00"}
+{"id": "2077200178944282748", "is_news": true, "player": "Junior Caminero", "team": "Tampa Bay Rays", "event_class": "injury", "excluded_reason": null, "classified_at": "2026-07-15T12:14:03.683582+00:00"}
+{"id": "2077202178775646605", "is_news": true, "player": "Junior Caminero", "team": null, "event_class": "injury", "excluded_reason": null, "classified_at": "2026-07-15T12:14:05.009330+00:00"}
+{"id": "2077202447060066597", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-07-15T12:14:06.297909+00:00"}
+{"id": "2077205974243533124", "is_news": true, "player": "Junior Caminero", "team": "Tampa Bay Rays", "event_class": "injury", "excluded_reason": null, "classified_at": "2026-07-15T12:14:07.588284+00:00"}
+{"id": "2077212342065266790", "is_news": false, "player": "Ernie Clement", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-15T12:14:08.797538+00:00"}
+{"id": "2077218544488693966", "is_news": false, "player": "Justin Wrobleski", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-15T12:14:10.759968+00:00"}
+{"id": "2077223588328030599", "is_news": false, "player": "Miguel Vargas", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-15T12:14:12.142541+00:00"}
+{"id": "2077230306789339298", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-15T12:14:14.010240+00:00"}
+{"id": "2077236767330296283", "is_news": false, "player": "Cody Bellinger", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-15T12:14:15.343017+00:00"}
+{"id": "2077290202670764517", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "promo", "classified_at": "2026-07-15T12:14:16.794994+00:00"}
+{"id": "2077347459257242002", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "no_player", "classified_at": "2026-07-15T12:14:18.925478+00:00"}

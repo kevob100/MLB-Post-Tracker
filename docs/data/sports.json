@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-14T12:12:12.123839+00:00",
+  "generated_at": "2026-07-15T12:15:17.581533+00:00",
   "sports": [
     {
       "key": "nfl",
@@ -8,7 +8,7 @@
         "rotowire": "RotoWireNFL",
         "underdog": "UnderdogNFL"
       },
-      "generated_at": "2026-07-14T12:10:31.650701+00:00"
+      "generated_at": "2026-07-15T12:13:38.247995+00:00"
     },
     {
       "key": "mlb",
@@ -17,7 +17,7 @@
         "rotowire": "RotoWireMLB",
         "underdog": "UnderdogMLB"
       },
-      "generated_at": "2026-07-14T12:11:31.426509+00:00"
+      "generated_at": "2026-07-15T12:14:24.301812+00:00"
     },
     {
       "key": "nba",
@@ -26,7 +26,7 @@
         "rotowire": "RotoWireNBA",
         "underdog": "UnderdogNBA"
       },
-      "generated_at": "2026-07-14T12:12:12.120137+00:00"
+      "generated_at": "2026-07-15T12:15:17.577616+00:00"
     }
   ]
 }

@@ -30,3 +30,5 @@
 {"id": "2076783654211064247", "is_news": true, "player": "Cam Skattebo", "team": null, "event_class": "role_change", "excluded_reason": null, "classified_at": "2026-07-14T12:10:26.595567+00:00"}
 {"id": "2076789527293592029", "is_news": true, "player": "Malik Nabers", "team": "New York Giants", "event_class": "injury", "excluded_reason": null, "classified_at": "2026-07-14T12:10:27.970036+00:00"}
 {"id": "2076822564484124978", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "promo", "classified_at": "2026-07-14T12:10:31.634714+00:00"}
+{"id": "2077051761261428891", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "promo", "classified_at": "2026-07-15T12:13:36.731661+00:00"}
+{"id": "2077203640931000679", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "promo", "classified_at": "2026-07-15T12:13:38.232152+00:00"}
