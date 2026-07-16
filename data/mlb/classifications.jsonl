@@ -7278,3 +7278,22 @@
 {"id": "2077236767330296283", "is_news": false, "player": "Cody Bellinger", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-15T12:14:15.343017+00:00"}
 {"id": "2077290202670764517", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "promo", "classified_at": "2026-07-15T12:14:16.794994+00:00"}
 {"id": "2077347459257242002", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "no_player", "classified_at": "2026-07-15T12:14:18.925478+00:00"}
+{"id": "2077377654236279160", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "promo", "classified_at": "2026-07-16T12:19:42.289386+00:00"}
+{"id": "2077377667100234201", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "promo", "classified_at": "2026-07-16T12:19:43.755769+00:00"}
+{"id": "2077405485989294395", "is_news": true, "player": "Lance McCullers Jr.", "team": "Milwaukee Brewers", "event_class": "roster_move", "excluded_reason": null, "classified_at": "2026-07-16T12:19:45.915676+00:00"}
+{"id": "2077406750601277682", "is_news": true, "player": "Lance McCullers Jr.", "team": "Milwaukee Brewers", "event_class": "roster_move", "excluded_reason": null, "classified_at": "2026-07-16T12:19:47.307962+00:00"}
+{"id": "2077408052941033939", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-07-16T12:19:49.006669+00:00"}
+{"id": "2077411730825638270", "is_news": true, "player": "Brendan Donovan", "team": "St. Louis Cardinals", "event_class": "injury", "excluded_reason": null, "classified_at": "2026-07-16T12:19:50.275090+00:00"}
+{"id": "2077413690509304186", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "no_player", "classified_at": "2026-07-16T12:19:51.889333+00:00"}
+{"id": "2077421946510213371", "is_news": true, "player": "Owen Murphy", "team": null, "event_class": "role_change", "excluded_reason": null, "classified_at": "2026-07-16T12:19:53.291267+00:00"}
+{"id": "2077433412965503301", "is_news": true, "player": "Junior Caminero", "team": "Tampa Bay Rays", "event_class": "status_change", "excluded_reason": null, "classified_at": "2026-07-16T12:19:54.887136+00:00"}
+{"id": "2077433881142149567", "is_news": true, "player": "Harry Ford", "team": null, "event_class": "roster_move", "excluded_reason": null, "classified_at": "2026-07-16T12:19:56.281675+00:00"}
+{"id": "2077473236132970522", "is_news": false, "player": null, "team": null, "event_class": "roster_move", "excluded_reason": "no_player", "classified_at": "2026-07-16T12:19:57.499640+00:00"}
+{"id": "2077476965364158885", "is_news": true, "player": "Lance McCullers Jr.", "team": "Milwaukee Brewers", "event_class": "roster_move", "excluded_reason": null, "classified_at": "2026-07-16T12:19:58.820888+00:00"}
+{"id": "2077478449539674272", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "no_player", "classified_at": "2026-07-16T12:20:00.232616+00:00"}
+{"id": "2077480773863497884", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-07-16T12:20:01.510236+00:00"}
+{"id": "2077547976705310783", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "no_player", "classified_at": "2026-07-16T12:20:02.816975+00:00"}
+{"id": "2077573500424896917", "is_news": true, "player": "Brendan Donovan", "team": null, "event_class": "roster_move", "excluded_reason": null, "classified_at": "2026-07-16T12:20:04.162052+00:00"}
+{"id": "2077574417094156716", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "no_player", "classified_at": "2026-07-16T12:20:05.370985+00:00"}
+{"id": "2077709845516390450", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "no_player", "classified_at": "2026-07-16T12:20:06.534523+00:00"}
+{"id": "2077729565451886602", "is_news": true, "player": "Chase Burns", "team": null, "event_class": "role_change", "excluded_reason": null, "classified_at": "2026-07-16T12:20:08.252830+00:00"}

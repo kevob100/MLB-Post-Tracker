@@ -32,3 +32,14 @@
 {"id": "2076822564484124978", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "promo", "classified_at": "2026-07-14T12:10:31.634714+00:00"}
 {"id": "2077051761261428891", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "promo", "classified_at": "2026-07-15T12:13:36.731661+00:00"}
 {"id": "2077203640931000679", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "promo", "classified_at": "2026-07-15T12:13:38.232152+00:00"}
+{"id": "2077395810380063211", "is_news": true, "player": "Bhayshul Tuten", "team": null, "event_class": "role_change", "excluded_reason": null, "classified_at": "2026-07-16T12:19:22.645740+00:00"}
+{"id": "2077396172793131339", "is_news": false, "player": null, "team": "Cleveland Browns", "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-07-16T12:19:24.230840+00:00"}
+{"id": "2077435538135568586", "is_news": false, "player": "Keon Coleman", "team": "Buffalo Bills", "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-07-16T12:19:25.681507+00:00"}
+{"id": "2077477696989221209", "is_news": true, "player": "Patrick Mahomes", "team": "Kansas City Chiefs", "event_class": "injury", "excluded_reason": null, "classified_at": "2026-07-16T12:19:26.994835+00:00"}
+{"id": "2077478228348809670", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-07-16T12:19:28.277332+00:00"}
+{"id": "2077486050046328945", "is_news": true, "player": "Alvin Kamara", "team": "New Orleans Saints", "event_class": "roster_move", "excluded_reason": null, "classified_at": "2026-07-16T12:19:30.068931+00:00"}
+{"id": "2077486634350620749", "is_news": true, "player": "Alvin Kamara", "team": "New Orleans Saints", "event_class": "roster_move", "excluded_reason": null, "classified_at": "2026-07-16T12:19:31.782666+00:00"}
+{"id": "2077487600789594265", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-07-16T12:19:33.046906+00:00"}
+{"id": "2077493588456284613", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-07-16T12:19:34.269733+00:00"}
+{"id": "2077499941493076021", "is_news": true, "player": "George Pickens", "team": "Pittsburgh Steelers", "event_class": "roster_move", "excluded_reason": null, "classified_at": "2026-07-16T12:19:35.663853+00:00"}
+{"id": "2077524863858696629", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "promo", "classified_at": "2026-07-16T12:19:37.941463+00:00"}
