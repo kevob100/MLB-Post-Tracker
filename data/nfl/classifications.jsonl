@@ -43,3 +43,20 @@
 {"id": "2077493588456284613", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-07-16T12:19:34.269733+00:00"}
 {"id": "2077499941493076021", "is_news": true, "player": "George Pickens", "team": "Pittsburgh Steelers", "event_class": "roster_move", "excluded_reason": null, "classified_at": "2026-07-16T12:19:35.663853+00:00"}
 {"id": "2077524863858696629", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "promo", "classified_at": "2026-07-16T12:19:37.941463+00:00"}
+{"id": "2077756326042640586", "is_news": false, "player": "Jonathan Taylor", "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-07-17T12:08:03.805076+00:00"}
+{"id": "2077756351116198105", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-07-17T12:08:05.065364+00:00"}
+{"id": "2077764996390412481", "is_news": true, "player": "Alvin Kamara", "team": "New Orleans Saints", "event_class": "roster_move", "excluded_reason": null, "classified_at": "2026-07-17T12:08:06.552319+00:00"}
+{"id": "2077765433139065321", "is_news": true, "player": "Alvin Kamara", "team": "New Orleans Saints", "event_class": "roster_move", "excluded_reason": null, "classified_at": "2026-07-17T12:08:08.426276+00:00"}
+{"id": "2077767139813953877", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-07-17T12:08:09.800148+00:00"}
+{"id": "2077788627673780421", "is_news": true, "player": "Zay Flowers", "team": "Baltimore Ravens", "event_class": "roster_move", "excluded_reason": null, "classified_at": "2026-07-17T12:08:11.193372+00:00"}
+{"id": "2077788900647387200", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "no_player", "classified_at": "2026-07-17T12:08:12.654957+00:00"}
+{"id": "2077805073690775790", "is_news": false, "player": "Christian McCaffrey", "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-07-17T12:08:14.576324+00:00"}
+{"id": "2077805174471442587", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-07-17T12:08:15.926609+00:00"}
+{"id": "2077810446954819840", "is_news": false, "player": "Trevor Lawrence", "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-07-17T12:08:17.663150+00:00"}
+{"id": "2077810598654451970", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "no_player", "classified_at": "2026-07-17T12:08:18.991246+00:00"}
+{"id": "2077843777935319446", "is_news": false, "player": "Hunter Henry", "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-07-17T12:08:24.396189+00:00"}
+{"id": "2077844282292031875", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-07-17T12:08:26.013093+00:00"}
+{"id": "2077881580828209391", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "promo", "classified_at": "2026-07-17T12:08:27.947836+00:00"}
+{"id": "2077886534418637202", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "promo", "classified_at": "2026-07-17T12:08:29.210119+00:00"}
+{"id": "2077897860557787445", "is_news": true, "player": "Aaron Donald", "team": "Los Angeles Rams", "event_class": "roster_move", "excluded_reason": null, "classified_at": "2026-07-17T12:08:30.536309+00:00"}
+{"id": "2077921266242027804", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "promo", "classified_at": "2026-07-17T12:08:32.123806+00:00"}
