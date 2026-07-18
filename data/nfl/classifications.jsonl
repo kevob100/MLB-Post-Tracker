@@ -60,3 +60,13 @@
 {"id": "2077886534418637202", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "promo", "classified_at": "2026-07-17T12:08:29.210119+00:00"}
 {"id": "2077897860557787445", "is_news": true, "player": "Aaron Donald", "team": "Los Angeles Rams", "event_class": "roster_move", "excluded_reason": null, "classified_at": "2026-07-17T12:08:30.536309+00:00"}
 {"id": "2077921266242027804", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "promo", "classified_at": "2026-07-17T12:08:32.123806+00:00"}
+{"id": "2078102426687533288", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "promo", "classified_at": "2026-07-18T11:51:49.761543+00:00"}
+{"id": "2078102434518389049", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "promo", "classified_at": "2026-07-18T11:51:51.071160+00:00"}
+{"id": "2078135165528801686", "is_news": false, "player": "Puka Nacua", "team": "Los Angeles Rams", "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-07-18T11:51:52.679938+00:00"}
+{"id": "2078135517049245835", "is_news": false, "player": "Chris Johnson", "team": "Tennessee Titans", "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-07-18T11:51:54.982553+00:00"}
+{"id": "2078136835813888507", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-07-18T11:51:56.222290+00:00"}
+{"id": "2078161256117068147", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-07-18T11:51:57.754590+00:00"}
+{"id": "2078162853932974275", "is_news": false, "player": "Makai Lemon", "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-07-18T11:52:01.538105+00:00"}
+{"id": "2078164529985228973", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "no_player", "classified_at": "2026-07-18T11:52:02.907938+00:00"}
+{"id": "2078178023023530214", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-07-18T11:52:05.393769+00:00"}
+{"id": "2078210533648409041", "is_news": false, "player": null, "team": "Arizona Cardinals", "event_class": "other", "excluded_reason": "no_player", "classified_at": "2026-07-18T11:52:07.321409+00:00"}
