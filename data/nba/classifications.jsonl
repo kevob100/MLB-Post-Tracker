@@ -332,3 +332,25 @@
 {"id": "2078311743663562981", "is_news": false, "player": "Pacome Dadiet", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-18T11:57:02.180653+00:00"}
 {"id": "2078313421901070739", "is_news": false, "player": "Tre White", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-18T11:57:03.449906+00:00"}
 {"id": "2078345883075101025", "is_news": false, "player": "Keaton Wagler", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-18T11:57:04.740887+00:00"}
+{"id": "2078496044447404543", "is_news": false, "player": "LeBron James", "team": null, "event_class": "other", "excluded_reason": "promo", "classified_at": "2026-07-19T12:01:48.746791+00:00"}
+{"id": "2078497596004295028", "is_news": false, "player": "LeBron James", "team": null, "event_class": "other", "excluded_reason": "promo", "classified_at": "2026-07-19T12:01:50.375445+00:00"}
+{"id": "2078535400662897131", "is_news": false, "player": "LeBron James", "team": null, "event_class": "other", "excluded_reason": "promo", "classified_at": "2026-07-19T12:01:51.737307+00:00"}
+{"id": "2078535974745694208", "is_news": false, "player": "LeBron James", "team": "Miami Heat", "event_class": "other", "excluded_reason": "promo", "classified_at": "2026-07-19T12:01:53.146017+00:00"}
+{"id": "2078537402650386809", "is_news": true, "player": "Moussa Cisse", "team": "New York Knicks", "event_class": "roster_move", "excluded_reason": null, "classified_at": "2026-07-19T12:01:54.476490+00:00"}
+{"id": "2078543165422698507", "is_news": false, "player": "Trae Young", "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-07-19T12:02:02.744017+00:00"}
+{"id": "2078573469537653173", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "parse_error": true, "classified_at": "2026-07-19T12:02:05.141033+00:00"}
+{"id": "2078584820213461080", "is_news": true, "player": "Labaron Philon", "team": null, "event_class": "status_change", "excluded_reason": null, "classified_at": "2026-07-19T12:02:06.814182+00:00"}
+{"id": "2078609482049859875", "is_news": false, "player": "Caleb Grill", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-19T12:02:15.723258+00:00"}
+{"id": "2078617974513029527", "is_news": false, "player": "Brayden Burries", "team": "Milwaukee Bucks", "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-19T12:02:16.930439+00:00"}
+{"id": "2078617982758957558", "is_news": false, "player": "Joel Ayayi", "team": "Nets", "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-19T12:02:18.432784+00:00"}
+{"id": "2078618905145131109", "is_news": true, "player": "Kingston Flemings", "team": null, "event_class": "status_change", "excluded_reason": null, "classified_at": "2026-07-19T12:02:19.798264+00:00"}
+{"id": "2078638490648998090", "is_news": false, "player": "Cedric Coward", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-19T12:02:21.224500+00:00"}
+{"id": "2078638622387945504", "is_news": false, "player": "Cameron Boozer", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-19T12:02:22.999139+00:00"}
+{"id": "2078646728866021752", "is_news": false, "player": "Reece Beekman", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-19T12:02:24.331985+00:00"}
+{"id": "2078668941249978621", "is_news": false, "player": null, "team": "Golden State Warriors", "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-19T12:02:25.762020+00:00"}
+{"id": "2078671177535373500", "is_news": false, "player": "Yaxel Lendeborg", "team": "Nets", "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-19T12:02:26.999653+00:00"}
+{"id": "2078677221808468464", "is_news": false, "player": "Dominique Daniels", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-19T12:02:28.270710+00:00"}
+{"id": "2078690665785950290", "is_news": true, "player": "Moussa Cisse", "team": "Dallas Mavericks", "event_class": "roster_move", "excluded_reason": null, "classified_at": "2026-07-19T12:02:29.684956+00:00"}
+{"id": "2078691967882478019", "is_news": true, "player": "Moussa Cisse", "team": "Dallas Mavericks", "event_class": "roster_move", "excluded_reason": null, "classified_at": "2026-07-19T12:02:31.972609+00:00"}
+{"id": "2078700371522753019", "is_news": false, "player": "Miles Kelly", "team": "Nets", "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-19T12:02:33.316273+00:00"}
+{"id": "2078702507656618491", "is_news": false, "player": "Devin Askew", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-19T12:02:35.480150+00:00"}

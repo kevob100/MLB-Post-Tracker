@@ -70,3 +70,11 @@
 {"id": "2078164529985228973", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "no_player", "classified_at": "2026-07-18T11:52:02.907938+00:00"}
 {"id": "2078178023023530214", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-07-18T11:52:05.393769+00:00"}
 {"id": "2078210533648409041", "is_news": false, "player": null, "team": "Arizona Cardinals", "event_class": "other", "excluded_reason": "no_player", "classified_at": "2026-07-18T11:52:07.321409+00:00"}
+{"id": "2078464812128907717", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "promo", "classified_at": "2026-07-19T11:56:15.668528+00:00"}
+{"id": "2078474994502246570", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "promo", "classified_at": "2026-07-19T11:56:20.517415+00:00"}
+{"id": "2078476002305474761", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "promo", "classified_at": "2026-07-19T11:56:21.720948+00:00"}
+{"id": "2078479011215192203", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "promo", "classified_at": "2026-07-19T11:56:23.368292+00:00"}
+{"id": "2078482159766003824", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "promo", "classified_at": "2026-07-19T11:56:24.553887+00:00"}
+{"id": "2078483051563159749", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "promo", "classified_at": "2026-07-19T11:56:25.709195+00:00"}
+{"id": "2078502797272564032", "is_news": true, "player": "Jadarian Price", "team": null, "event_class": "role_change", "excluded_reason": null, "classified_at": "2026-07-19T11:56:26.822047+00:00"}
+{"id": "2078544941303607715", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-07-19T11:56:28.133897+00:00"}
