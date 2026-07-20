@@ -78,3 +78,7 @@
 {"id": "2078483051563159749", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "promo", "classified_at": "2026-07-19T11:56:25.709195+00:00"}
 {"id": "2078502797272564032", "is_news": true, "player": "Jadarian Price", "team": null, "event_class": "role_change", "excluded_reason": null, "classified_at": "2026-07-19T11:56:26.822047+00:00"}
 {"id": "2078544941303607715", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-07-19T11:56:28.133897+00:00"}
+{"id": "2078844514190430618", "is_news": false, "player": "Saquon Barkley", "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-07-20T13:04:31.472291+00:00"}
+{"id": "2078853957296812405", "is_news": false, "player": "Brandon Aiyuk", "team": "San Francisco 49ers", "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-07-20T13:04:33.845645+00:00"}
+{"id": "2078888031226876050", "is_news": false, "player": "Cam Skattebo", "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-07-20T13:04:35.440168+00:00"}
+{"id": "2079189595791430143", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "promo", "classified_at": "2026-07-20T13:04:37.060233+00:00"}
