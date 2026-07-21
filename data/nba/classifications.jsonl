@@ -363,3 +363,7 @@
 {"id": "2078927883267949008", "is_news": true, "player": "Egor Demin", "team": null, "event_class": "status_change", "excluded_reason": null, "classified_at": "2026-07-20T13:11:27.456624+00:00"}
 {"id": "2079036180608241737", "is_news": false, "player": "Yaxel Lendeborg", "team": "Golden State Warriors", "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-20T13:11:29.104683+00:00"}
 {"id": "2079039088468910288", "is_news": false, "player": "Yaxel Lendeborg", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-20T13:11:30.440538+00:00"}
+{"id": "2079205622436843587", "is_news": true, "player": "Jonathan Kuminga", "team": "Los Angeles Lakers", "event_class": "roster_move", "excluded_reason": null, "classified_at": "2026-07-21T12:30:51.512073+00:00"}
+{"id": "2079248231632920610", "is_news": false, "player": null, "team": "Miami Heat", "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-07-21T12:30:53.243783+00:00"}
+{"id": "2079268295627223363", "is_news": false, "player": "LeBron James", "team": null, "event_class": "other", "excluded_reason": "promo", "classified_at": "2026-07-21T12:30:54.677621+00:00"}
+{"id": "2079270987200139362", "is_news": true, "player": "Matisse Thybulle", "team": "Los Angeles Lakers", "event_class": "roster_move", "excluded_reason": null, "classified_at": "2026-07-21T12:30:56.966657+00:00"}

@@ -82,3 +82,23 @@
 {"id": "2078853957296812405", "is_news": false, "player": "Brandon Aiyuk", "team": "San Francisco 49ers", "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-07-20T13:04:33.845645+00:00"}
 {"id": "2078888031226876050", "is_news": false, "player": "Cam Skattebo", "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-07-20T13:04:35.440168+00:00"}
 {"id": "2079189595791430143", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "promo", "classified_at": "2026-07-20T13:04:37.060233+00:00"}
+{"id": "2079197346915664237", "is_news": false, "player": "Cameron Skattebo", "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-07-21T12:23:08.131944+00:00"}
+{"id": "2079197606257819709", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-07-21T12:23:09.301634+00:00"}
+{"id": "2079205641894187261", "is_news": false, "player": "Le'Veon Bell", "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-07-21T12:23:10.687938+00:00"}
+{"id": "2079211659554414597", "is_news": true, "player": "Roger Goodell", "team": null, "event_class": "roster_move", "excluded_reason": null, "classified_at": "2026-07-21T12:23:12.145158+00:00"}
+{"id": "2079223089112416759", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "no_player", "classified_at": "2026-07-21T12:23:13.842456+00:00"}
+{"id": "2079224242747351243", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "no_player", "classified_at": "2026-07-21T12:23:15.384998+00:00"}
+{"id": "2079255741383225488", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-07-21T12:23:16.824028+00:00"}
+{"id": "2079263311187603562", "is_news": false, "player": null, "team": "Philadelphia Eagles", "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-07-21T12:23:19.153246+00:00"}
+{"id": "2079282652167766151", "is_news": true, "player": "Devonte Wyatt", "team": "Green Bay Packers", "event_class": "roster_move", "excluded_reason": null, "classified_at": "2026-07-21T12:23:21.386240+00:00"}
+{"id": "2079285719554458108", "is_news": true, "player": "Tucker Kraft", "team": "Green Bay Packers", "event_class": "roster_move", "excluded_reason": null, "classified_at": "2026-07-21T12:23:23.893428+00:00"}
+{"id": "2079296551839551616", "is_news": true, "player": "Tucker Kraft", "team": "Green Bay Packers", "event_class": "injury", "excluded_reason": null, "classified_at": "2026-07-21T12:23:25.185838+00:00"}
+{"id": "2079297019030520102", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-07-21T12:23:26.874659+00:00"}
+{"id": "2079313432302547258", "is_news": true, "player": "Ryan Clark", "team": "ESPN", "event_class": "roster_move", "excluded_reason": null, "classified_at": "2026-07-21T12:23:28.806742+00:00"}
+{"id": "2079320551328268681", "is_news": true, "player": "Bucky Irving", "team": null, "event_class": "injury", "excluded_reason": null, "classified_at": "2026-07-21T12:23:30.337377+00:00"}
+{"id": "2079333165768872019", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "promo", "classified_at": "2026-07-21T12:23:31.874726+00:00"}
+{"id": "2079342292972789861", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "no_player", "classified_at": "2026-07-21T12:23:33.173353+00:00"}
+{"id": "2079348625159647624", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "promo", "classified_at": "2026-07-21T12:23:34.905092+00:00"}
+{"id": "2079362728741810185", "is_news": true, "player": "Bucky Irving", "team": null, "event_class": "injury", "excluded_reason": null, "classified_at": "2026-07-21T12:23:36.276437+00:00"}
+{"id": "2079369710445920540", "is_news": false, "player": "Aaron Rodgers", "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-07-21T12:23:37.559405+00:00"}
+{"id": "2079531210083094941", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-07-21T12:23:39.136912+00:00"}
