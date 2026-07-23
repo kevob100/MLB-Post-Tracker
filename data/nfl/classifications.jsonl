@@ -132,3 +132,22 @@
 {"id": "2079694320244768897", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "promo", "classified_at": "2026-07-22T12:24:42.567557+00:00"}
 {"id": "2079694972282900632", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-07-22T12:24:43.797993+00:00"}
 {"id": "2079741206838288526", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "no_player", "classified_at": "2026-07-22T12:24:45.390112+00:00"}
+{"id": "2079909218295885868", "is_news": true, "player": "Devon Witherspoon", "team": "Seattle Seahawks", "event_class": "roster_move", "excluded_reason": null, "classified_at": "2026-07-23T12:23:05.074631+00:00"}
+{"id": "2079914365713588370", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "promo", "classified_at": "2026-07-23T12:23:06.319755+00:00"}
+{"id": "2079932441108648005", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "no_player", "classified_at": "2026-07-23T12:23:07.939070+00:00"}
+{"id": "2079937170106687900", "is_news": false, "player": null, "team": "Detroit Lions", "event_class": "role_change", "excluded_reason": "no_player", "classified_at": "2026-07-23T12:23:09.252645+00:00"}
+{"id": "2079938338421612995", "is_news": true, "player": "Jonathon Brooks", "team": "Carolina Panthers", "event_class": "role_change", "excluded_reason": null, "classified_at": "2026-07-23T12:23:10.781518+00:00"}
+{"id": "2079939564513141124", "is_news": true, "player": "Tetairoa McMillan", "team": null, "event_class": "role_change", "excluded_reason": null, "classified_at": "2026-07-23T12:23:12.085732+00:00"}
+{"id": "2079946756217782395", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "promo", "classified_at": "2026-07-23T12:23:13.555779+00:00"}
+{"id": "2079971662678696365", "is_news": true, "player": "Zach Charbonnet", "team": null, "event_class": "roster_move", "excluded_reason": null, "classified_at": "2026-07-23T12:23:15.187841+00:00"}
+{"id": "2079971688536531082", "is_news": true, "player": "Zach Charbonnet", "team": null, "event_class": "roster_move", "excluded_reason": null, "classified_at": "2026-07-23T12:23:16.417395+00:00"}
+{"id": "2079973348973388053", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-07-23T12:23:17.803528+00:00"}
+{"id": "2079977054460583981", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "no_player", "classified_at": "2026-07-23T12:23:19.043134+00:00"}
+{"id": "2080002980628025465", "is_news": false, "player": "Jalen Hurts", "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-07-23T12:23:20.492312+00:00"}
+{"id": "2080051559266767346", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "promo", "classified_at": "2026-07-23T12:23:23.260200+00:00"}
+{"id": "2080063200620384541", "is_news": true, "player": "Jacoby Brissett", "team": null, "event_class": "status_change", "excluded_reason": null, "classified_at": "2026-07-23T12:23:24.494964+00:00"}
+{"id": "2080065074777997393", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-07-23T12:23:25.826346+00:00"}
+{"id": "2080069301785026829", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "promo", "classified_at": "2026-07-23T12:23:27.197873+00:00"}
+{"id": "2080078441831874578", "is_news": true, "player": "Nick Emmanwori", "team": "Seattle Seahawks", "event_class": "injury", "excluded_reason": null, "classified_at": "2026-07-23T12:23:28.610631+00:00"}
+{"id": "2080079846521389424", "is_news": true, "player": "Jimmy Garoppolo", "team": null, "event_class": "roster_move", "excluded_reason": null, "classified_at": "2026-07-23T12:23:29.960208+00:00"}
+{"id": "2080262044750659592", "is_news": false, "player": null, "team": "Baltimore Ravens", "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-07-23T12:23:31.486688+00:00"}
