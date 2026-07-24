@@ -381,3 +381,10 @@
 {"id": "2080043273146777912", "is_news": true, "player": "Chip Engelland", "team": "Houston Rockets", "event_class": "roster_move", "excluded_reason": null, "classified_at": "2026-07-23T12:27:28.769637+00:00"}
 {"id": "2080081143303680333", "is_news": true, "player": "D'Angelo Russell", "team": "Memphis Grizzlies", "event_class": "roster_move", "excluded_reason": null, "classified_at": "2026-07-23T12:27:30.181215+00:00"}
 {"id": "2080169959108305063", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "no_player", "classified_at": "2026-07-23T12:27:31.510147+00:00"}
+{"id": "2080313835437642047", "is_news": true, "player": "Jordan Walsh", "team": "Boston Celtics", "event_class": "roster_move", "excluded_reason": null, "classified_at": "2026-07-24T12:20:27.108276+00:00"}
+{"id": "2080331445554344052", "is_news": false, "player": "LeBron James", "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-07-24T12:20:28.412374+00:00"}
+{"id": "2080338897947546105", "is_news": false, "player": "LeBron James", "team": "Los Angeles Lakers", "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-07-24T12:20:29.691105+00:00"}
+{"id": "2080351431266103430", "is_news": false, "player": "LeBron James", "team": null, "event_class": "other", "excluded_reason": "promo", "classified_at": "2026-07-24T12:20:31.539448+00:00"}
+{"id": "2080356681913942264", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-07-24T12:20:32.945630+00:00"}
+{"id": "2080364713775341933", "is_news": true, "player": "Jae'Sean Tate", "team": "Houston Rockets", "event_class": "roster_move", "excluded_reason": null, "classified_at": "2026-07-24T12:20:34.251532+00:00"}
+{"id": "2080370700292940181", "is_news": true, "player": "Jonathan Kuminga", "team": "Los Angeles Lakers", "event_class": "roster_move", "excluded_reason": null, "classified_at": "2026-07-24T12:20:35.634706+00:00"}
