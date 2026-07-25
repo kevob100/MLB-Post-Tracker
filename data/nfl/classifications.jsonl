@@ -188,3 +188,24 @@
 {"id": "2080417421395890217", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-07-24T12:18:25.758637+00:00"}
 {"id": "2080456725103054864", "is_news": true, "player": "Quinshon Judkins", "team": null, "event_class": "injury", "excluded_reason": null, "classified_at": "2026-07-24T12:18:27.481685+00:00"}
 {"id": "2080457183284916731", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-07-24T12:18:28.703459+00:00"}
+{"id": "2080664295336014337", "is_news": false, "player": "Jacoby Brissett", "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-07-25T12:01:34.319812+00:00"}
+{"id": "2080664801923973575", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-07-25T12:01:36.933244+00:00"}
+{"id": "2080665591870808195", "is_news": true, "player": "Malik Nabers", "team": null, "event_class": "role_change", "excluded_reason": null, "classified_at": "2026-07-25T12:01:38.330949+00:00"}
+{"id": "2080666311517204876", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "no_player", "classified_at": "2026-07-25T12:01:39.790263+00:00"}
+{"id": "2080667696564257035", "is_news": true, "player": "Trey Benson", "team": null, "event_class": "injury", "excluded_reason": null, "classified_at": "2026-07-25T12:01:41.058443+00:00"}
+{"id": "2080668324627894396", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "no_player", "classified_at": "2026-07-25T12:01:42.289226+00:00"}
+{"id": "2080669726867403024", "is_news": true, "player": "James Conner", "team": null, "event_class": "injury", "excluded_reason": null, "classified_at": "2026-07-25T12:01:43.749036+00:00"}
+{"id": "2080670971766112514", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "no_player", "classified_at": "2026-07-25T12:01:48.393225+00:00"}
+{"id": "2080690617634451706", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "no_player", "classified_at": "2026-07-25T12:01:50.137467+00:00"}
+{"id": "2080724158204256290", "is_news": false, "player": "Tony Romo", "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-07-25T12:01:55.725791+00:00"}
+{"id": "2080731616976982090", "is_news": true, "player": "Will Grier", "team": "Dallas Cowboys", "event_class": "roster_move", "excluded_reason": null, "classified_at": "2026-07-25T12:01:56.958624+00:00"}
+{"id": "2080743658932842770", "is_news": true, "player": "Patrick Mahomes", "team": "Kansas City Chiefs", "event_class": "injury", "excluded_reason": null, "classified_at": "2026-07-25T12:01:59.199259+00:00"}
+{"id": "2080744179588644910", "is_news": true, "player": "Rashee Rice", "team": "Kansas City Chiefs", "event_class": "status_change", "excluded_reason": null, "classified_at": "2026-07-25T12:02:00.848840+00:00"}
+{"id": "2080744727607992474", "is_news": true, "player": "Patrick Mahomes", "team": "Kansas City Chiefs", "event_class": "injury", "excluded_reason": null, "classified_at": "2026-07-25T12:02:02.249180+00:00"}
+{"id": "2080746499416142116", "is_news": true, "player": "Patrick Mahomes", "team": "Kansas City Chiefs", "event_class": "injury", "excluded_reason": null, "classified_at": "2026-07-25T12:02:05.992767+00:00"}
+{"id": "2080747848878928346", "is_news": true, "player": "Patrick Mahomes", "team": "Kansas City Chiefs", "event_class": "injury", "excluded_reason": null, "classified_at": "2026-07-25T12:02:07.677176+00:00"}
+{"id": "2080749510234423440", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "no_player", "classified_at": "2026-07-25T12:02:08.817296+00:00"}
+{"id": "2080750163656651074", "is_news": true, "player": "Rashee Rice", "team": "Kansas City Chiefs", "event_class": "injury", "excluded_reason": null, "classified_at": "2026-07-25T12:02:10.075810+00:00"}
+{"id": "2080750772757655975", "is_news": true, "player": "Patrick Mahomes", "team": "Kansas City Chiefs", "event_class": "injury", "excluded_reason": null, "classified_at": "2026-07-25T12:02:11.427297+00:00"}
+{"id": "2080751165881409775", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "no_player", "classified_at": "2026-07-25T12:02:12.675078+00:00"}
+{"id": "2080819962453913917", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "promo", "classified_at": "2026-07-25T12:02:14.201240+00:00"}
