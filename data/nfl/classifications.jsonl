@@ -209,3 +209,16 @@
 {"id": "2080750772757655975", "is_news": true, "player": "Patrick Mahomes", "team": "Kansas City Chiefs", "event_class": "injury", "excluded_reason": null, "classified_at": "2026-07-25T12:02:11.427297+00:00"}
 {"id": "2080751165881409775", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "no_player", "classified_at": "2026-07-25T12:02:12.675078+00:00"}
 {"id": "2080819962453913917", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "promo", "classified_at": "2026-07-25T12:02:14.201240+00:00"}
+{"id": "2081024312958419236", "is_news": true, "player": "Christian Gonzalez", "team": "New England Patriots", "event_class": "roster_move", "excluded_reason": null, "classified_at": "2026-07-26T12:01:51.552196+00:00"}
+{"id": "2081032220970500291", "is_news": false, "player": "DeAndre Hopkins", "team": "New England Patriots", "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-26T12:01:59.921267+00:00"}
+{"id": "2081047438236811693", "is_news": true, "player": "Kyle Shanahan", "team": "San Francisco 49ers", "event_class": "injury", "excluded_reason": null, "classified_at": "2026-07-26T12:02:08.300058+00:00"}
+{"id": "2081047912323154211", "is_news": true, "player": "Kyle Shanahan", "team": "San Francisco 49ers", "event_class": "injury", "excluded_reason": null, "classified_at": "2026-07-26T12:02:16.665439+00:00"}
+{"id": "2081062456764313872", "is_news": true, "player": "Puka Nacua", "team": "Los Angeles Rams", "event_class": "status_change", "excluded_reason": null, "classified_at": "2026-07-26T12:02:25.362144+00:00"}
+{"id": "2081083395757482031", "is_news": true, "player": "George Kittle", "team": "San Francisco 49ers", "event_class": "status_change", "excluded_reason": null, "classified_at": "2026-07-26T12:02:33.809704+00:00"}
+{"id": "2081084178414612492", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-07-26T12:02:35.068412+00:00"}
+{"id": "2081085535867531682", "is_news": true, "player": "Brandon Aiyuk", "team": "San Francisco 49ers", "event_class": "status_change", "excluded_reason": null, "classified_at": "2026-07-26T12:02:43.437595+00:00"}
+{"id": "2081086672612024422", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-07-26T12:02:48.003534+00:00"}
+{"id": "2081086995002999168", "is_news": true, "player": "Ty Simpson", "team": null, "event_class": "roster_move", "excluded_reason": null, "classified_at": "2026-07-26T12:02:53.086350+00:00"}
+{"id": "2081087668440478108", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-07-26T12:02:54.863246+00:00"}
+{"id": "2081095585025634340", "is_news": true, "player": "Chris Olave", "team": "New Orleans Saints", "event_class": "roster_move", "excluded_reason": null, "classified_at": "2026-07-26T12:02:58.648853+00:00"}
+{"id": "2081173197710389605", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "no_player", "classified_at": "2026-07-26T12:03:00.342814+00:00"}
