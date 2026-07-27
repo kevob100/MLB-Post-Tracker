@@ -462,52 +462,18 @@ function renderCustom() {
     ["Same-event dups", `${s.dups}`, "RW + UD"],
   ];
 
-  // Win-rate graph: bars over the selected window, bucketed by day/week/month so the
-  // graph adapts to whatever From/To span is chosen (a short range → daily bars; a wide
-  // one → weekly/monthly, so it never becomes an unreadable wall of daily bars). Only
-  // buckets with ≥1 matched story appear (win rate is only meaningful where there are
-  // matches). Reuses summarize() over each bucket's [start,end) window.
-  const DAY = 86400000;
-  const inRangeStories = state.stories.filter(st => {
-    if (st.same_event_duplicate || st.review_status === "rejected" || st.review_status === "merged") return false;
-    const t = storyTime(st);
-    if (fromT && t < fromT) return false;
-    if (toT && t > toT) return false;
-    return true;
-  });
-  const times = inRangeStories.map(storyTime);
-  const span = (fromT != null && toT != null) ? (toT - fromT)
-    : (times.length ? Math.max(...times) - Math.min(...times) : 0);
-  const gran = span <= 45 * DAY ? "day" : span <= 365 * DAY ? "week" : "month";
-  const isoOf = ms => new Date(ms).toISOString();
-  const bucketOf = t => {
-    const d = new Date(t);
-    if (gran === "day") {
-      const start = Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), d.getUTCDate());
-      return { start, end: start + DAY, label: isoOf(start).slice(5, 10) };            // MM-DD
-    }
-    if (gran === "week") {
-      const dow = (d.getUTCDay() + 6) % 7;   // 0 = Monday
-      const start = Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), d.getUTCDate() - dow);
-      return { start, end: start + 7 * DAY, label: "wk " + isoOf(start).slice(5, 10) }; // wk MM-DD
-    }
-    const start = Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), 1);
-    const end = Date.UTC(d.getUTCFullYear(), d.getUTCMonth() + 1, 1);
-    return { start, end, label: isoOf(start).slice(0, 7) };                            // YYYY-MM
-  };
-  const buckets = new Map();
-  inRangeStories.forEach(st => { const b = bucketOf(storyTime(st)); buckets.set(b.start, b); });
-  const rows = [...buckets.values()].sort((a, b) => a.start - b.start)
-    .map(b => ({ period: b.label, ...summarize(state.stories, b.start, b.end - 1) }))
-    .filter(r => r.matched > 0);
-  const bars = rows.map(r => {
-    const pct = (r.rotowire_first_rate ?? 0) * 100;
-    return `<div class="bar-row"><span>${r.period}</span>
-      <div class="bar-track"><div class="bar-fill" style="width:${pct}%"></div></div>
-      <span>${fmtPct(r.rotowire_first_rate)}</span></div>`;
-  }).join("");
-  const graph = `<div class="panel"><h3 style="color:var(--muted)">RotoWire-first win rate by ${gran}</h3>
-    <div class="bars">${bars || `<div class="empty">No matched stories in this range.</div>`}</div></div>`;
+  // Win-rate graph: a single bar for the whole selected period (RotoWire-first rate over
+  // the [from,to] window, from the same summary `s` as the KPI cards).
+  const pct = (s.rotowire_first_rate ?? 0) * 100;
+  const barLabel = ranged ? rangeLabel : "All dates";
+  const bar = s.matched
+    ? `<div class="bar-row" style="grid-template-columns:minmax(120px,auto) 1fr 56px">
+         <span>${esc(barLabel)}</span>
+         <div class="bar-track"><div class="bar-fill" style="width:${pct}%"></div></div>
+         <span>${fmtPct(s.rotowire_first_rate)}</span></div>`
+    : `<div class="empty">No matched stories in this range.</div>`;
+  const graph = `<div class="panel"><h3 style="color:var(--muted)">RotoWire-first win rate</h3>
+    <div class="bars">${bar}</div></div>`;
 
   document.getElementById("view-custom").innerHTML =
     `<div class="filters">
