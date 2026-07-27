@@ -118,6 +118,7 @@
     <div class="tab active" data-view="feed">Story Feed</div>
     <div class="tab" data-view="weekly">Weekly</div>
     <div class="tab" data-view="monthly">Monthly</div>
+    <div class="tab" data-view="custom">Custom</div>
     <div class="tab" data-view="gaps">Coverage Gaps</div>
     <div class="tab" data-view="dups">Duplicates</div>
   </div>
@@ -132,12 +133,14 @@
       <label>Review<select id="f-status">
         <option value="">all</option><option>pending</option><option>confirmed</option>
         <option>rejected</option><option>merged</option></select></label>
+      <label>Matched only<input type="checkbox" id="f-matched"></label>
     </div>
     <div id="feed-wrap"></div>
   </section>
 
   <section id="view-weekly" class="hidden"></section>
   <section id="view-monthly" class="hidden"></section>
+  <section id="view-custom" class="hidden"></section>
   <section id="view-gaps" class="hidden"></section>
   <section id="view-dups" class="hidden"></section>
 </div>
@@ -233,7 +236,7 @@ function setMode(isAll) {
   document.getElementById("kpis").classList.toggle("hidden", isAll);
   document.getElementById("tabs").classList.toggle("hidden", isAll);
   if (isAll) {
-    ["feed","weekly","monthly","gaps","dups"].forEach(v =>
+    ["feed","weekly","monthly","custom","gaps","dups"].forEach(v =>
       document.getElementById("view-" + v).classList.add("hidden"));
   } else {
     showView(state.view || "feed");   // restore the active tab, one visible at a time
@@ -378,9 +381,10 @@ function sortVal(s, key) {
 function filteredStories() {
   const from = val("f-from"), to = val("f-to"), ev = val("f-event"),
         pl = val("f-player").toLowerCase(), conf = parseFloat(val("f-conf")),
-        st = val("f-status");
+        st = val("f-status"), matchedOnly = document.getElementById("f-matched").checked;
   return state.stories.filter(s => {
     if (s.same_event_duplicate) return false;  // duplicates live on their own tab
+    if (matchedOnly && s.status !== "matched") return false;
     const t = storyTime(s);
     if (from && t < +new Date(from)) return false;
     if (to && t > +new Date(to) + 86400000) return false;
@@ -437,6 +441,38 @@ function renderRollup(el, rows, periodLabel) {
     <th data-nosort style="text-align:right">RW win rate</th><th data-nosort style="text-align:right">Median Δ</th>
     <th data-nosort style="text-align:right">Mean Δ</th><th data-nosort style="text-align:right">RW-only</th>
     <th data-nosort style="text-align:right">UD-only</th></tr></thead><tbody>${body}</tbody></table>`;
+}
+
+// Custom-range summary for the current sport. Reuses summarize() (same math as the
+// ALL overview / src/aggregate.py::_summary) over a user-picked [from,to] window.
+function renderCustom() {
+  const fromT = state.customFrom ? +new Date(state.customFrom) : null;
+  const toT = state.customTo ? +new Date(state.customTo) + 86400000 : null;
+  const s = summarize(state.stories, fromT, toT);
+  const ranged = state.customFrom || state.customTo;
+  const rangeLabel = `${state.customFrom || "start"} → ${state.customTo || "latest"}`;
+  const cards = [
+    ["RotoWire-first win rate", fmtPct(s.rotowire_first_rate), s.matched ? `${s.rotowire_first}/${s.matched}` : ""],
+    ["Median lead", fmtLead(s.median_lead_seconds), ""],
+    ["Mean lead", fmtLead(s.mean_lead_seconds), ""],
+    ["Matched stories", fmtNum(s.matched), ""],
+    ["Coverage gaps", `${s.rotowire_only} / ${s.underdog_only}`, "RW-only / UD-only"],
+    ["Same-event dups", `${s.dups}`, "RW + UD"],
+  ];
+  document.getElementById("view-custom").innerHTML =
+    `<div class="filters">
+       <label>From<input type="date" id="c-from" value="${state.customFrom || ""}"></label>
+       <label>To<input type="date" id="c-to" value="${state.customTo || ""}"></label>
+       <label>&nbsp;<button id="c-clear" class="sport-btn" style="padding:6px 12px">Clear</button></label>
+     </div>
+     <p style="color:var(--muted);font-size:13px;margin:0 0 12px">
+       Metrics for ${ranged ? esc(rangeLabel) : "all dates"} — pick a range to scope the numbers.</p>
+     <div class="kpis">${cards.map(([l,v,sub]) =>
+       `<div class="kpi"><div class="label">${l}</div><div class="value">${v} <small>${sub||""}</small></div></div>`).join("")}</div>`;
+  const cf = document.getElementById("c-from"), ct = document.getElementById("c-to");
+  cf.onchange = () => { state.customFrom = cf.value; renderCustom(); };
+  ct.onchange = () => { state.customTo = ct.value; renderCustom(); };
+  document.getElementById("c-clear").onclick = () => { state.customFrom = ""; state.customTo = ""; renderCustom(); };
 }
 
 // Feed label = which account actually posted this one-sided story.
@@ -633,7 +669,7 @@ function renderAllTable() {
 function showView(name) {
   state.view = name;
   document.querySelectorAll(".tab").forEach(t => t.classList.toggle("active", t.dataset.view===name));
-  ["feed","weekly","monthly","gaps","dups"].forEach(v =>
+  ["feed","weekly","monthly","custom","gaps","dups"].forEach(v =>
     document.getElementById("view-"+v).classList.toggle("hidden", v!==name));
 }
 
@@ -654,6 +690,7 @@ function init() {
   if (!state.wired) {
     ["f-from","f-to","f-event","f-player","f-conf","f-status"].forEach(id =>
       document.getElementById(id).addEventListener("input", renderFeed));
+    document.getElementById("f-matched").addEventListener("change", renderFeed);
     document.querySelectorAll(".tab").forEach(t => t.onclick = () => showView(t.dataset.view));
     state.wired = true;
   }
@@ -661,6 +698,7 @@ function init() {
   renderFeed();
   renderRollup(document.getElementById("view-weekly"), state.agg.weekly || [], "week");
   renderRollup(document.getElementById("view-monthly"), state.agg.monthly || [], "month");
+  renderCustom();
   renderGaps();
   renderDups();
 }
