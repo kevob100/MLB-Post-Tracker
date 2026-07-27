@@ -222,3 +222,16 @@
 {"id": "2081087668440478108", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-07-26T12:02:54.863246+00:00"}
 {"id": "2081095585025634340", "is_news": true, "player": "Chris Olave", "team": "New Orleans Saints", "event_class": "roster_move", "excluded_reason": null, "classified_at": "2026-07-26T12:02:58.648853+00:00"}
 {"id": "2081173197710389605", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "no_player", "classified_at": "2026-07-26T12:03:00.342814+00:00"}
+{"id": "2081448375233229066", "is_news": true, "player": "Jacoby Brissett", "team": "Arizona Cardinals", "event_class": "roster_move", "excluded_reason": null, "classified_at": "2026-07-27T13:37:51.502331+00:00"}
+{"id": "2081448640657162438", "is_news": true, "player": "Jacoby Brissett", "team": "Arizona Cardinals", "event_class": "roster_move", "excluded_reason": null, "classified_at": "2026-07-27T13:37:52.947277+00:00"}
+{"id": "2081450019433992201", "is_news": true, "player": "Jacoby Brissett", "team": "Arizona Cardinals", "event_class": "roster_move", "excluded_reason": null, "classified_at": "2026-07-27T13:37:54.451858+00:00"}
+{"id": "2081450536239321597", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-07-27T13:37:55.915474+00:00"}
+{"id": "2081500225105989700", "is_news": false, "player": "Jeremiyah Love", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-27T13:37:57.367628+00:00"}
+{"id": "2081504393724150161", "is_news": false, "player": "Michael Wilson", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-07-27T13:37:58.667632+00:00"}
+{"id": "2081507360476930460", "is_news": false, "player": "Jacoby Brissett", "team": "Arizona Cardinals", "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-07-27T13:38:00.143163+00:00"}
+{"id": "2081516152962875887", "is_news": true, "player": "Christian Kirk", "team": null, "event_class": "injury", "excluded_reason": null, "classified_at": "2026-07-27T13:38:01.388525+00:00"}
+{"id": "2081516664672153851", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-07-27T13:38:03.460428+00:00"}
+{"id": "2081551122699805060", "is_news": true, "player": "Jadarian Price", "team": null, "event_class": "role_change", "excluded_reason": null, "classified_at": "2026-07-27T13:38:05.414276+00:00"}
+{"id": "2081563452565266798", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "no_player", "classified_at": "2026-07-27T13:38:06.631116+00:00"}
+{"id": "2081733681790501118", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-07-27T13:38:07.953031+00:00"}
+{"id": "2081735450171973798", "is_news": false, "player": null, "team": "Buffalo Bills", "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-07-27T13:38:09.333144+00:00"}
