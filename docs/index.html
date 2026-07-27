@@ -461,6 +461,30 @@ function renderCustom() {
     ["Coverage gaps", `${s.rotowire_only} / ${s.underdog_only}`, "RW-only / UD-only"],
     ["Same-event dups", `${s.dups}`, "RW + UD"],
   ];
+
+  // Win-rate graph: one bar per day in range that has ≥1 matched story (win rate is
+  // only meaningful where there are matches). Buckets by UTC day, like the server rollups.
+  const days = new Set();
+  state.stories.forEach(st => {
+    if (st.same_event_duplicate || st.review_status === "rejected" || st.review_status === "merged") return;
+    const t = storyTime(st);
+    if (fromT && t < fromT) return;
+    if (toT && t > toT) return;
+    days.add(new Date(t).toISOString().slice(0, 10));
+  });
+  const dayRows = [...days].sort().map(day => {
+    const start = +new Date(day + "T00:00:00Z");
+    return { period: day.slice(5), ...summarize(state.stories, start, start + 86399999) };
+  }).filter(r => r.matched > 0);
+  const bars = dayRows.map(r => {
+    const pct = (r.rotowire_first_rate ?? 0) * 100;
+    return `<div class="bar-row"><span>${r.period}</span>
+      <div class="bar-track"><div class="bar-fill" style="width:${pct}%"></div></div>
+      <span>${fmtPct(r.rotowire_first_rate)}</span></div>`;
+  }).join("");
+  const graph = `<div class="panel"><h3 style="color:var(--muted)">RotoWire-first win rate by day</h3>
+    <div class="bars">${bars || `<div class="empty">No matched stories in this range.</div>`}</div></div>`;
+
   document.getElementById("view-custom").innerHTML =
     `<div class="filters">
        <label>From<input type="date" id="c-from" value="${state.customFrom || ""}"></label>
@@ -470,7 +494,8 @@ function renderCustom() {
      <p style="color:var(--muted);font-size:13px;margin:0 0 12px">
        Metrics for ${ranged ? esc(rangeLabel) : "all dates"} — pick a range to scope the numbers.</p>
      <div class="kpis">${cards.map(([l,v,sub]) =>
-       `<div class="kpi"><div class="label">${l}</div><div class="value">${v} <small>${sub||""}</small></div></div>`).join("")}</div>`;
+       `<div class="kpi"><div class="label">${l}</div><div class="value">${v} <small>${sub||""}</small></div></div>`).join("")}</div>
+     ${graph}`;
   const cf = document.getElementById("c-from"), ct = document.getElementById("c-to");
   cf.onchange = () => { state.customFrom = cf.value; renderCustom(); };
   ct.onchange = () => { state.customTo = ct.value; renderCustom(); };
