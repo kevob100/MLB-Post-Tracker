@@ -130,10 +130,10 @@
       <label>Event<select id="f-event"></select></label>
       <label>Player<input type="text" id="f-player" placeholder="name…"></label>
       <label>Min confidence<input type="number" id="f-conf" min="0" max="1" step="0.05" style="width:80px"></label>
-      <label>Review<select id="f-status">
-        <option value="">all</option><option>pending</option><option>confirmed</option>
+      <label>Status<select id="f-status">
+        <option value="">all</option><option value="matched">matched</option>
+        <option>pending</option><option>confirmed</option>
         <option>rejected</option><option>merged</option></select></label>
-      <label>Matched only<input type="checkbox" id="f-matched"></label>
     </div>
     <div id="feed-wrap"></div>
   </section>
@@ -381,17 +381,19 @@ function sortVal(s, key) {
 function filteredStories() {
   const from = val("f-from"), to = val("f-to"), ev = val("f-event"),
         pl = val("f-player").toLowerCase(), conf = parseFloat(val("f-conf")),
-        st = val("f-status"), matchedOnly = document.getElementById("f-matched").checked;
+        st = val("f-status");
   return state.stories.filter(s => {
     if (s.same_event_duplicate) return false;  // duplicates live on their own tab
-    if (matchedOnly && s.status !== "matched") return false;
     const t = storyTime(s);
     if (from && t < +new Date(from)) return false;
     if (to && t > +new Date(to) + 86400000) return false;
     if (ev && s.event_class !== ev) return false;
     if (pl && !(s.player||"").toLowerCase().includes(pl)) return false;
     if (!isNaN(conf) && (s.match_confidence ?? 0) < conf) return false;
-    if (st && s.review_status !== st) return false;
+    // Status filter: "matched" targets the story's match status; the review states
+    // (pending/confirmed/rejected/merged) target review_status.
+    if (st === "matched") { if (s.status !== "matched") return false; }
+    else if (st && s.review_status !== st) return false;
     return true;
   });
 }
@@ -690,7 +692,6 @@ function init() {
   if (!state.wired) {
     ["f-from","f-to","f-event","f-player","f-conf","f-status"].forEach(id =>
       document.getElementById(id).addEventListener("input", renderFeed));
-    document.getElementById("f-matched").addEventListener("change", renderFeed);
     document.querySelectorAll(".tab").forEach(t => t.onclick = () => showView(t.dataset.view));
     state.wired = true;
   }
