@@ -20,7 +20,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-27T13:38:12.088389+00:00",
+    "computed_at": "2026-07-28T12:52:55.331544+00:00",
     "review_status": "pending"
   },
   {
@@ -44,7 +44,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-27T13:38:12.088408+00:00",
+    "computed_at": "2026-07-28T12:52:55.331560+00:00",
     "review_status": "pending"
   },
   {
@@ -68,7 +68,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-27T13:38:12.088426+00:00",
+    "computed_at": "2026-07-28T12:52:55.331574+00:00",
     "review_status": "pending"
   },
   {
@@ -92,7 +92,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-27T13:38:12.088442+00:00",
+    "computed_at": "2026-07-28T12:52:55.331589+00:00",
     "review_status": "pending"
   },
   {
@@ -116,7 +116,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-27T13:38:12.088458+00:00",
+    "computed_at": "2026-07-28T12:52:55.331604+00:00",
     "review_status": "pending"
   },
   {
@@ -140,7 +140,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-27T13:38:12.088474+00:00",
+    "computed_at": "2026-07-28T12:52:55.331619+00:00",
     "review_status": "pending"
   },
   {
@@ -164,7 +164,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-27T13:38:12.088491+00:00",
+    "computed_at": "2026-07-28T12:52:55.331635+00:00",
     "review_status": "pending"
   },
   {
@@ -188,7 +188,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-27T13:38:12.088508+00:00",
+    "computed_at": "2026-07-28T12:52:55.331650+00:00",
     "review_status": "pending"
   },
   {
@@ -212,7 +212,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-27T13:38:12.088524+00:00",
+    "computed_at": "2026-07-28T12:52:55.331664+00:00",
     "review_status": "pending"
   },
   {
@@ -236,7 +236,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-27T13:38:12.088539+00:00",
+    "computed_at": "2026-07-28T12:52:55.331677+00:00",
     "review_status": "pending"
   },
   {
@@ -263,7 +263,7 @@
     "rotowire_first": false,
     "match_confidence": 0.95,
     "match_method": "llm",
-    "computed_at": "2026-07-27T13:38:12.088134+00:00",
+    "computed_at": "2026-07-28T12:52:55.331209+00:00",
     "review_status": "pending"
   },
   {
@@ -287,7 +287,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-27T13:38:12.088553+00:00",
+    "computed_at": "2026-07-28T12:52:55.331690+00:00",
     "review_status": "pending"
   },
   {
@@ -314,7 +314,7 @@
     "rotowire_first": false,
     "match_confidence": 0.95,
     "match_method": "llm",
-    "computed_at": "2026-07-27T13:38:12.088104+00:00",
+    "computed_at": "2026-07-28T12:52:55.331153+00:00",
     "review_status": "pending"
   },
   {
@@ -338,7 +338,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-27T13:38:12.088569+00:00",
+    "computed_at": "2026-07-28T12:52:55.331704+00:00",
     "review_status": "pending"
   },
   {
@@ -362,7 +362,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-27T13:38:12.088585+00:00",
+    "computed_at": "2026-07-28T12:52:55.331718+00:00",
     "review_status": "pending"
   },
   {
@@ -386,7 +386,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-27T13:38:12.088610+00:00",
+    "computed_at": "2026-07-28T12:52:55.331742+00:00",
     "review_status": "pending"
   },
   {
@@ -410,7 +410,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-27T13:38:12.088624+00:00",
+    "computed_at": "2026-07-28T12:52:55.331755+00:00",
     "review_status": "pending"
   },
   {
@@ -434,7 +434,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-27T13:38:12.088638+00:00",
+    "computed_at": "2026-07-28T12:52:55.331768+00:00",
     "review_status": "pending"
   },
   {
@@ -458,7 +458,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-27T13:38:12.088653+00:00",
+    "computed_at": "2026-07-28T12:52:55.331782+00:00",
     "review_status": "pending"
   },
   {
@@ -482,7 +482,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-27T13:38:12.088668+00:00",
+    "computed_at": "2026-07-28T12:52:55.331795+00:00",
     "review_status": "pending"
   },
   {
@@ -506,7 +506,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-27T13:38:12.088682+00:00",
+    "computed_at": "2026-07-28T12:52:55.331808+00:00",
     "review_status": "pending"
   },
   {
@@ -530,7 +530,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-27T13:38:12.088696+00:00",
+    "computed_at": "2026-07-28T12:52:55.331821+00:00",
     "review_status": "pending"
   },
   {
@@ -554,7 +554,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-27T13:38:12.088711+00:00",
+    "computed_at": "2026-07-28T12:52:55.331834+00:00",
     "review_status": "pending"
   },
   {
@@ -578,7 +578,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-27T13:38:12.088725+00:00",
+    "computed_at": "2026-07-28T12:52:55.331847+00:00",
     "review_status": "pending"
   },
   {
@@ -602,7 +602,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-27T13:38:12.088739+00:00",
+    "computed_at": "2026-07-28T12:52:55.331861+00:00",
     "review_status": "pending"
   },
   {
@@ -626,7 +626,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-27T13:38:12.088752+00:00",
+    "computed_at": "2026-07-28T12:52:55.331875+00:00",
     "review_status": "pending"
   },
   {
@@ -650,7 +650,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-27T13:38:12.088766+00:00",
+    "computed_at": "2026-07-28T12:52:55.331888+00:00",
     "review_status": "pending"
   },
   {
@@ -674,7 +674,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-27T13:38:12.088780+00:00",
+    "computed_at": "2026-07-28T12:52:55.331901+00:00",
     "review_status": "pending"
   },
   {
@@ -698,7 +698,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-27T13:38:12.088794+00:00",
+    "computed_at": "2026-07-28T12:52:55.331914+00:00",
     "review_status": "pending"
   },
   {
@@ -722,7 +722,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-27T13:38:12.088807+00:00",
+    "computed_at": "2026-07-28T12:52:55.331928+00:00",
     "review_status": "pending"
   },
   {
@@ -746,7 +746,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-27T13:38:12.088821+00:00",
+    "computed_at": "2026-07-28T12:52:55.331941+00:00",
     "review_status": "pending"
   },
   {
@@ -770,7 +770,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-27T13:38:12.088835+00:00",
+    "computed_at": "2026-07-28T12:52:55.331955+00:00",
     "review_status": "pending"
   },
   {
@@ -794,7 +794,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-27T13:38:12.088849+00:00",
+    "computed_at": "2026-07-28T12:52:55.331968+00:00",
     "review_status": "pending"
   },
   {
@@ -818,7 +818,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-27T13:38:12.088881+00:00",
+    "computed_at": "2026-07-28T12:52:55.331981+00:00",
     "review_status": "pending"
   },
   {
@@ -842,7 +842,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-27T13:38:12.088902+00:00",
+    "computed_at": "2026-07-28T12:52:55.331994+00:00",
     "review_status": "pending"
   },
   {
@@ -866,7 +866,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-27T13:38:12.088918+00:00",
+    "computed_at": "2026-07-28T12:52:55.332007+00:00",
     "review_status": "pending"
   },
   {
@@ -890,7 +890,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-27T13:38:12.088933+00:00",
+    "computed_at": "2026-07-28T12:52:55.332020+00:00",
     "review_status": "pending"
   },
   {
@@ -914,7 +914,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-27T13:38:12.088957+00:00",
+    "computed_at": "2026-07-28T12:52:55.332042+00:00",
     "review_status": "pending"
   },
   {
@@ -938,7 +938,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-27T13:38:12.088972+00:00",
+    "computed_at": "2026-07-28T12:52:55.332054+00:00",
     "review_status": "pending"
   },
   {
@@ -965,7 +965,7 @@
     "rotowire_first": true,
     "match_confidence": 0.99,
     "match_method": "llm",
-    "computed_at": "2026-07-27T13:38:12.088033+00:00",
+    "computed_at": "2026-07-28T12:52:55.331088+00:00",
     "review_status": "pending"
   },
   {
@@ -989,7 +989,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-27T13:38:12.088986+00:00",
+    "computed_at": "2026-07-28T12:52:55.332068+00:00",
     "review_status": "pending"
   },
   {
@@ -1013,7 +1013,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-27T13:38:12.089001+00:00",
+    "computed_at": "2026-07-28T12:52:55.332083+00:00",
     "review_status": "pending"
   },
   {
@@ -1037,7 +1037,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-27T13:38:12.089016+00:00",
+    "computed_at": "2026-07-28T12:52:55.332096+00:00",
     "review_status": "pending"
   },
   {
@@ -1061,7 +1061,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-27T13:38:12.089030+00:00",
+    "computed_at": "2026-07-28T12:52:55.332110+00:00",
     "review_status": "pending"
   },
   {
@@ -1085,7 +1085,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-27T13:38:12.089045+00:00",
+    "computed_at": "2026-07-28T12:52:55.332123+00:00",
     "review_status": "pending"
   },
   {
@@ -1109,7 +1109,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-27T13:38:12.089060+00:00",
+    "computed_at": "2026-07-28T12:52:55.332135+00:00",
     "review_status": "pending"
   },
   {
@@ -1133,7 +1133,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-27T13:38:12.089075+00:00",
+    "computed_at": "2026-07-28T12:52:55.332148+00:00",
     "review_status": "pending"
   },
   {
@@ -1157,7 +1157,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-27T13:38:12.089100+00:00",
+    "computed_at": "2026-07-28T12:52:55.332169+00:00",
     "review_status": "pending"
   },
   {
@@ -1181,7 +1181,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-27T13:38:12.089115+00:00",
+    "computed_at": "2026-07-28T12:52:55.332182+00:00",
     "review_status": "pending"
   },
   {
@@ -1205,7 +1205,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-27T13:38:12.089129+00:00",
+    "computed_at": "2026-07-28T12:52:55.332195+00:00",
     "review_status": "pending"
   },
   {
@@ -1229,7 +1229,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-27T13:38:12.089143+00:00",
+    "computed_at": "2026-07-28T12:52:55.332208+00:00",
     "review_status": "pending"
   },
   {
@@ -1253,7 +1253,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-27T13:38:12.089157+00:00",
+    "computed_at": "2026-07-28T12:52:55.332221+00:00",
     "review_status": "pending"
   },
   {
@@ -1277,7 +1277,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-27T13:38:12.089171+00:00",
+    "computed_at": "2026-07-28T12:52:55.332234+00:00",
     "review_status": "pending"
   },
   {
@@ -1301,7 +1301,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-27T13:38:12.089184+00:00",
+    "computed_at": "2026-07-28T12:52:55.332248+00:00",
     "review_status": "pending"
   },
   {
@@ -1328,7 +1328,7 @@
     "rotowire_first": false,
     "match_confidence": 0.98,
     "match_method": "llm",
-    "computed_at": "2026-07-27T13:38:12.088248+00:00",
+    "computed_at": "2026-07-28T12:52:55.331361+00:00",
     "review_status": "pending"
   },
   {
@@ -1352,7 +1352,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-27T13:38:12.089198+00:00",
+    "computed_at": "2026-07-28T12:52:55.332261+00:00",
     "review_status": "pending"
   },
   {
@@ -1376,7 +1376,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-27T13:38:12.089212+00:00",
+    "computed_at": "2026-07-28T12:52:55.332274+00:00",
     "review_status": "pending"
   },
   {
@@ -1403,7 +1403,7 @@
     "rotowire_first": false,
     "match_confidence": 0.99,
     "match_method": "llm",
-    "computed_at": "2026-07-27T13:38:12.088193+00:00",
+    "computed_at": "2026-07-28T12:52:55.331285+00:00",
     "review_status": "pending"
   },
   {
@@ -1427,7 +1427,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-27T13:38:12.089225+00:00",
+    "computed_at": "2026-07-28T12:52:55.332288+00:00",
     "review_status": "pending"
   },
   {
@@ -1451,7 +1451,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-27T13:38:12.089240+00:00",
+    "computed_at": "2026-07-28T12:52:55.332302+00:00",
     "review_status": "pending"
   },
   {
@@ -1475,7 +1475,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-27T13:38:12.089254+00:00",
+    "computed_at": "2026-07-28T12:52:55.332315+00:00",
     "review_status": "pending"
   },
   {
@@ -1499,7 +1499,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-27T13:38:12.089270+00:00",
+    "computed_at": "2026-07-28T12:52:55.332329+00:00",
     "review_status": "pending"
   },
   {
@@ -1523,7 +1523,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-27T13:38:12.089285+00:00",
+    "computed_at": "2026-07-28T12:52:55.332342+00:00",
     "review_status": "pending"
   },
   {
@@ -1547,7 +1547,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-27T13:38:12.089299+00:00",
+    "computed_at": "2026-07-28T12:52:55.332355+00:00",
     "review_status": "pending"
   },
   {
@@ -1571,7 +1571,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-27T13:38:12.089333+00:00",
+    "computed_at": "2026-07-28T12:52:55.332398+00:00",
     "review_status": "pending"
   },
   {
@@ -1598,7 +1598,7 @@
     "rotowire_first": false,
     "match_confidence": 0.98,
     "match_method": "llm",
-    "computed_at": "2026-07-27T13:38:12.088163+00:00",
+    "computed_at": "2026-07-28T12:52:55.331260+00:00",
     "review_status": "pending"
   },
   {
@@ -1625,7 +1625,7 @@
     "rotowire_first": false,
     "match_confidence": 0.95,
     "match_method": "llm",
-    "computed_at": "2026-07-27T13:38:12.088221+00:00",
+    "computed_at": "2026-07-28T12:52:55.331309+00:00",
     "review_status": "pending"
   },
   {
@@ -1649,7 +1649,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-27T13:38:12.089348+00:00",
+    "computed_at": "2026-07-28T12:52:55.332411+00:00",
     "review_status": "pending"
   },
   {
@@ -1673,7 +1673,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-27T13:38:12.089372+00:00",
+    "computed_at": "2026-07-28T12:52:55.332433+00:00",
     "review_status": "pending"
   },
   {
@@ -1697,7 +1697,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-27T13:38:12.089386+00:00",
+    "computed_at": "2026-07-28T12:52:55.332446+00:00",
     "review_status": "pending"
   },
   {
@@ -1721,7 +1721,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-27T13:38:12.089400+00:00",
+    "computed_at": "2026-07-28T12:52:55.332459+00:00",
     "review_status": "pending"
   },
   {
@@ -1745,7 +1745,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-27T13:38:12.089414+00:00",
+    "computed_at": "2026-07-28T12:52:55.332472+00:00",
     "review_status": "pending"
   },
   {
@@ -1769,7 +1769,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-27T13:38:12.089427+00:00",
+    "computed_at": "2026-07-28T12:52:55.332486+00:00",
     "review_status": "pending"
   },
   {
@@ -1793,7 +1793,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-27T13:38:12.089441+00:00",
+    "computed_at": "2026-07-28T12:52:55.332499+00:00",
     "review_status": "pending"
   },
   {
@@ -1820,7 +1820,7 @@
     "rotowire_first": false,
     "match_confidence": 0.99,
     "match_method": "llm",
-    "computed_at": "2026-07-27T13:38:12.088073+00:00",
+    "computed_at": "2026-07-28T12:52:55.331125+00:00",
     "review_status": "pending"
   },
   {
@@ -1844,7 +1844,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-27T13:38:12.088303+00:00",
+    "computed_at": "2026-07-28T12:52:55.331446+00:00",
     "review_status": "pending"
   },
   {
@@ -1868,7 +1868,304 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-27T13:38:12.089456+00:00",
+    "computed_at": "2026-07-28T12:52:55.332521+00:00",
+    "review_status": "pending"
+  },
+  {
+    "story_id": "st_2081764011494785401",
+    "canonical_label": null,
+    "player": "Jordan James",
+    "player_key": "jordan james",
+    "team": null,
+    "event_class": "role_change",
+    "status": "rotowire_only",
+    "same_event_duplicate": false,
+    "duplicate_of": null,
+    "rotowire": {
+      "tweet_id": "2081764011494785401",
+      "created_at": "2026-07-27T15:29:52.000Z",
+      "impression_count": 1341,
+      "text": "Jordan James: Opens camp as RB2"
+    },
+    "underdog": null,
+    "time_delta_seconds": null,
+    "rotowire_first": null,
+    "match_confidence": null,
+    "match_method": "none",
+    "computed_at": "2026-07-28T12:52:55.332534+00:00",
+    "review_status": "pending"
+  },
+  {
+    "story_id": "st_2081767570361794951",
+    "canonical_label": null,
+    "player": "Marvin Harrison Jr.",
+    "player_key": "marvin harrison",
+    "team": null,
+    "event_class": "injury",
+    "status": "rotowire_only",
+    "same_event_duplicate": false,
+    "duplicate_of": null,
+    "rotowire": {
+      "tweet_id": "2081767570361794951",
+      "created_at": "2026-07-27T15:44:00.000Z",
+      "impression_count": 5111,
+      "text": "Marvin Harrison: Doesn't finish practice Sunday"
+    },
+    "underdog": null,
+    "time_delta_seconds": null,
+    "rotowire_first": null,
+    "match_confidence": null,
+    "match_method": "none",
+    "computed_at": "2026-07-28T12:52:55.332548+00:00",
+    "review_status": "pending"
+  },
+  {
+    "story_id": "st_2081767749747933234",
+    "canonical_label": null,
+    "player": "Kyle Williams",
+    "player_key": "kyle williams",
+    "team": null,
+    "event_class": "role_change",
+    "status": "rotowire_only",
+    "same_event_duplicate": false,
+    "duplicate_of": null,
+    "rotowire": {
+      "tweet_id": "2081767749747933234",
+      "created_at": "2026-07-27T15:44:43.000Z",
+      "impression_count": 29376,
+      "text": "Kyle Williams: Appears buried on depth chart"
+    },
+    "underdog": null,
+    "time_delta_seconds": null,
+    "rotowire_first": null,
+    "match_confidence": null,
+    "match_method": "none",
+    "computed_at": "2026-07-28T12:52:55.332560+00:00",
+    "review_status": "pending"
+  },
+  {
+    "story_id": "st_2081786599822541005",
+    "canonical_label": null,
+    "player": "Miles Sanders",
+    "player_key": "miles sanders",
+    "team": "Las Vegas Raiders",
+    "event_class": "roster_move",
+    "status": "underdog_only",
+    "same_event_duplicate": false,
+    "duplicate_of": null,
+    "rotowire": null,
+    "underdog": {
+      "tweet_id": "2081786599822541005",
+      "created_at": "2026-07-27T16:59:37.000Z",
+      "impression_count": 145191,
+      "text": "Fowler: Miles Sanders worked out for the Raiders on Monday."
+    },
+    "time_delta_seconds": null,
+    "rotowire_first": null,
+    "match_confidence": null,
+    "match_method": "none",
+    "computed_at": "2026-07-28T12:52:55.332573+00:00",
+    "review_status": "pending"
+  },
+  {
+    "story_id": "st_2081789334152171784_2081779261023629794",
+    "canonical_label": "Daniel Jones declares himself fully healthy and ready for 11-on-11s in training camp",
+    "player": "Daniel Jones",
+    "player_key": "daniel jones",
+    "team": "New York Giants",
+    "event_class": "injury",
+    "status": "matched",
+    "rotowire": {
+      "tweet_id": "2081789334152171784",
+      "created_at": "2026-07-27T17:10:29.000Z",
+      "impression_count": 3968,
+      "text": "Daniel Jones: Deems himself fully healthy"
+    },
+    "underdog": {
+      "tweet_id": "2081779261023629794",
+      "created_at": "2026-07-27T16:30:28.000Z",
+      "impression_count": 85580,
+      "text": "Daniel Jones (Achilles) said he'll participate in 11-on-11's in training camp, via @PatMcAfeeShow."
+    },
+    "time_delta_seconds": -2401,
+    "rotowire_first": false,
+    "match_confidence": 0.85,
+    "match_method": "llm",
+    "computed_at": "2026-07-28T12:52:55.331336+00:00",
+    "review_status": "pending"
+  },
+  {
+    "story_id": "st_2081792056221991063",
+    "canonical_label": null,
+    "player": "Jadarian Price",
+    "player_key": "jadarian price",
+    "team": null,
+    "event_class": "role_change",
+    "status": "rotowire_only",
+    "same_event_duplicate": false,
+    "duplicate_of": null,
+    "rotowire": {
+      "tweet_id": "2081792056221991063",
+      "created_at": "2026-07-27T17:21:18.000Z",
+      "impression_count": 1658,
+      "text": "Jadarian Price: Splitting first-team reps"
+    },
+    "underdog": null,
+    "time_delta_seconds": null,
+    "rotowire_first": null,
+    "match_confidence": null,
+    "match_method": "none",
+    "computed_at": "2026-07-28T12:52:55.332586+00:00",
+    "review_status": "pending"
+  },
+  {
+    "story_id": "st_2081829735189925948",
+    "canonical_label": null,
+    "player": "George Holani",
+    "player_key": "george holani",
+    "team": null,
+    "event_class": "role_change",
+    "status": "rotowire_only",
+    "same_event_duplicate": false,
+    "duplicate_of": null,
+    "rotowire": {
+      "tweet_id": "2081829735189925948",
+      "created_at": "2026-07-27T19:51:02.000Z",
+      "impression_count": 1764,
+      "text": "George Holani: Alternating with first team"
+    },
+    "underdog": null,
+    "time_delta_seconds": null,
+    "rotowire_first": null,
+    "match_confidence": null,
+    "match_method": "none",
+    "computed_at": "2026-07-28T12:52:55.332599+00:00",
+    "review_status": "pending"
+  },
+  {
+    "story_id": "st_2081840522872644040",
+    "canonical_label": null,
+    "player": "Tucker Kraft",
+    "player_key": "tucker kraft",
+    "team": "Green Bay Packers",
+    "event_class": "status_change",
+    "status": "rotowire_only",
+    "same_event_duplicate": false,
+    "duplicate_of": null,
+    "rotowire": {
+      "tweet_id": "2081840522872644040",
+      "created_at": "2026-07-27T20:33:54.000Z",
+      "impression_count": 1848,
+      "text": "Tucker Kraft: Lands on PUP list"
+    },
+    "underdog": null,
+    "time_delta_seconds": null,
+    "rotowire_first": null,
+    "match_confidence": null,
+    "match_method": "none",
+    "computed_at": "2026-07-28T12:52:55.332612+00:00",
+    "review_status": "pending"
+  },
+  {
+    "story_id": "st_2081841523595895170_2081842069581054235",
+    "canonical_label": "Alec Pierce placed on PUP list (ankle) to open camp",
+    "player": "Alec Pierce",
+    "player_key": "alec pierce",
+    "team": null,
+    "event_class": "status_change",
+    "status": "matched",
+    "rotowire": {
+      "tweet_id": "2081841523595895170",
+      "created_at": "2026-07-27T20:37:52.000Z",
+      "impression_count": 6610,
+      "text": "Alec Pierce: Opens camp on PUP list"
+    },
+    "underdog": {
+      "tweet_id": "2081842069581054235",
+      "created_at": "2026-07-27T20:40:02.000Z",
+      "impression_count": 190457,
+      "text": "Alec Pierce (ankle) placed on PUP list."
+    },
+    "time_delta_seconds": 130,
+    "rotowire_first": true,
+    "match_confidence": 0.95,
+    "match_method": "llm",
+    "computed_at": "2026-07-28T12:52:55.331183+00:00",
+    "review_status": "pending"
+  },
+  {
+    "story_id": "st_2081847125671883078",
+    "canonical_label": null,
+    "player": "Chris Brooks",
+    "player_key": "chris brooks",
+    "team": null,
+    "event_class": "roster_move",
+    "status": "rotowire_only",
+    "same_event_duplicate": false,
+    "duplicate_of": null,
+    "rotowire": {
+      "tweet_id": "2081847125671883078",
+      "created_at": "2026-07-27T21:00:08.000Z",
+      "impression_count": 1588,
+      "text": "Chris Brooks: Placed on NFI list"
+    },
+    "underdog": null,
+    "time_delta_seconds": null,
+    "rotowire_first": null,
+    "match_confidence": null,
+    "match_method": "none",
+    "computed_at": "2026-07-28T12:52:55.332625+00:00",
+    "review_status": "pending"
+  },
+  {
+    "story_id": "st_2081867229444886825_2081866289430024398",
+    "canonical_label": "Vita Vea requests trade from the Buccaneers",
+    "player": "Vita Vea",
+    "player_key": "vita vea",
+    "team": "Tampa Bay Buccaneers",
+    "event_class": "roster_move",
+    "status": "matched",
+    "rotowire": {
+      "tweet_id": "2081867229444886825",
+      "created_at": "2026-07-27T22:20:01.000Z",
+      "impression_count": 1894,
+      "text": "Vita Vea: Makes trade request"
+    },
+    "underdog": {
+      "tweet_id": "2081866289430024398",
+      "created_at": "2026-07-27T22:16:17.000Z",
+      "impression_count": 199075,
+      "text": "Garafolo: DT Vita Vea requests trade from the Bucs."
+    },
+    "time_delta_seconds": -224,
+    "rotowire_first": false,
+    "match_confidence": 0.99,
+    "match_method": "llm",
+    "computed_at": "2026-07-28T12:52:55.331235+00:00",
+    "review_status": "pending"
+  },
+  {
+    "story_id": "st_2081902123613139042",
+    "canonical_label": null,
+    "player": "Jamal Adams",
+    "player_key": "jamal adams",
+    "team": "Minnesota Vikings",
+    "event_class": "roster_move",
+    "status": "underdog_only",
+    "same_event_duplicate": false,
+    "duplicate_of": null,
+    "rotowire": null,
+    "underdog": {
+      "tweet_id": "2081902123613139042",
+      "created_at": "2026-07-28T00:38:40.000Z",
+      "impression_count": 121723,
+      "text": "S Jamal Adams signs with the Vikings."
+    },
+    "time_delta_seconds": null,
+    "rotowire_first": null,
+    "match_confidence": null,
+    "match_method": "none",
+    "computed_at": "2026-07-28T12:52:55.332639+00:00",
     "review_status": "pending"
   }
 ]

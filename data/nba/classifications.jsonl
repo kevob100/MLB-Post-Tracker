@@ -421,3 +421,13 @@
 {"id": "2081571998468071891", "is_news": true, "player": "Spencer Jones", "team": "Denver Nuggets", "event_class": "roster_move", "excluded_reason": null, "classified_at": "2026-07-27T13:44:01.958467+00:00"}
 {"id": "2081580502658462199", "is_news": false, "player": null, "team": "Denver Nuggets", "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-07-27T13:44:04.023324+00:00"}
 {"id": "2081736333463085371", "is_news": false, "player": null, "team": null, "event_class": "roster_move", "excluded_reason": "no_player", "classified_at": "2026-07-27T13:44:05.358555+00:00"}
+{"id": "2081737920696709377", "is_news": false, "player": "LeBron James", "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-07-28T12:58:39.193637+00:00"}
+{"id": "2081749298031497581", "is_news": true, "player": "LeBron James", "team": "Philadelphia 76ers", "event_class": "roster_move", "excluded_reason": null, "classified_at": "2026-07-28T12:58:42.107362+00:00"}
+{"id": "2081804713352106371", "is_news": true, "player": "Kyrie Irving", "team": null, "event_class": "injury", "excluded_reason": null, "classified_at": "2026-07-28T12:58:44.056478+00:00"}
+{"id": "2081825402398412907", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "no_player", "classified_at": "2026-07-28T12:58:45.694423+00:00"}
+{"id": "2081828520066519409", "is_news": true, "player": "LeBron James", "team": "Philadelphia 76ers", "event_class": "role_change", "excluded_reason": null, "classified_at": "2026-07-28T12:58:47.080699+00:00"}
+{"id": "2081917576112660590", "is_news": false, "player": null, "team": "Denver Nuggets", "event_class": "other", "excluded_reason": "no_player", "classified_at": "2026-07-28T12:58:55.176748+00:00"}
+{"id": "2081927691322671421", "is_news": true, "player": "Kyrie Irving", "team": null, "event_class": "injury", "excluded_reason": null, "classified_at": "2026-07-28T12:58:57.566105+00:00"}
+{"id": "2081944092498403367", "is_news": true, "player": "Bennedict Mathurin", "team": "New Orleans Pelicans", "event_class": "roster_move", "excluded_reason": null, "classified_at": "2026-07-28T12:58:58.932240+00:00"}
+{"id": "2081948439458279733", "is_news": true, "player": "Peyton Watson", "team": "Denver Nuggets", "event_class": "roster_move", "excluded_reason": null, "classified_at": "2026-07-28T12:59:00.187694+00:00"}
+{"id": "2081948842744832143", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-07-28T12:59:01.551729+00:00"}
