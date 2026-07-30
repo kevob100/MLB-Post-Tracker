@@ -20,7 +20,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.908371+00:00",
+    "computed_at": "2026-07-30T12:32:01.887560+00:00",
     "review_status": "pending"
   },
   {
@@ -44,7 +44,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.908389+00:00",
+    "computed_at": "2026-07-30T12:32:01.887579+00:00",
     "review_status": "pending"
   },
   {
@@ -68,7 +68,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.908404+00:00",
+    "computed_at": "2026-07-30T12:32:01.887595+00:00",
     "review_status": "pending"
   },
   {
@@ -92,7 +92,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.908419+00:00",
+    "computed_at": "2026-07-30T12:32:01.887612+00:00",
     "review_status": "pending"
   },
   {
@@ -116,7 +116,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.908433+00:00",
+    "computed_at": "2026-07-30T12:32:01.887629+00:00",
     "review_status": "pending"
   },
   {
@@ -140,7 +140,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.908448+00:00",
+    "computed_at": "2026-07-30T12:32:01.887647+00:00",
     "review_status": "pending"
   },
   {
@@ -164,7 +164,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.908464+00:00",
+    "computed_at": "2026-07-30T12:32:01.887664+00:00",
     "review_status": "pending"
   },
   {
@@ -188,7 +188,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.908481+00:00",
+    "computed_at": "2026-07-30T12:32:01.887745+00:00",
     "review_status": "pending"
   },
   {
@@ -212,7 +212,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.908496+00:00",
+    "computed_at": "2026-07-30T12:32:01.887769+00:00",
     "review_status": "pending"
   },
   {
@@ -236,7 +236,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.908510+00:00",
+    "computed_at": "2026-07-30T12:32:01.887786+00:00",
     "review_status": "pending"
   },
   {
@@ -263,7 +263,7 @@
     "rotowire_first": false,
     "match_confidence": 0.95,
     "match_method": "llm",
-    "computed_at": "2026-07-29T13:02:01.907911+00:00",
+    "computed_at": "2026-07-30T12:32:01.886920+00:00",
     "review_status": "pending"
   },
   {
@@ -287,7 +287,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.908524+00:00",
+    "computed_at": "2026-07-30T12:32:01.887802+00:00",
     "review_status": "pending"
   },
   {
@@ -314,7 +314,7 @@
     "rotowire_first": false,
     "match_confidence": 0.95,
     "match_method": "llm",
-    "computed_at": "2026-07-29T13:02:01.907810+00:00",
+    "computed_at": "2026-07-30T12:32:01.886784+00:00",
     "review_status": "pending"
   },
   {
@@ -338,7 +338,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.908538+00:00",
+    "computed_at": "2026-07-30T12:32:01.887816+00:00",
     "review_status": "pending"
   },
   {
@@ -362,7 +362,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.908553+00:00",
+    "computed_at": "2026-07-30T12:32:01.887831+00:00",
     "review_status": "pending"
   },
   {
@@ -386,7 +386,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.908577+00:00",
+    "computed_at": "2026-07-30T12:32:01.887863+00:00",
     "review_status": "pending"
   },
   {
@@ -410,7 +410,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.908591+00:00",
+    "computed_at": "2026-07-30T12:32:01.887894+00:00",
     "review_status": "pending"
   },
   {
@@ -434,7 +434,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.908604+00:00",
+    "computed_at": "2026-07-30T12:32:01.887913+00:00",
     "review_status": "pending"
   },
   {
@@ -458,7 +458,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.908618+00:00",
+    "computed_at": "2026-07-30T12:32:01.887928+00:00",
     "review_status": "pending"
   },
   {
@@ -482,7 +482,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.908632+00:00",
+    "computed_at": "2026-07-30T12:32:01.887943+00:00",
     "review_status": "pending"
   },
   {
@@ -506,7 +506,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.908645+00:00",
+    "computed_at": "2026-07-30T12:32:01.887958+00:00",
     "review_status": "pending"
   },
   {
@@ -530,7 +530,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.908658+00:00",
+    "computed_at": "2026-07-30T12:32:01.887973+00:00",
     "review_status": "pending"
   },
   {
@@ -554,7 +554,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.908672+00:00",
+    "computed_at": "2026-07-30T12:32:01.887988+00:00",
     "review_status": "pending"
   },
   {
@@ -578,7 +578,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.908685+00:00",
+    "computed_at": "2026-07-30T12:32:01.888012+00:00",
     "review_status": "pending"
   },
   {
@@ -602,7 +602,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.908698+00:00",
+    "computed_at": "2026-07-30T12:32:01.888026+00:00",
     "review_status": "pending"
   },
   {
@@ -626,7 +626,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.908711+00:00",
+    "computed_at": "2026-07-30T12:32:01.888040+00:00",
     "review_status": "pending"
   },
   {
@@ -650,7 +650,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.908724+00:00",
+    "computed_at": "2026-07-30T12:32:01.888055+00:00",
     "review_status": "pending"
   },
   {
@@ -674,7 +674,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.908737+00:00",
+    "computed_at": "2026-07-30T12:32:01.888069+00:00",
     "review_status": "pending"
   },
   {
@@ -698,7 +698,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.908751+00:00",
+    "computed_at": "2026-07-30T12:32:01.888083+00:00",
     "review_status": "pending"
   },
   {
@@ -722,7 +722,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.908765+00:00",
+    "computed_at": "2026-07-30T12:32:01.888097+00:00",
     "review_status": "pending"
   },
   {
@@ -746,7 +746,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.908779+00:00",
+    "computed_at": "2026-07-30T12:32:01.888111+00:00",
     "review_status": "pending"
   },
   {
@@ -770,7 +770,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.908792+00:00",
+    "computed_at": "2026-07-30T12:32:01.888126+00:00",
     "review_status": "pending"
   },
   {
@@ -794,7 +794,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.908805+00:00",
+    "computed_at": "2026-07-30T12:32:01.888140+00:00",
     "review_status": "pending"
   },
   {
@@ -818,7 +818,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.908818+00:00",
+    "computed_at": "2026-07-30T12:32:01.888154+00:00",
     "review_status": "pending"
   },
   {
@@ -842,7 +842,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.908831+00:00",
+    "computed_at": "2026-07-30T12:32:01.888169+00:00",
     "review_status": "pending"
   },
   {
@@ -866,7 +866,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.908844+00:00",
+    "computed_at": "2026-07-30T12:32:01.888185+00:00",
     "review_status": "pending"
   },
   {
@@ -890,7 +890,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.908858+00:00",
+    "computed_at": "2026-07-30T12:32:01.888200+00:00",
     "review_status": "pending"
   },
   {
@@ -914,7 +914,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.908880+00:00",
+    "computed_at": "2026-07-30T12:32:01.888226+00:00",
     "review_status": "pending"
   },
   {
@@ -938,7 +938,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.908893+00:00",
+    "computed_at": "2026-07-30T12:32:01.888240+00:00",
     "review_status": "pending"
   },
   {
@@ -965,7 +965,7 @@
     "rotowire_first": true,
     "match_confidence": 0.99,
     "match_method": "llm",
-    "computed_at": "2026-07-29T13:02:01.907673+00:00",
+    "computed_at": "2026-07-30T12:32:01.886541+00:00",
     "review_status": "pending"
   },
   {
@@ -989,7 +989,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.908907+00:00",
+    "computed_at": "2026-07-30T12:32:01.888255+00:00",
     "review_status": "pending"
   },
   {
@@ -1013,7 +1013,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.908921+00:00",
+    "computed_at": "2026-07-30T12:32:01.888269+00:00",
     "review_status": "pending"
   },
   {
@@ -1037,7 +1037,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.908934+00:00",
+    "computed_at": "2026-07-30T12:32:01.888283+00:00",
     "review_status": "pending"
   },
   {
@@ -1061,7 +1061,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.908947+00:00",
+    "computed_at": "2026-07-30T12:32:01.888297+00:00",
     "review_status": "pending"
   },
   {
@@ -1085,7 +1085,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.908961+00:00",
+    "computed_at": "2026-07-30T12:32:01.888311+00:00",
     "review_status": "pending"
   },
   {
@@ -1109,7 +1109,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.908974+00:00",
+    "computed_at": "2026-07-30T12:32:01.888324+00:00",
     "review_status": "pending"
   },
   {
@@ -1133,7 +1133,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.908989+00:00",
+    "computed_at": "2026-07-30T12:32:01.888338+00:00",
     "review_status": "pending"
   },
   {
@@ -1157,7 +1157,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.909011+00:00",
+    "computed_at": "2026-07-30T12:32:01.888371+00:00",
     "review_status": "pending"
   },
   {
@@ -1181,7 +1181,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.909025+00:00",
+    "computed_at": "2026-07-30T12:32:01.888386+00:00",
     "review_status": "pending"
   },
   {
@@ -1205,7 +1205,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.909038+00:00",
+    "computed_at": "2026-07-30T12:32:01.888400+00:00",
     "review_status": "pending"
   },
   {
@@ -1229,7 +1229,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.909052+00:00",
+    "computed_at": "2026-07-30T12:32:01.888415+00:00",
     "review_status": "pending"
   },
   {
@@ -1253,7 +1253,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.909066+00:00",
+    "computed_at": "2026-07-30T12:32:01.888430+00:00",
     "review_status": "pending"
   },
   {
@@ -1277,7 +1277,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.909079+00:00",
+    "computed_at": "2026-07-30T12:32:01.888444+00:00",
     "review_status": "pending"
   },
   {
@@ -1301,7 +1301,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.909092+00:00",
+    "computed_at": "2026-07-30T12:32:01.888458+00:00",
     "review_status": "pending"
   },
   {
@@ -1328,7 +1328,7 @@
     "rotowire_first": false,
     "match_confidence": 0.98,
     "match_method": "llm",
-    "computed_at": "2026-07-29T13:02:01.908157+00:00",
+    "computed_at": "2026-07-30T12:32:01.887298+00:00",
     "review_status": "pending"
   },
   {
@@ -1352,7 +1352,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.909106+00:00",
+    "computed_at": "2026-07-30T12:32:01.888472+00:00",
     "review_status": "pending"
   },
   {
@@ -1376,7 +1376,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.909119+00:00",
+    "computed_at": "2026-07-30T12:32:01.888485+00:00",
     "review_status": "pending"
   },
   {
@@ -1403,7 +1403,7 @@
     "rotowire_first": false,
     "match_confidence": 0.99,
     "match_method": "llm",
-    "computed_at": "2026-07-29T13:02:01.908082+00:00",
+    "computed_at": "2026-07-30T12:32:01.887198+00:00",
     "review_status": "pending"
   },
   {
@@ -1427,7 +1427,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.909132+00:00",
+    "computed_at": "2026-07-30T12:32:01.888499+00:00",
     "review_status": "pending"
   },
   {
@@ -1451,7 +1451,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.909145+00:00",
+    "computed_at": "2026-07-30T12:32:01.888512+00:00",
     "review_status": "pending"
   },
   {
@@ -1475,7 +1475,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.909159+00:00",
+    "computed_at": "2026-07-30T12:32:01.888526+00:00",
     "review_status": "pending"
   },
   {
@@ -1499,7 +1499,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.909172+00:00",
+    "computed_at": "2026-07-30T12:32:01.888540+00:00",
     "review_status": "pending"
   },
   {
@@ -1523,7 +1523,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.909185+00:00",
+    "computed_at": "2026-07-30T12:32:01.889585+00:00",
     "review_status": "pending"
   },
   {
@@ -1547,7 +1547,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.909198+00:00",
+    "computed_at": "2026-07-30T12:32:01.889768+00:00",
     "review_status": "pending"
   },
   {
@@ -1571,7 +1571,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.909240+00:00",
+    "computed_at": "2026-07-30T12:32:01.889815+00:00",
     "review_status": "pending"
   },
   {
@@ -1598,7 +1598,7 @@
     "rotowire_first": false,
     "match_confidence": 0.98,
     "match_method": "llm",
-    "computed_at": "2026-07-29T13:02:01.908058+00:00",
+    "computed_at": "2026-07-30T12:32:01.887172+00:00",
     "review_status": "pending"
   },
   {
@@ -1625,7 +1625,7 @@
     "rotowire_first": false,
     "match_confidence": 0.95,
     "match_method": "llm",
-    "computed_at": "2026-07-29T13:02:01.908109+00:00",
+    "computed_at": "2026-07-30T12:32:01.887249+00:00",
     "review_status": "pending"
   },
   {
@@ -1649,7 +1649,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.909253+00:00",
+    "computed_at": "2026-07-30T12:32:01.889833+00:00",
     "review_status": "pending"
   },
   {
@@ -1673,7 +1673,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.909275+00:00",
+    "computed_at": "2026-07-30T12:32:01.889860+00:00",
     "review_status": "pending"
   },
   {
@@ -1697,7 +1697,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.909288+00:00",
+    "computed_at": "2026-07-30T12:32:01.889892+00:00",
     "review_status": "pending"
   },
   {
@@ -1721,7 +1721,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.909301+00:00",
+    "computed_at": "2026-07-30T12:32:01.889913+00:00",
     "review_status": "pending"
   },
   {
@@ -1745,7 +1745,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.909314+00:00",
+    "computed_at": "2026-07-30T12:32:01.889928+00:00",
     "review_status": "pending"
   },
   {
@@ -1769,7 +1769,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.909328+00:00",
+    "computed_at": "2026-07-30T12:32:01.889944+00:00",
     "review_status": "pending"
   },
   {
@@ -1793,7 +1793,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.909341+00:00",
+    "computed_at": "2026-07-30T12:32:01.889960+00:00",
     "review_status": "pending"
   },
   {
@@ -1820,7 +1820,7 @@
     "rotowire_first": false,
     "match_confidence": 0.99,
     "match_method": "llm",
-    "computed_at": "2026-07-29T13:02:01.907756+00:00",
+    "computed_at": "2026-07-30T12:32:01.886733+00:00",
     "review_status": "pending"
   },
   {
@@ -1844,7 +1844,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.908257+00:00",
+    "computed_at": "2026-07-30T12:32:01.887409+00:00",
     "review_status": "pending"
   },
   {
@@ -1868,7 +1868,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.909363+00:00",
+    "computed_at": "2026-07-30T12:32:01.889985+00:00",
     "review_status": "pending"
   },
   {
@@ -1892,7 +1892,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.909376+00:00",
+    "computed_at": "2026-07-30T12:32:01.889999+00:00",
     "review_status": "pending"
   },
   {
@@ -1916,7 +1916,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.909398+00:00",
+    "computed_at": "2026-07-30T12:32:01.890023+00:00",
     "review_status": "pending"
   },
   {
@@ -1940,7 +1940,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.909412+00:00",
+    "computed_at": "2026-07-30T12:32:01.890037+00:00",
     "review_status": "pending"
   },
   {
@@ -1964,7 +1964,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.909425+00:00",
+    "computed_at": "2026-07-30T12:32:01.890051+00:00",
     "review_status": "pending"
   },
   {
@@ -1991,7 +1991,7 @@
     "rotowire_first": false,
     "match_confidence": 0.85,
     "match_method": "llm",
-    "computed_at": "2026-07-29T13:02:01.908133+00:00",
+    "computed_at": "2026-07-30T12:32:01.887274+00:00",
     "review_status": "pending"
   },
   {
@@ -2015,7 +2015,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.909438+00:00",
+    "computed_at": "2026-07-30T12:32:01.890064+00:00",
     "review_status": "pending"
   },
   {
@@ -2039,7 +2039,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.909452+00:00",
+    "computed_at": "2026-07-30T12:32:01.890078+00:00",
     "review_status": "pending"
   },
   {
@@ -2063,7 +2063,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.909464+00:00",
+    "computed_at": "2026-07-30T12:32:01.890091+00:00",
     "review_status": "pending"
   },
   {
@@ -2090,7 +2090,7 @@
     "rotowire_first": true,
     "match_confidence": 0.95,
     "match_method": "llm",
-    "computed_at": "2026-07-29T13:02:01.907886+00:00",
+    "computed_at": "2026-07-30T12:32:01.886859+00:00",
     "review_status": "pending"
   },
   {
@@ -2114,7 +2114,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.909478+00:00",
+    "computed_at": "2026-07-30T12:32:01.890105+00:00",
     "review_status": "pending"
   },
   {
@@ -2141,7 +2141,7 @@
     "rotowire_first": false,
     "match_confidence": 0.99,
     "match_method": "llm",
-    "computed_at": "2026-07-29T13:02:01.907935+00:00",
+    "computed_at": "2026-07-30T12:32:01.887021+00:00",
     "review_status": "pending"
   },
   {
@@ -2165,7 +2165,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.909491+00:00",
+    "computed_at": "2026-07-30T12:32:01.890118+00:00",
     "review_status": "pending"
   },
   {
@@ -2189,7 +2189,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.909512+00:00",
+    "computed_at": "2026-07-30T12:32:01.890142+00:00",
     "review_status": "pending"
   },
   {
@@ -2213,7 +2213,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.909525+00:00",
+    "computed_at": "2026-07-30T12:32:01.890156+00:00",
     "review_status": "pending"
   },
   {
@@ -2240,7 +2240,7 @@
     "rotowire_first": true,
     "match_confidence": 0.97,
     "match_method": "llm",
-    "computed_at": "2026-07-29T13:02:01.907960+00:00",
+    "computed_at": "2026-07-30T12:32:01.887072+00:00",
     "review_status": "pending"
   },
   {
@@ -2267,7 +2267,7 @@
     "rotowire_first": true,
     "match_confidence": 0.92,
     "match_method": "llm",
-    "computed_at": "2026-07-29T13:02:01.908009+00:00",
+    "computed_at": "2026-07-30T12:32:01.887121+00:00",
     "review_status": "pending"
   },
   {
@@ -2294,7 +2294,7 @@
     "rotowire_first": false,
     "match_confidence": 0.97,
     "match_method": "llm",
-    "computed_at": "2026-07-29T13:02:01.907835+00:00",
+    "computed_at": "2026-07-30T12:32:01.886809+00:00",
     "review_status": "pending"
   },
   {
@@ -2318,7 +2318,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.909538+00:00",
+    "computed_at": "2026-07-30T12:32:01.890170+00:00",
     "review_status": "pending"
   },
   {
@@ -2345,7 +2345,7 @@
     "rotowire_first": true,
     "match_confidence": 0.95,
     "match_method": "llm",
-    "computed_at": "2026-07-29T13:02:01.907729+00:00",
+    "computed_at": "2026-07-30T12:32:01.886653+00:00",
     "review_status": "pending"
   },
   {
@@ -2369,7 +2369,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.909551+00:00",
+    "computed_at": "2026-07-30T12:32:01.890184+00:00",
     "review_status": "pending"
   },
   {
@@ -2393,7 +2393,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.909564+00:00",
+    "computed_at": "2026-07-30T12:32:01.890198+00:00",
     "review_status": "pending"
   },
   {
@@ -2417,7 +2417,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.909577+00:00",
+    "computed_at": "2026-07-30T12:32:01.890212+00:00",
     "review_status": "pending"
   },
   {
@@ -2441,7 +2441,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.909590+00:00",
+    "computed_at": "2026-07-30T12:32:01.890226+00:00",
     "review_status": "pending"
   },
   {
@@ -2468,7 +2468,7 @@
     "rotowire_first": false,
     "match_confidence": 0.99,
     "match_method": "llm",
-    "computed_at": "2026-07-29T13:02:01.907785+00:00",
+    "computed_at": "2026-07-30T12:32:01.886759+00:00",
     "review_status": "pending"
   },
   {
@@ -2492,7 +2492,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.909603+00:00",
+    "computed_at": "2026-07-30T12:32:01.890239+00:00",
     "review_status": "pending"
   },
   {
@@ -2519,7 +2519,7 @@
     "rotowire_first": false,
     "match_confidence": 0.95,
     "match_method": "llm",
-    "computed_at": "2026-07-29T13:02:01.907984+00:00",
+    "computed_at": "2026-07-30T12:32:01.887097+00:00",
     "review_status": "pending"
   },
   {
@@ -2543,7 +2543,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.909625+00:00",
+    "computed_at": "2026-07-30T12:32:01.890262+00:00",
     "review_status": "pending"
   },
   {
@@ -2570,7 +2570,7 @@
     "rotowire_first": true,
     "match_confidence": 0.99,
     "match_method": "llm",
-    "computed_at": "2026-07-29T13:02:01.907635+00:00",
+    "computed_at": "2026-07-30T12:32:01.886469+00:00",
     "review_status": "pending"
   },
   {
@@ -2594,7 +2594,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.909638+00:00",
+    "computed_at": "2026-07-30T12:32:01.890275+00:00",
     "review_status": "pending"
   },
   {
@@ -2618,7 +2618,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.909651+00:00",
+    "computed_at": "2026-07-30T12:32:01.890289+00:00",
     "review_status": "pending"
   },
   {
@@ -2642,7 +2642,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.909664+00:00",
+    "computed_at": "2026-07-30T12:32:01.890303+00:00",
     "review_status": "pending"
   },
   {
@@ -2669,7 +2669,7 @@
     "rotowire_first": false,
     "match_confidence": 0.95,
     "match_method": "llm",
-    "computed_at": "2026-07-29T13:02:01.907860+00:00",
+    "computed_at": "2026-07-30T12:32:01.886834+00:00",
     "review_status": "pending"
   },
   {
@@ -2693,7 +2693,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.909678+00:00",
+    "computed_at": "2026-07-30T12:32:01.890317+00:00",
     "review_status": "pending"
   },
   {
@@ -2717,7 +2717,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.909691+00:00",
+    "computed_at": "2026-07-30T12:32:01.890332+00:00",
     "review_status": "pending"
   },
   {
@@ -2741,7 +2741,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.909705+00:00",
+    "computed_at": "2026-07-30T12:32:01.890346+00:00",
     "review_status": "pending"
   },
   {
@@ -2765,7 +2765,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.909718+00:00",
+    "computed_at": "2026-07-30T12:32:01.890360+00:00",
     "review_status": "pending"
   },
   {
@@ -2789,7 +2789,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.909731+00:00",
+    "computed_at": "2026-07-30T12:32:01.890374+00:00",
     "review_status": "pending"
   },
   {
@@ -2813,7 +2813,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.909744+00:00",
+    "computed_at": "2026-07-30T12:32:01.890388+00:00",
     "review_status": "pending"
   },
   {
@@ -2840,7 +2840,7 @@
     "rotowire_first": false,
     "match_confidence": 0.99,
     "match_method": "llm",
-    "computed_at": "2026-07-29T13:02:01.908034+00:00",
+    "computed_at": "2026-07-30T12:32:01.887147+00:00",
     "review_status": "pending"
   },
   {
@@ -2864,7 +2864,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.909757+00:00",
+    "computed_at": "2026-07-30T12:32:01.890401+00:00",
     "review_status": "pending"
   },
   {
@@ -2891,7 +2891,7 @@
     "rotowire_first": false,
     "match_confidence": 0.98,
     "match_method": "llm",
-    "computed_at": "2026-07-29T13:02:01.907703+00:00",
+    "computed_at": "2026-07-30T12:32:01.886625+00:00",
     "review_status": "pending"
   },
   {
@@ -2915,7 +2915,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.909771+00:00",
+    "computed_at": "2026-07-30T12:32:01.890415+00:00",
     "review_status": "pending"
   },
   {
@@ -2931,7 +2931,7 @@
     "rotowire": {
       "tweet_id": "2082441546083770749",
       "created_at": "2026-07-29T12:22:09.000Z",
-      "impression_count": 561,
+      "impression_count": 1334,
       "text": "Michael Penix: Not ready for team drills"
     },
     "underdog": null,
@@ -2939,7 +2939,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.909784+00:00",
+    "computed_at": "2026-07-30T12:32:01.890430+00:00",
     "review_status": "pending"
   },
   {
@@ -2955,7 +2955,7 @@
     "rotowire": {
       "tweet_id": "2082445005772267958",
       "created_at": "2026-07-29T12:35:53.000Z",
-      "impression_count": 412,
+      "impression_count": 1047,
       "text": "Tua Tagovailoa: Managing an injury"
     },
     "underdog": null,
@@ -2963,7 +2963,7 @@
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.909806+00:00",
+    "computed_at": "2026-07-30T12:32:01.890453+00:00",
     "review_status": "pending"
   },
   {
@@ -2980,14 +2980,1289 @@
     "underdog": {
       "tweet_id": "2082450433600049596",
       "created_at": "2026-07-29T12:57:28.000Z",
-      "impression_count": 6491,
+      "impression_count": 190615,
       "text": "Keon Coleman taking reps at punt returner in training camp."
     },
     "time_delta_seconds": null,
     "rotowire_first": null,
     "match_confidence": null,
     "match_method": "none",
-    "computed_at": "2026-07-29T13:02:01.909818+00:00",
+    "computed_at": "2026-07-30T12:32:01.890467+00:00",
+    "review_status": "pending"
+  },
+  {
+    "story_id": "st_2082451916831822021",
+    "canonical_label": null,
+    "player": "Kenyon Sadiq",
+    "player_key": "kenyon sadiq",
+    "team": null,
+    "event_class": "injury",
+    "status": "rotowire_only",
+    "same_event_duplicate": false,
+    "duplicate_of": null,
+    "rotowire": {
+      "tweet_id": "2082451916831822021",
+      "created_at": "2026-07-29T13:03:21.000Z",
+      "impression_count": 1191,
+      "text": "Kenyon Sadiq: Back at practice"
+    },
+    "underdog": null,
+    "time_delta_seconds": null,
+    "rotowire_first": null,
+    "match_confidence": null,
+    "match_method": "none",
+    "computed_at": "2026-07-30T12:32:01.890480+00:00",
+    "review_status": "pending"
+  },
+  {
+    "story_id": "st_2082452031130722746",
+    "canonical_label": null,
+    "player": "Jonathan Greenard",
+    "player_key": "jonathan greenard",
+    "team": null,
+    "event_class": "injury",
+    "status": "underdog_only",
+    "same_event_duplicate": false,
+    "duplicate_of": null,
+    "rotowire": null,
+    "underdog": {
+      "tweet_id": "2082452031130722746",
+      "created_at": "2026-07-29T13:03:48.000Z",
+      "impression_count": 94283,
+      "text": "EDGE Jonathan Greenard to be placed on PUP list due to pec strain, per @EliotShorrParks."
+    },
+    "time_delta_seconds": null,
+    "rotowire_first": null,
+    "match_confidence": null,
+    "match_method": "none",
+    "computed_at": "2026-07-30T12:32:01.890494+00:00",
+    "review_status": "pending"
+  },
+  {
+    "story_id": "st_2082454004936720658",
+    "canonical_label": null,
+    "player": "Travis Hunter",
+    "player_key": "travis hunter",
+    "team": null,
+    "event_class": "status_change",
+    "status": "rotowire_only",
+    "same_event_duplicate": false,
+    "duplicate_of": null,
+    "rotowire": {
+      "tweet_id": "2082454004936720658",
+      "created_at": "2026-07-29T13:11:39.000Z",
+      "impression_count": 1177,
+      "text": "Travis Hunter: Practicing at training camp"
+    },
+    "underdog": null,
+    "time_delta_seconds": null,
+    "rotowire_first": null,
+    "match_confidence": null,
+    "match_method": "none",
+    "computed_at": "2026-07-30T12:32:01.890507+00:00",
+    "review_status": "pending"
+  },
+  {
+    "story_id": "st_2082454749798965372",
+    "canonical_label": null,
+    "player": "Cooper Rush",
+    "player_key": "cooper rush",
+    "team": "Atlanta Falcons",
+    "event_class": "roster_move",
+    "status": "underdog_only",
+    "same_event_duplicate": false,
+    "duplicate_of": null,
+    "rotowire": null,
+    "underdog": {
+      "tweet_id": "2082454749798965372",
+      "created_at": "2026-07-29T13:14:37.000Z",
+      "impression_count": 116991,
+      "text": "Cooper Rush signs with the Falcons."
+    },
+    "time_delta_seconds": null,
+    "rotowire_first": null,
+    "match_confidence": null,
+    "match_method": "none",
+    "computed_at": "2026-07-30T12:32:01.890520+00:00",
+    "review_status": "pending"
+  },
+  {
+    "story_id": "st_2082460075478630895",
+    "canonical_label": null,
+    "player": "Chris Rodriguez",
+    "player_key": "chris rodriguez",
+    "team": null,
+    "event_class": "injury",
+    "status": "underdog_only",
+    "same_event_duplicate": false,
+    "duplicate_of": null,
+    "rotowire": null,
+    "underdog": {
+      "tweet_id": "2082460075478630895",
+      "created_at": "2026-07-29T13:35:46.000Z",
+      "impression_count": 70054,
+      "text": "Chris Rodriguez (foot) has been cleared to participate in individual work at training camp."
+    },
+    "time_delta_seconds": null,
+    "rotowire_first": null,
+    "match_confidence": null,
+    "match_method": "none",
+    "computed_at": "2026-07-30T12:32:01.890543+00:00",
+    "review_status": "pending"
+  },
+  {
+    "story_id": "st_2082461528322671031",
+    "canonical_label": null,
+    "player": "Tank Dell",
+    "player_key": "tank dell",
+    "team": "Houston Texans",
+    "event_class": "injury",
+    "status": "underdog_only",
+    "same_event_duplicate": false,
+    "duplicate_of": null,
+    "rotowire": null,
+    "underdog": {
+      "tweet_id": "2082461528322671031",
+      "created_at": "2026-07-29T13:41:33.000Z",
+      "impression_count": 72280,
+      "text": "GM Caserio: Tank Dell (knee) will be limited in first few weeks at practice as he ramps up."
+    },
+    "time_delta_seconds": null,
+    "rotowire_first": null,
+    "match_confidence": null,
+    "match_method": "none",
+    "computed_at": "2026-07-30T12:32:01.890556+00:00",
+    "review_status": "pending"
+  },
+  {
+    "story_id": "st_2082466677380325722_2082466658052874539",
+    "canonical_label": "Jahmyr Gibbs not practicing while awaiting new contract deal",
+    "player": "Jahmyr Gibbs",
+    "player_key": "jahmyr gibbs",
+    "team": "Detroit Lions",
+    "event_class": "status_change",
+    "status": "matched",
+    "rotowire": {
+      "tweet_id": "2082466677380325722",
+      "created_at": "2026-07-29T14:02:00.000Z",
+      "impression_count": 1437,
+      "text": "Jahmyr Gibbs: Not practicing, awaits new deal"
+    },
+    "underdog": {
+      "tweet_id": "2082466658052874539",
+      "created_at": "2026-07-29T14:01:56.000Z",
+      "impression_count": 109282,
+      "text": "Jahmyr Gibbs not seen participating in practice Wednesday as he awaits a new deal."
+    },
+    "time_delta_seconds": -4,
+    "rotowire_first": false,
+    "match_confidence": 0.99,
+    "match_method": "llm",
+    "computed_at": "2026-07-30T12:32:01.886509+00:00",
+    "review_status": "pending"
+  },
+  {
+    "story_id": "st_2082468767594885326",
+    "canonical_label": null,
+    "player": "Tristan Wirfs",
+    "player_key": "tristan wirfs",
+    "team": "Tampa Bay Buccaneers",
+    "event_class": "injury",
+    "status": "underdog_only",
+    "same_event_duplicate": false,
+    "duplicate_of": null,
+    "rotowire": null,
+    "underdog": {
+      "tweet_id": "2082468767594885326",
+      "created_at": "2026-07-29T14:10:19.000Z",
+      "impression_count": 65615,
+      "text": "HC Bowles: LT Tristan Wirfs (hamstring) considered day-to-day."
+    },
+    "time_delta_seconds": null,
+    "rotowire_first": null,
+    "match_confidence": null,
+    "match_method": "none",
+    "computed_at": "2026-07-30T12:32:01.890571+00:00",
+    "review_status": "pending"
+  },
+  {
+    "story_id": "st_2082469652983157194_2082469712848408855",
+    "canonical_label": "Bijan Robinson not practicing while awaiting new contract",
+    "player": "Bijan Robinson",
+    "player_key": "bijan robinson",
+    "team": "Atlanta Falcons",
+    "event_class": "status_change",
+    "status": "matched",
+    "rotowire": {
+      "tweet_id": "2082469652983157194",
+      "created_at": "2026-07-29T14:13:50.000Z",
+      "impression_count": 1902,
+      "text": "Bijan Robinson: Not practicing amid contract talks"
+    },
+    "underdog": {
+      "tweet_id": "2082469712848408855",
+      "created_at": "2026-07-29T14:14:04.000Z",
+      "impression_count": 347067,
+      "text": "Bijan Robinson not seen participating in practice Wednesday as he awaits a new deal."
+    },
+    "time_delta_seconds": 14,
+    "rotowire_first": true,
+    "match_confidence": 0.97,
+    "match_method": "llm",
+    "computed_at": "2026-07-30T12:32:01.886598+00:00",
+    "review_status": "pending"
+  },
+  {
+    "story_id": "st_2082470697297698909",
+    "canonical_label": null,
+    "player": "Vita Vea",
+    "player_key": "vita vea",
+    "team": "Tampa Bay Buccaneers",
+    "event_class": "injury",
+    "status": "underdog_only",
+    "same_event_duplicate": false,
+    "duplicate_of": null,
+    "rotowire": null,
+    "underdog": {
+      "tweet_id": "2082470697297698909",
+      "created_at": "2026-07-29T14:17:59.000Z",
+      "impression_count": 82211,
+      "text": "HC Bowles: DT Vita Vea isn't practicing after he \"tweaked something\" during running drill on Tuesday."
+    },
+    "time_delta_seconds": null,
+    "rotowire_first": null,
+    "match_confidence": null,
+    "match_method": "none",
+    "computed_at": "2026-07-30T12:32:01.890585+00:00",
+    "review_status": "pending"
+  },
+  {
+    "story_id": "st_2082471126626673115",
+    "canonical_label": null,
+    "player": "Kenyon Sadiq",
+    "player_key": "kenyon sadiq",
+    "team": null,
+    "event_class": "role_change",
+    "status": "underdog_only",
+    "same_event_duplicate": false,
+    "duplicate_of": null,
+    "rotowire": null,
+    "underdog": {
+      "tweet_id": "2082471126626673115",
+      "created_at": "2026-07-29T14:19:41.000Z",
+      "impression_count": 88652,
+      "text": "HC Glenn on rookie Kenyon Sadiq, via @ZackBlatt:\n\n\"He is going to be a huge weapon for us.\" https://t.co/U0DYS50yEx"
+    },
+    "time_delta_seconds": null,
+    "rotowire_first": null,
+    "match_confidence": null,
+    "match_method": "none",
+    "computed_at": "2026-07-30T12:32:01.890649+00:00",
+    "review_status": "pending"
+  },
+  {
+    "story_id": "st_2082471248668311901",
+    "canonical_label": null,
+    "player": "Bucky Irving",
+    "player_key": "bucky irving",
+    "team": null,
+    "event_class": "status_change",
+    "status": "rotowire_only",
+    "same_event_duplicate": false,
+    "duplicate_of": null,
+    "rotowire": {
+      "tweet_id": "2082471248668311901",
+      "created_at": "2026-07-29T14:20:10.000Z",
+      "impression_count": 1329,
+      "text": "Bucky Irving: Full-go for training camp"
+    },
+    "underdog": null,
+    "time_delta_seconds": null,
+    "rotowire_first": null,
+    "match_confidence": null,
+    "match_method": "none",
+    "computed_at": "2026-07-30T12:32:01.890668+00:00",
+    "review_status": "pending"
+  },
+  {
+    "story_id": "st_2082473460047962122_2082472431155908895",
+    "canonical_label": "Tucker Kraft (knee) could be available Week 1 per GM Gutekunst",
+    "player": "Tucker Kraft",
+    "player_key": "tucker kraft",
+    "team": "Green Bay Packers",
+    "event_class": "injury",
+    "status": "matched",
+    "rotowire": {
+      "tweet_id": "2082473460047962122",
+      "created_at": "2026-07-29T14:28:58.000Z",
+      "impression_count": 1111,
+      "text": "Tucker Kraft: Week 1 remains in play"
+    },
+    "underdog": {
+      "tweet_id": "2082472431155908895",
+      "created_at": "2026-07-29T14:24:52.000Z",
+      "impression_count": 70759,
+      "text": "GM Gutekunst said it's \"very much a possibility\" Tucker Kraft (knee) will be available Week 1."
+    },
+    "time_delta_seconds": -246,
+    "rotowire_first": false,
+    "match_confidence": 0.97,
+    "match_method": "llm",
+    "computed_at": "2026-07-30T12:32:01.887047+00:00",
+    "review_status": "pending"
+  },
+  {
+    "story_id": "st_2082474557630243150",
+    "canonical_label": null,
+    "player": "Michael Penix Jr.",
+    "player_key": "michael penix",
+    "team": null,
+    "event_class": "injury",
+    "status": "underdog_only",
+    "same_event_duplicate": true,
+    "duplicate_of": "st_2082479638815596590_2082476438746235347",
+    "rotowire": null,
+    "underdog": {
+      "tweet_id": "2082474557630243150",
+      "created_at": "2026-07-29T14:33:19.000Z",
+      "impression_count": 100878,
+      "text": "Michael Penix Jr (knee) said he could have another 4 weeks before being cleared."
+    },
+    "time_delta_seconds": null,
+    "rotowire_first": null,
+    "match_confidence": null,
+    "match_method": "none",
+    "computed_at": "2026-07-30T12:32:01.887416+00:00",
+    "review_status": "pending"
+  },
+  {
+    "story_id": "st_2082476747476336975",
+    "canonical_label": null,
+    "player": "Xavier Worthy",
+    "player_key": "xavier worthy",
+    "team": null,
+    "event_class": "injury",
+    "status": "rotowire_only",
+    "same_event_duplicate": false,
+    "duplicate_of": null,
+    "rotowire": {
+      "tweet_id": "2082476747476336975",
+      "created_at": "2026-07-29T14:42:01.000Z",
+      "impression_count": 1317,
+      "text": "Xavier Worthy: Cleared for contact"
+    },
+    "underdog": null,
+    "time_delta_seconds": null,
+    "rotowire_first": null,
+    "match_confidence": null,
+    "match_method": "none",
+    "computed_at": "2026-07-30T12:32:01.890683+00:00",
+    "review_status": "pending"
+  },
+  {
+    "story_id": "st_2082479638815596590_2082476438746235347",
+    "canonical_label": "Michael Penix Jr. still weeks away from return, being cautious with knee recovery",
+    "player": "Michael Penix Jr.",
+    "player_key": "michael penix",
+    "team": null,
+    "event_class": "injury",
+    "status": "matched",
+    "rotowire": {
+      "tweet_id": "2082479638815596590",
+      "created_at": "2026-07-29T14:53:31.000Z",
+      "impression_count": 1458,
+      "text": "Michael Penix: Still weeks away?"
+    },
+    "underdog": {
+      "tweet_id": "2082476438746235347",
+      "created_at": "2026-07-29T14:40:48.000Z",
+      "impression_count": 74594,
+      "text": "Michael Penix Jr (knee) on his recovery from injury, via @JoshTheAthletic:\n\n\"To be honest I’ve been feeling really good. I feel like I can do everything, but I have to still be smart about it. I can’t afford to have somebody trip and fall and land on me right now.\" https://t.co/a2ThpWnfmz"
+    },
+    "time_delta_seconds": -763,
+    "rotowire_first": false,
+    "match_confidence": 0.82,
+    "match_method": "llm",
+    "computed_at": "2026-07-30T12:32:01.887224+00:00",
+    "review_status": "pending"
+  },
+  {
+    "story_id": "st_2082481325206900893_2082481377895657783",
+    "canonical_label": "Patrick Mahomes participating in 11-on-11 drills",
+    "player": "Patrick Mahomes",
+    "player_key": "patrick mahomes",
+    "team": "Kansas City Chiefs",
+    "event_class": "status_change",
+    "status": "matched",
+    "rotowire": {
+      "tweet_id": "2082481325206900893",
+      "created_at": "2026-07-29T15:00:13.000Z",
+      "impression_count": 1448,
+      "text": "Patrick Mahomes: Taking part in 11-on-11s"
+    },
+    "underdog": {
+      "tweet_id": "2082481377895657783",
+      "created_at": "2026-07-29T15:00:25.000Z",
+      "impression_count": 78195,
+      "text": "Patrick Mahomes (knee) is in to start 11-on-11 drills."
+    },
+    "time_delta_seconds": 12,
+    "rotowire_first": true,
+    "match_confidence": 0.95,
+    "match_method": "llm",
+    "computed_at": "2026-07-30T12:32:01.886570+00:00",
+    "review_status": "pending"
+  },
+  {
+    "story_id": "st_2082481499345965473",
+    "canonical_label": null,
+    "player": "Nnamdi Madubuike",
+    "player_key": "nnamdi madubuike",
+    "team": "Baltimore Ravens",
+    "event_class": "status_change",
+    "status": "underdog_only",
+    "same_event_duplicate": false,
+    "duplicate_of": null,
+    "rotowire": null,
+    "underdog": {
+      "tweet_id": "2082481499345965473",
+      "created_at": "2026-07-29T15:00:54.000Z",
+      "impression_count": 72246,
+      "text": "Ravens DT Nnamdi Madubuike (neck) passed physical, removed from PUP list."
+    },
+    "time_delta_seconds": null,
+    "rotowire_first": null,
+    "match_confidence": null,
+    "match_method": "none",
+    "computed_at": "2026-07-30T12:32:01.890698+00:00",
+    "review_status": "pending"
+  },
+  {
+    "story_id": "st_2082482456964317301",
+    "canonical_label": null,
+    "player": "Chris Brazzell",
+    "player_key": "chris brazzell",
+    "team": null,
+    "event_class": "injury",
+    "status": "underdog_only",
+    "same_event_duplicate": false,
+    "duplicate_of": null,
+    "rotowire": null,
+    "underdog": {
+      "tweet_id": "2082482456964317301",
+      "created_at": "2026-07-29T15:04:43.000Z",
+      "impression_count": 329639,
+      "text": "Chris Brazzell (leg) being carted off practice field on Wednesday."
+    },
+    "time_delta_seconds": null,
+    "rotowire_first": null,
+    "match_confidence": null,
+    "match_method": "none",
+    "computed_at": "2026-07-30T12:32:01.890724+00:00",
+    "review_status": "pending"
+  },
+  {
+    "story_id": "st_2082484113630527530",
+    "canonical_label": null,
+    "player": "Makai Lemon",
+    "player_key": "makai lemon",
+    "team": null,
+    "event_class": "role_change",
+    "status": "underdog_only",
+    "same_event_duplicate": false,
+    "duplicate_of": null,
+    "rotowire": null,
+    "underdog": {
+      "tweet_id": "2082484113630527530",
+      "created_at": "2026-07-29T15:11:18.000Z",
+      "impression_count": 103078,
+      "text": "Makai Lemon took reps with punt returners during ST work, per @EJSmith94."
+    },
+    "time_delta_seconds": null,
+    "rotowire_first": null,
+    "match_confidence": null,
+    "match_method": "none",
+    "computed_at": "2026-07-30T12:32:01.890738+00:00",
+    "review_status": "pending"
+  },
+  {
+    "story_id": "st_2082486858907258921_2082486241107251604",
+    "canonical_label": "Chris Olave did not participate in team/practice drills on Wednesday",
+    "player": "Chris Olave",
+    "player_key": "chris olave",
+    "team": "New Orleans Saints",
+    "event_class": "injury",
+    "status": "matched",
+    "rotowire": {
+      "tweet_id": "2082486858907258921",
+      "created_at": "2026-07-29T15:22:12.000Z",
+      "impression_count": 1513,
+      "text": "Chris Olave: Doesn't participate in team drills"
+    },
+    "underdog": {
+      "tweet_id": "2082486241107251604",
+      "created_at": "2026-07-29T15:19:45.000Z",
+      "impression_count": 331771,
+      "text": "Chris Olave (bag chasing) not seen participating in practice Wednesday."
+    },
+    "time_delta_seconds": -147,
+    "rotowire_first": false,
+    "match_confidence": 0.92,
+    "match_method": "llm",
+    "computed_at": "2026-07-30T12:32:01.886957+00:00",
+    "review_status": "pending"
+  },
+  {
+    "story_id": "st_2082486959205671044",
+    "canonical_label": null,
+    "player": "Kerby Joseph",
+    "player_key": "kerby joseph",
+    "team": "Detroit Lions",
+    "event_class": "injury",
+    "status": "underdog_only",
+    "same_event_duplicate": false,
+    "duplicate_of": null,
+    "rotowire": null,
+    "underdog": {
+      "tweet_id": "2082486959205671044",
+      "created_at": "2026-07-29T15:22:36.000Z",
+      "impression_count": 76610,
+      "text": "Lions S Kerby Joseph (knee) not expected to be ready for Week 1, per @nolanbianchi."
+    },
+    "time_delta_seconds": null,
+    "rotowire_first": null,
+    "match_confidence": null,
+    "match_method": "none",
+    "computed_at": "2026-07-30T12:32:01.890752+00:00",
+    "review_status": "pending"
+  },
+  {
+    "story_id": "st_2082490660548919535",
+    "canonical_label": null,
+    "player": "Shemar Stewart",
+    "player_key": "shemar stewart",
+    "team": "Cincinnati Bengals",
+    "event_class": "injury",
+    "status": "underdog_only",
+    "same_event_duplicate": false,
+    "duplicate_of": null,
+    "rotowire": null,
+    "underdog": {
+      "tweet_id": "2082490660548919535",
+      "created_at": "2026-07-29T15:37:18.000Z",
+      "impression_count": 1699946,
+      "text": "Bengals EDGE Shemar Stewart (leg) carted off practice field on Wednesday."
+    },
+    "time_delta_seconds": null,
+    "rotowire_first": null,
+    "match_confidence": null,
+    "match_method": "none",
+    "computed_at": "2026-07-30T12:32:01.890776+00:00",
+    "review_status": "pending"
+  },
+  {
+    "story_id": "st_2082491851873853514",
+    "canonical_label": null,
+    "player": "Cyrus Allen",
+    "player_key": "cyrus allen",
+    "team": null,
+    "event_class": "role_change",
+    "status": "underdog_only",
+    "same_event_duplicate": false,
+    "duplicate_of": null,
+    "rotowire": null,
+    "underdog": {
+      "tweet_id": "2082491851873853514",
+      "created_at": "2026-07-29T15:42:02.000Z",
+      "impression_count": 591918,
+      "text": "HC Reid on rookie WR Cyrus Allen working with the first-team offense, via @goldmctNFL:\n\n\"I think Pat's got some trust there.\""
+    },
+    "time_delta_seconds": null,
+    "rotowire_first": null,
+    "match_confidence": null,
+    "match_method": "none",
+    "computed_at": "2026-07-30T12:32:01.890790+00:00",
+    "review_status": "pending"
+  },
+  {
+    "story_id": "st_2082494871072305382",
+    "canonical_label": null,
+    "player": "Jonathan Taylor",
+    "player_key": "jonathan taylor",
+    "team": "Indianapolis Colts",
+    "event_class": "roster_move",
+    "status": "rotowire_only",
+    "same_event_duplicate": false,
+    "duplicate_of": null,
+    "rotowire": {
+      "tweet_id": "2082494871072305382",
+      "created_at": "2026-07-29T15:54:02.000Z",
+      "impression_count": 1031,
+      "text": "Jonathan Taylor: Optimistic regarding contract"
+    },
+    "underdog": null,
+    "time_delta_seconds": null,
+    "rotowire_first": null,
+    "match_confidence": null,
+    "match_method": "none",
+    "computed_at": "2026-07-30T12:32:01.890805+00:00",
+    "review_status": "pending"
+  },
+  {
+    "story_id": "st_2082500704896164224",
+    "canonical_label": null,
+    "player": "Harold Fannin Jr.",
+    "player_key": "harold fannin",
+    "team": null,
+    "event_class": "status_change",
+    "status": "rotowire_only",
+    "same_event_duplicate": false,
+    "duplicate_of": null,
+    "rotowire": {
+      "tweet_id": "2082500704896164224",
+      "created_at": "2026-07-29T16:17:13.000Z",
+      "impression_count": 1180,
+      "text": "Harold Fannin: Full-go for training camp"
+    },
+    "underdog": null,
+    "time_delta_seconds": null,
+    "rotowire_first": null,
+    "match_confidence": null,
+    "match_method": "none",
+    "computed_at": "2026-07-30T12:32:01.890819+00:00",
+    "review_status": "pending"
+  },
+  {
+    "story_id": "st_2082509255928668409",
+    "canonical_label": null,
+    "player": "Deshaun Watson",
+    "player_key": "deshaun watson",
+    "team": null,
+    "event_class": "role_change",
+    "status": "rotowire_only",
+    "same_event_duplicate": false,
+    "duplicate_of": null,
+    "rotowire": {
+      "tweet_id": "2082509255928668409",
+      "created_at": "2026-07-29T16:51:12.000Z",
+      "impression_count": 1413,
+      "text": "Deshaun Watson: Will continue to split reps"
+    },
+    "underdog": null,
+    "time_delta_seconds": null,
+    "rotowire_first": null,
+    "match_confidence": null,
+    "match_method": "none",
+    "computed_at": "2026-07-30T12:32:01.890844+00:00",
+    "review_status": "pending"
+  },
+  {
+    "story_id": "st_2082510766020624417",
+    "canonical_label": null,
+    "player": "Jeremiyah Love",
+    "player_key": "jeremiyah love",
+    "team": "Arizona Cardinals",
+    "event_class": "role_change",
+    "status": "underdog_only",
+    "same_event_duplicate": false,
+    "duplicate_of": null,
+    "rotowire": null,
+    "underdog": {
+      "tweet_id": "2082510766020624417",
+      "created_at": "2026-07-29T16:57:12.000Z",
+      "impression_count": 325321,
+      "text": "Cardinals don't plan to overload Jeremiyah Love as a rookie, per @AlbertBreer.\n\nThey're looking for the right rotation between Love, James Conner, and Tyler Allgeier. https://t.co/0HvtVjNahi"
+    },
+    "time_delta_seconds": null,
+    "rotowire_first": null,
+    "match_confidence": null,
+    "match_method": "none",
+    "computed_at": "2026-07-30T12:32:01.890859+00:00",
+    "review_status": "pending"
+  },
+  {
+    "story_id": "st_2082512271398367359",
+    "canonical_label": null,
+    "player": "Cam Skattebo",
+    "player_key": "cam skattebo",
+    "team": null,
+    "event_class": "injury",
+    "status": "underdog_only",
+    "same_event_duplicate": false,
+    "duplicate_of": null,
+    "rotowire": null,
+    "underdog": {
+      "tweet_id": "2082512271398367359",
+      "created_at": "2026-07-29T17:03:11.000Z",
+      "impression_count": 85952,
+      "text": "Cam Skattebo (ankle) is \"good to go\" in training camp."
+    },
+    "time_delta_seconds": null,
+    "rotowire_first": null,
+    "match_confidence": null,
+    "match_method": "none",
+    "computed_at": "2026-07-30T12:32:01.890890+00:00",
+    "review_status": "pending"
+  },
+  {
+    "story_id": "st_2082512293208739871_2082512070625427557",
+    "canonical_label": "Malik Nabers (knee) participating in individual drills including running and route-running",
+    "player": "Malik Nabers",
+    "player_key": "malik nabers",
+    "team": "New York Giants",
+    "event_class": "injury",
+    "status": "matched",
+    "rotowire": {
+      "tweet_id": "2082512293208739871",
+      "created_at": "2026-07-29T17:03:16.000Z",
+      "impression_count": 1749,
+      "text": "Malik Nabers: Taking part in individual drills"
+    },
+    "underdog": {
+      "tweet_id": "2082512070625427557",
+      "created_at": "2026-07-29T17:02:23.000Z",
+      "impression_count": 122890,
+      "text": "Malik Nabers (knee) has been running, cutting, running routes and taking part in individual drills, via @JordanRaanan."
+    },
+    "time_delta_seconds": -53,
+    "rotowire_first": false,
+    "match_confidence": 0.95,
+    "match_method": "llm",
+    "computed_at": "2026-07-30T12:32:01.886679+00:00",
+    "review_status": "pending"
+  },
+  {
+    "story_id": "st_2082513148574085223",
+    "canonical_label": null,
+    "player": "Jadeveon Clowney",
+    "player_key": "jadeveon clowney",
+    "team": "Cleveland Browns",
+    "event_class": "roster_move",
+    "status": "underdog_only",
+    "same_event_duplicate": false,
+    "duplicate_of": null,
+    "rotowire": null,
+    "underdog": {
+      "tweet_id": "2082513148574085223",
+      "created_at": "2026-07-29T17:06:40.000Z",
+      "impression_count": 85641,
+      "text": "Garafolo: EDGE Jadeveon Clowney visiting the Browns on Wednesday."
+    },
+    "time_delta_seconds": null,
+    "rotowire_first": null,
+    "match_confidence": null,
+    "match_method": "none",
+    "computed_at": "2026-07-30T12:32:01.890910+00:00",
+    "review_status": "pending"
+  },
+  {
+    "story_id": "st_2082513563072004100",
+    "canonical_label": null,
+    "player": "Cameron Skattebo",
+    "player_key": "cameron skattebo",
+    "team": null,
+    "event_class": "status_change",
+    "status": "rotowire_only",
+    "same_event_duplicate": false,
+    "duplicate_of": null,
+    "rotowire": {
+      "tweet_id": "2082513563072004100",
+      "created_at": "2026-07-29T17:08:19.000Z",
+      "impression_count": 1208,
+      "text": "Cam Skattebo: Declared ready for camp"
+    },
+    "underdog": null,
+    "time_delta_seconds": null,
+    "rotowire_first": null,
+    "match_confidence": null,
+    "match_method": "none",
+    "computed_at": "2026-07-30T12:32:01.890925+00:00",
+    "review_status": "pending"
+  },
+  {
+    "story_id": "st_2082514964523126875",
+    "canonical_label": null,
+    "player": "Shedeur Sanders",
+    "player_key": "shedeur sanders",
+    "team": null,
+    "event_class": "role_change",
+    "status": "rotowire_only",
+    "same_event_duplicate": false,
+    "duplicate_of": null,
+    "rotowire": {
+      "tweet_id": "2082514964523126875",
+      "created_at": "2026-07-29T17:13:53.000Z",
+      "impression_count": 1460,
+      "text": "Shedeur Sanders: Splitting first-team reps still"
+    },
+    "underdog": null,
+    "time_delta_seconds": null,
+    "rotowire_first": null,
+    "match_confidence": null,
+    "match_method": "none",
+    "computed_at": "2026-07-30T12:32:01.890939+00:00",
+    "review_status": "pending"
+  },
+  {
+    "story_id": "st_2082517500990791928_2082516820573999489",
+    "canonical_label": "Ricky Pearsall dealing with knee/PCL issue, not practicing",
+    "player": "Ricky Pearsall",
+    "player_key": "ricky pearsall",
+    "team": "San Francisco 49ers",
+    "event_class": "injury",
+    "status": "matched",
+    "rotowire": {
+      "tweet_id": "2082517500990791928",
+      "created_at": "2026-07-29T17:23:58.000Z",
+      "impression_count": 5995,
+      "text": "Ricky Pearsall: Dealing with knee issue"
+    },
+    "underdog": {
+      "tweet_id": "2082516820573999489",
+      "created_at": "2026-07-29T17:21:15.000Z",
+      "impression_count": 198874,
+      "text": "Ricky Pearsall not practicing on Wednesday because of knee swelling related to PCL injury he suffered last year.\n\nAll options are being explored and there is some \"concern.\""
+    },
+    "time_delta_seconds": -163,
+    "rotowire_first": false,
+    "match_confidence": 0.95,
+    "match_method": "llm",
+    "computed_at": "2026-07-30T12:32:01.886994+00:00",
+    "review_status": "pending"
+  },
+  {
+    "story_id": "st_2082520816235712932",
+    "canonical_label": null,
+    "player": "Daniel Jones",
+    "player_key": "daniel jones",
+    "team": null,
+    "event_class": "role_change",
+    "status": "rotowire_only",
+    "same_event_duplicate": false,
+    "duplicate_of": null,
+    "rotowire": {
+      "tweet_id": "2082520816235712932",
+      "created_at": "2026-07-29T17:37:08.000Z",
+      "impression_count": 1310,
+      "text": "Daniel Jones: Takes all the first-team reps"
+    },
+    "underdog": null,
+    "time_delta_seconds": null,
+    "rotowire_first": null,
+    "match_confidence": null,
+    "match_method": "none",
+    "computed_at": "2026-07-30T12:32:01.890954+00:00",
+    "review_status": "pending"
+  },
+  {
+    "story_id": "st_2082521795115020498",
+    "canonical_label": null,
+    "player": "Bryan Bresee",
+    "player_key": "bryan bresee",
+    "team": "New Orleans Saints",
+    "event_class": "injury",
+    "status": "underdog_only",
+    "same_event_duplicate": false,
+    "duplicate_of": null,
+    "rotowire": null,
+    "underdog": {
+      "tweet_id": "2082521795115020498",
+      "created_at": "2026-07-29T17:41:01.000Z",
+      "impression_count": 160807,
+      "text": "Saints DT Bryan Bresee suffered knee injury at camp on Wednesday, per @nick_underhill.\n\nWill undergo further evaluation."
+    },
+    "time_delta_seconds": null,
+    "rotowire_first": null,
+    "match_confidence": null,
+    "match_method": "none",
+    "computed_at": "2026-07-30T12:32:01.890977+00:00",
+    "review_status": "pending"
+  },
+  {
+    "story_id": "st_2082522162095665645",
+    "canonical_label": null,
+    "player": "Jordan James",
+    "player_key": "jordan james",
+    "team": null,
+    "event_class": "injury",
+    "status": "rotowire_only",
+    "same_event_duplicate": false,
+    "duplicate_of": null,
+    "rotowire": {
+      "tweet_id": "2082522162095665645",
+      "created_at": "2026-07-29T17:42:29.000Z",
+      "impression_count": 1366,
+      "text": "Jordan James: Diagnosed with fractured rib"
+    },
+    "underdog": null,
+    "time_delta_seconds": null,
+    "rotowire_first": null,
+    "match_confidence": null,
+    "match_method": "none",
+    "computed_at": "2026-07-30T12:32:01.890992+00:00",
+    "review_status": "pending"
+  },
+  {
+    "story_id": "st_2082523188810936363",
+    "canonical_label": null,
+    "player": "Grant Delpit",
+    "player_key": "grant delpit",
+    "team": "Cleveland Browns",
+    "event_class": "roster_move",
+    "status": "rotowire_only",
+    "same_event_duplicate": false,
+    "duplicate_of": null,
+    "rotowire": {
+      "tweet_id": "2082523188810936363",
+      "created_at": "2026-07-29T17:46:34.000Z",
+      "impression_count": 1178,
+      "text": "Grant Delpit: Inks three-year extension"
+    },
+    "underdog": null,
+    "time_delta_seconds": null,
+    "rotowire_first": null,
+    "match_confidence": null,
+    "match_method": "none",
+    "computed_at": "2026-07-30T12:32:01.891005+00:00",
+    "review_status": "pending"
+  },
+  {
+    "story_id": "st_2082527611691905209_2082527853581648176",
+    "canonical_label": "Chris Brazzell expected to miss up to 8 weeks with a moderate LCL tear in his left knee",
+    "player": "Chris Brazzell",
+    "player_key": "chris brazzell",
+    "team": null,
+    "event_class": "injury",
+    "status": "matched",
+    "rotowire": {
+      "tweet_id": "2082527611691905209",
+      "created_at": "2026-07-29T18:04:08.000Z",
+      "impression_count": 1275,
+      "text": "Chris Brazzell: Could miss up to eight weeks"
+    },
+    "underdog": {
+      "tweet_id": "2082527853581648176",
+      "created_at": "2026-07-29T18:05:06.000Z",
+      "impression_count": 110629,
+      "text": "Chris Brazzell expected to miss 8 weeks after suffering moderate LCL tear in left knee, per @josephperson."
+    },
+    "time_delta_seconds": 58,
+    "rotowire_first": true,
+    "match_confidence": 0.97,
+    "match_method": "llm",
+    "computed_at": "2026-07-30T12:32:01.886706+00:00",
+    "review_status": "pending"
+  },
+  {
+    "story_id": "st_2082528711744581863",
+    "canonical_label": null,
+    "player": "Tucker Kraft",
+    "player_key": "tucker kraft",
+    "team": null,
+    "event_class": "injury",
+    "status": "underdog_only",
+    "same_event_duplicate": false,
+    "duplicate_of": null,
+    "rotowire": null,
+    "underdog": {
+      "tweet_id": "2082528711744581863",
+      "created_at": "2026-07-29T18:08:31.000Z",
+      "impression_count": 83124,
+      "text": "Tucker Kraft (knee) said he'll probably come off PUP list \"very soon.\""
+    },
+    "time_delta_seconds": null,
+    "rotowire_first": null,
+    "match_confidence": null,
+    "match_method": "none",
+    "computed_at": "2026-07-30T12:32:01.891019+00:00",
+    "review_status": "pending"
+  },
+  {
+    "story_id": "st_2082530523482624104",
+    "canonical_label": null,
+    "player": "Jonathan Greenard",
+    "player_key": "jonathan greenard",
+    "team": null,
+    "event_class": "injury",
+    "status": "rotowire_only",
+    "same_event_duplicate": false,
+    "duplicate_of": null,
+    "rotowire": {
+      "tweet_id": "2082530523482624104",
+      "created_at": "2026-07-29T18:15:43.000Z",
+      "impression_count": 1540,
+      "text": "Jonathan Greenard: Placed on PUP with pec strain"
+    },
+    "underdog": null,
+    "time_delta_seconds": null,
+    "rotowire_first": null,
+    "match_confidence": null,
+    "match_method": "none",
+    "computed_at": "2026-07-30T12:32:01.891032+00:00",
+    "review_status": "pending"
+  },
+  {
+    "story_id": "st_2082532524471861400",
+    "canonical_label": null,
+    "player": "Cyrus Allen",
+    "player_key": "cyrus allen",
+    "team": null,
+    "event_class": "role_change",
+    "status": "rotowire_only",
+    "same_event_duplicate": false,
+    "duplicate_of": null,
+    "rotowire": {
+      "tweet_id": "2082532524471861400",
+      "created_at": "2026-07-29T18:23:40.000Z",
+      "impression_count": 2634,
+      "text": "Cyrus Allen: Getting first-team snaps already"
+    },
+    "underdog": null,
+    "time_delta_seconds": null,
+    "rotowire_first": null,
+    "match_confidence": null,
+    "match_method": "none",
+    "computed_at": "2026-07-30T12:32:01.891046+00:00",
+    "review_status": "pending"
+  },
+  {
+    "story_id": "st_2082539268195389531",
+    "canonical_label": null,
+    "player": "Shemar Stewart",
+    "player_key": "shemar stewart",
+    "team": null,
+    "event_class": "injury",
+    "status": "rotowire_only",
+    "same_event_duplicate": false,
+    "duplicate_of": null,
+    "rotowire": {
+      "tweet_id": "2082539268195389531",
+      "created_at": "2026-07-29T18:50:27.000Z",
+      "impression_count": 1499,
+      "text": "Shemar Stewart: Carted off field with leg injury"
+    },
+    "underdog": null,
+    "time_delta_seconds": null,
+    "rotowire_first": null,
+    "match_confidence": null,
+    "match_method": "none",
+    "computed_at": "2026-07-30T12:32:01.891059+00:00",
+    "review_status": "pending"
+  },
+  {
+    "story_id": "st_2082541015387320369",
+    "canonical_label": null,
+    "player": "Malik Nabers",
+    "player_key": "malik nabers",
+    "team": "New York Giants",
+    "event_class": "status_change",
+    "status": "underdog_only",
+    "same_event_duplicate": false,
+    "duplicate_of": null,
+    "rotowire": null,
+    "underdog": {
+      "tweet_id": "2082541015387320369",
+      "created_at": "2026-07-29T18:57:24.000Z",
+      "impression_count": 798974,
+      "text": "🚨 Malik Nabers running routes at training camp\n\nvia @charlottecrrll\n\nhttps://t.co/yaH8lOexp6"
+    },
+    "time_delta_seconds": null,
+    "rotowire_first": null,
+    "match_confidence": null,
+    "match_method": "none",
+    "computed_at": "2026-07-30T12:32:01.891072+00:00",
+    "review_status": "pending"
+  },
+  {
+    "story_id": "st_2082543522003980423",
+    "canonical_label": null,
+    "player": "Dak Prescott",
+    "player_key": "dak prescott",
+    "team": "Dallas Cowboys",
+    "event_class": "status_change",
+    "status": "rotowire_only",
+    "same_event_duplicate": false,
+    "duplicate_of": null,
+    "rotowire": {
+      "tweet_id": "2082543522003980423",
+      "created_at": "2026-07-29T19:07:22.000Z",
+      "impression_count": 1189,
+      "text": "Dak Prescott: On field to open camp"
+    },
+    "underdog": null,
+    "time_delta_seconds": null,
+    "rotowire_first": null,
+    "match_confidence": null,
+    "match_method": "none",
+    "computed_at": "2026-07-30T12:32:01.891085+00:00",
+    "review_status": "pending"
+  },
+  {
+    "story_id": "st_2082545008180187397",
+    "canonical_label": null,
+    "player": "Jerry Jeudy",
+    "player_key": "jerry jeudy",
+    "team": null,
+    "event_class": "injury",
+    "status": "rotowire_only",
+    "same_event_duplicate": false,
+    "duplicate_of": null,
+    "rotowire": {
+      "tweet_id": "2082545008180187397",
+      "created_at": "2026-07-29T19:13:16.000Z",
+      "impression_count": 2079,
+      "text": "Jerry Jeudy: Past hamstring injury"
+    },
+    "underdog": null,
+    "time_delta_seconds": null,
+    "rotowire_first": null,
+    "match_confidence": null,
+    "match_method": "none",
+    "computed_at": "2026-07-30T12:32:01.891099+00:00",
+    "review_status": "pending"
+  },
+  {
+    "story_id": "st_2082558674417951063",
+    "canonical_label": null,
+    "player": "Malik Nabers",
+    "player_key": "malik nabers",
+    "team": "New York Giants",
+    "event_class": "injury",
+    "status": "underdog_only",
+    "same_event_duplicate": false,
+    "duplicate_of": null,
+    "rotowire": null,
+    "underdog": {
+      "tweet_id": "2082558674417951063",
+      "created_at": "2026-07-29T20:07:34.000Z",
+      "impression_count": 92283,
+      "text": "Malik Nabers (knee) viewed as \"realistic expectation\" to play in Week 1, per @Connor_J_Hughes.\n\nhttps://t.co/RF34Wxj0II https://t.co/K7Wkap9Ac5"
+    },
+    "time_delta_seconds": null,
+    "rotowire_first": null,
+    "match_confidence": null,
+    "match_method": "none",
+    "computed_at": "2026-07-30T12:32:01.891112+00:00",
+    "review_status": "pending"
+  },
+  {
+    "story_id": "st_2082570884678566337",
+    "canonical_label": null,
+    "player": "Roman Wilson",
+    "player_key": "roman wilson",
+    "team": "Pittsburgh Steelers",
+    "event_class": "role_change",
+    "status": "underdog_only",
+    "same_event_duplicate": false,
+    "duplicate_of": null,
+    "rotowire": null,
+    "underdog": {
+      "tweet_id": "2082570884678566337",
+      "created_at": "2026-07-29T20:56:05.000Z",
+      "impression_count": 127715,
+      "text": "Roman Wilson took \"overwhelming majority\" of WR3 reps in 11 personnel, per @MikeDeFabo.\n\nWilson lined up with Germie Bernard on the field in some instances, with Wilson in the slot and Bernard outside. https://t.co/aRKSS1vEFI"
+    },
+    "time_delta_seconds": null,
+    "rotowire_first": null,
+    "match_confidence": null,
+    "match_method": "none",
+    "computed_at": "2026-07-30T12:32:01.891126+00:00",
+    "review_status": "pending"
+  },
+  {
+    "story_id": "st_2082581164280181060",
+    "canonical_label": null,
+    "player": "Ricky Pearsall",
+    "player_key": "ricky pearsall",
+    "team": "San Francisco 49ers",
+    "event_class": "injury",
+    "status": "rotowire_only",
+    "same_event_duplicate": false,
+    "duplicate_of": null,
+    "rotowire": {
+      "tweet_id": "2082581164280181060",
+      "created_at": "2026-07-29T21:36:56.000Z",
+      "impression_count": 1304,
+      "text": "Ricky Pearsall: Concern over knee issue"
+    },
+    "underdog": null,
+    "time_delta_seconds": null,
+    "rotowire_first": null,
+    "match_confidence": null,
+    "match_method": "none",
+    "computed_at": "2026-07-30T12:32:01.891139+00:00",
+    "review_status": "pending"
+  },
+  {
+    "story_id": "st_2082607334233096461",
+    "canonical_label": null,
+    "player": "Puka Nacua",
+    "player_key": "puka nacua",
+    "team": "Los Angeles Rams",
+    "event_class": "roster_move",
+    "status": "underdog_only",
+    "same_event_duplicate": false,
+    "duplicate_of": null,
+    "rotowire": null,
+    "underdog": {
+      "tweet_id": "2082607334233096461",
+      "created_at": "2026-07-29T23:20:56.000Z",
+      "impression_count": 92994,
+      "text": "Rap: Puka Nacua more likely to be extended next offseason. https://t.co/5kum158T3Y"
+    },
+    "time_delta_seconds": null,
+    "rotowire_first": null,
+    "match_confidence": null,
+    "match_method": "none",
+    "computed_at": "2026-07-30T12:32:01.891152+00:00",
+    "review_status": "pending"
+  },
+  {
+    "story_id": "st_2082608530494812313",
+    "canonical_label": null,
+    "player": "C.J. Stroud",
+    "player_key": "c j stroud",
+    "team": "Houston Texans",
+    "event_class": "roster_move",
+    "status": "underdog_only",
+    "same_event_duplicate": false,
+    "duplicate_of": null,
+    "rotowire": null,
+    "underdog": {
+      "tweet_id": "2082608530494812313",
+      "created_at": "2026-07-29T23:25:41.000Z",
+      "impression_count": 110651,
+      "text": "Rap: CJ Stroud doesn't \"seem close\" to an extension with the Texans yet. https://t.co/3YjxQOk4Ow"
+    },
+    "time_delta_seconds": null,
+    "rotowire_first": null,
+    "match_confidence": null,
+    "match_method": "none",
+    "computed_at": "2026-07-30T12:32:01.891166+00:00",
+    "review_status": "pending"
+  },
+  {
+    "story_id": "st_2082611012050534407",
+    "canonical_label": null,
+    "player": "Taysom Hill",
+    "player_key": "taysom hill",
+    "team": "New Orleans Saints",
+    "event_class": "roster_move",
+    "status": "underdog_only",
+    "same_event_duplicate": false,
+    "duplicate_of": null,
+    "rotowire": null,
+    "underdog": {
+      "tweet_id": "2082611012050534407",
+      "created_at": "2026-07-29T23:35:32.000Z",
+      "impression_count": 140188,
+      "text": "Taysom Hill announced he won't be returning to the Saints."
+    },
+    "time_delta_seconds": null,
+    "rotowire_first": null,
+    "match_confidence": null,
+    "match_method": "none",
+    "computed_at": "2026-07-30T12:32:01.891180+00:00",
     "review_status": "pending"
   }
 ]
