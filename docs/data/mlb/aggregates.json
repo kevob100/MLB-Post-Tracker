@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-07-31T13:00:06.316321+00:00",
+  "generated_at": "2026-08-01T12:08:49.855570+00:00",
   "summary": {
-    "matched": 383,
-    "rotowire_first": 59,
-    "rotowire_first_rate": 0.154,
+    "matched": 391,
+    "rotowire_first": 60,
+    "rotowire_first_rate": 0.1535,
     "median_lead_seconds": -248,
-    "mean_lead_seconds": -410.8,
-    "rotowire_only": 618,
-    "underdog_only": 237,
+    "mean_lead_seconds": -411.9,
+    "rotowire_only": 621,
+    "underdog_only": 247,
     "rotowire_duplicate": 37,
-    "underdog_duplicate": 40
+    "underdog_duplicate": 41
   },
   "weekly": [
     {
@@ -122,15 +122,15 @@
     },
     {
       "period": "2026-W31",
-      "matched": 28,
-      "rotowire_first": 3,
-      "rotowire_first_rate": 0.1071,
-      "median_lead_seconds": -125.0,
-      "mean_lead_seconds": -337.1,
-      "rotowire_only": 39,
-      "underdog_only": 22,
+      "matched": 36,
+      "rotowire_first": 4,
+      "rotowire_first_rate": 0.1111,
+      "median_lead_seconds": -143.0,
+      "mean_lead_seconds": -364.8,
+      "rotowire_only": 42,
+      "underdog_only": 32,
       "rotowire_duplicate": 3,
-      "underdog_duplicate": 5
+      "underdog_duplicate": 6
     }
   ],
   "monthly": [
@@ -160,15 +160,27 @@
     },
     {
       "period": "2026-07",
-      "matched": 163,
-      "rotowire_first": 29,
-      "rotowire_first_rate": 0.1779,
-      "median_lead_seconds": -229,
-      "mean_lead_seconds": -427.3,
-      "rotowire_only": 189,
-      "underdog_only": 129,
+      "matched": 168,
+      "rotowire_first": 30,
+      "rotowire_first_rate": 0.1786,
+      "median_lead_seconds": -229.0,
+      "mean_lead_seconds": -428.7,
+      "rotowire_only": 192,
+      "underdog_only": 137,
       "rotowire_duplicate": 15,
       "underdog_duplicate": 18
+    },
+    {
+      "period": "2026-08",
+      "matched": 3,
+      "rotowire_first": 0,
+      "rotowire_first_rate": 0.0,
+      "median_lead_seconds": -550,
+      "mean_lead_seconds": -441.3,
+      "rotowire_only": 0,
+      "underdog_only": 2,
+      "rotowire_duplicate": 0,
+      "underdog_duplicate": 1
     }
   ]
 }

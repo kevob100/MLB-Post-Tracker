@@ -463,3 +463,10 @@
 {"id": "2082845462416007571", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "promo", "classified_at": "2026-07-31T13:00:13.744462+00:00"}
 {"id": "2082874735768064421", "is_news": false, "player": "LeBron James", "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-07-31T13:00:16.146426+00:00"}
 {"id": "2082919260616003776", "is_news": true, "player": "Jamir Watkins", "team": null, "event_class": "injury", "excluded_reason": null, "classified_at": "2026-07-31T13:00:17.350628+00:00"}
+{"id": "2083194820827226527", "is_news": true, "player": "James Harden", "team": "Cleveland Cavaliers", "event_class": "roster_move", "excluded_reason": null, "classified_at": "2026-08-01T12:08:51.628897+00:00"}
+{"id": "2083203396752888267", "is_news": true, "player": "Mario Hezonja", "team": "Cleveland Cavaliers", "event_class": "roster_move", "excluded_reason": null, "classified_at": "2026-08-01T12:08:54.870347+00:00"}
+{"id": "2083225685925953542", "is_news": true, "player": "Victor Wembanyama", "team": "San Antonio Spurs", "event_class": "roster_move", "excluded_reason": null, "classified_at": "2026-08-01T12:08:56.624292+00:00"}
+{"id": "2083308078523453574", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "promo", "classified_at": "2026-08-01T12:09:04.287361+00:00"}
+{"id": "2083308082851897370", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-08-01T12:09:05.930104+00:00"}
+{"id": "2083369341240926678", "is_news": false, "player": "Bennedict Mathurin", "team": "Chicago Bulls", "event_class": "roster_move", "excluded_reason": "not_news", "classified_at": "2026-08-01T12:09:07.577265+00:00"}
+{"id": "2083371238467236091", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-08-01T12:09:08.793717+00:00"}
