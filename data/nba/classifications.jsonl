@@ -470,3 +470,7 @@
 {"id": "2083308082851897370", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-08-01T12:09:05.930104+00:00"}
 {"id": "2083369341240926678", "is_news": false, "player": "Bennedict Mathurin", "team": "Chicago Bulls", "event_class": "roster_move", "excluded_reason": "not_news", "classified_at": "2026-08-01T12:09:07.577265+00:00"}
 {"id": "2083371238467236091", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-08-01T12:09:08.793717+00:00"}
+{"id": "2083644479157014625", "is_news": true, "player": "Gary Payton II", "team": "Golden State Warriors", "event_class": "roster_move", "excluded_reason": null, "classified_at": "2026-08-02T12:09:22.222123+00:00"}
+{"id": "2083649045919416763", "is_news": false, "player": "Victor Wembanyama", "team": "San Antonio Spurs", "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-08-02T12:09:24.123991+00:00"}
+{"id": "2083653045225922903", "is_news": true, "player": "Jeremy Sochan", "team": "Portland Trail Blazers", "event_class": "roster_move", "excluded_reason": null, "classified_at": "2026-08-02T12:09:25.507671+00:00"}
+{"id": "2083657177336811857", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-08-02T12:09:26.927044+00:00"}

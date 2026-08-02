@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-08-01T12:02:53.796222+00:00",
+  "generated_at": "2026-08-02T12:03:15.641179+00:00",
   "summary": {
-    "matched": 39,
-    "rotowire_first": 10,
-    "rotowire_first_rate": 0.2564,
-    "median_lead_seconds": -108,
-    "mean_lead_seconds": -449.2,
-    "rotowire_only": 82,
-    "underdog_only": 84,
+    "matched": 44,
+    "rotowire_first": 11,
+    "rotowire_first_rate": 0.25,
+    "median_lead_seconds": -104.5,
+    "mean_lead_seconds": -401.6,
+    "rotowire_only": 85,
+    "underdog_only": 93,
     "rotowire_duplicate": 0,
-    "underdog_duplicate": 2
+    "underdog_duplicate": 4
   },
   "weekly": [
     {
@@ -50,15 +50,15 @@
     },
     {
       "period": "2026-W31",
-      "matched": 31,
-      "rotowire_first": 9,
-      "rotowire_first_rate": 0.2903,
-      "median_lead_seconds": -105,
-      "mean_lead_seconds": -378.8,
-      "rotowire_only": 48,
-      "underdog_only": 50,
+      "matched": 36,
+      "rotowire_first": 10,
+      "rotowire_first_rate": 0.2778,
+      "median_lead_seconds": -75.5,
+      "mean_lead_seconds": -330.3,
+      "rotowire_only": 51,
+      "underdog_only": 59,
       "rotowire_duplicate": 0,
-      "underdog_duplicate": 1
+      "underdog_duplicate": 3
     }
   ],
   "monthly": [
@@ -76,15 +76,15 @@
     },
     {
       "period": "2026-08",
-      "matched": 0,
-      "rotowire_first": 0,
-      "rotowire_first_rate": null,
-      "median_lead_seconds": null,
-      "mean_lead_seconds": null,
-      "rotowire_only": 0,
-      "underdog_only": 1,
+      "matched": 5,
+      "rotowire_first": 1,
+      "rotowire_first_rate": 0.2,
+      "median_lead_seconds": -29,
+      "mean_lead_seconds": -30,
+      "rotowire_only": 3,
+      "underdog_only": 10,
       "rotowire_duplicate": 0,
-      "underdog_duplicate": 0
+      "underdog_duplicate": 2
     }
   ]
 }
