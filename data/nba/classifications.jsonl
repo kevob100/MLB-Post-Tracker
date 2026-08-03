@@ -474,3 +474,8 @@
 {"id": "2083649045919416763", "is_news": false, "player": "Victor Wembanyama", "team": "San Antonio Spurs", "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-08-02T12:09:24.123991+00:00"}
 {"id": "2083653045225922903", "is_news": true, "player": "Jeremy Sochan", "team": "Portland Trail Blazers", "event_class": "roster_move", "excluded_reason": null, "classified_at": "2026-08-02T12:09:25.507671+00:00"}
 {"id": "2083657177336811857", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-08-02T12:09:26.927044+00:00"}
+{"id": "2084007756126629920", "is_news": true, "player": "Zach LaVine", "team": "Sacramento Kings", "event_class": "roster_move", "excluded_reason": null, "classified_at": "2026-08-03T13:48:04.551266+00:00"}
+{"id": "2084009123184550317", "is_news": true, "player": "Naji Marshall", "team": "Dallas Mavericks", "event_class": "roster_move", "excluded_reason": null, "classified_at": "2026-08-03T13:48:05.812438+00:00"}
+{"id": "2084010267751370947", "is_news": true, "player": "Naji Marshall", "team": "Dallas Mavericks", "event_class": "roster_move", "excluded_reason": null, "classified_at": "2026-08-03T13:48:07.333728+00:00"}
+{"id": "2084011481805304050", "is_news": true, "player": "Naji Marshall", "team": "Dallas Mavericks", "event_class": "roster_move", "excluded_reason": null, "classified_at": "2026-08-03T13:48:08.771456+00:00"}
+{"id": "2084034722095665363", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-08-03T13:48:09.999567+00:00"}
