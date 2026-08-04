@@ -479,3 +479,21 @@
 {"id": "2084010267751370947", "is_news": true, "player": "Naji Marshall", "team": "Dallas Mavericks", "event_class": "roster_move", "excluded_reason": null, "classified_at": "2026-08-03T13:48:07.333728+00:00"}
 {"id": "2084011481805304050", "is_news": true, "player": "Naji Marshall", "team": "Dallas Mavericks", "event_class": "roster_move", "excluded_reason": null, "classified_at": "2026-08-03T13:48:08.771456+00:00"}
 {"id": "2084034722095665363", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-08-03T13:48:09.999567+00:00"}
+{"id": "2084275483538047194", "is_news": false, "player": "Victor Wembanyama", "team": "San Antonio Spurs", "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-08-04T13:15:10.737263+00:00"}
+{"id": "2084276332855259334", "is_news": true, "player": "Klay Thompson", "team": null, "event_class": "roster_move", "excluded_reason": null, "classified_at": "2026-08-04T13:15:12.706689+00:00"}
+{"id": "2084277194977611801", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-08-04T13:15:14.158298+00:00"}
+{"id": "2084298475039052086", "is_news": true, "player": "Chris Bosh", "team": null, "event_class": "injury", "excluded_reason": null, "classified_at": "2026-08-04T13:15:15.513294+00:00"}
+{"id": "2084377870911115437", "is_news": true, "player": "Will Barton", "team": "Minnesota Timberwolves", "event_class": "roster_move", "excluded_reason": null, "classified_at": "2026-08-04T13:15:17.243463+00:00"}
+{"id": "2084384071862431864", "is_news": false, "player": "Davion Mitchell", "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-08-04T13:15:19.287962+00:00"}
+{"id": "2084384567062900998", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "promo", "classified_at": "2026-08-04T13:15:20.720391+00:00"}
+{"id": "2084393967194444083", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "promo", "classified_at": "2026-08-04T13:15:22.230119+00:00"}
+{"id": "2084393970394644887", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "promo", "classified_at": "2026-08-04T13:15:23.796620+00:00"}
+{"id": "2084393973188014378", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "promo", "classified_at": "2026-08-04T13:15:26.498232+00:00"}
+{"id": "2084393975985693026", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "promo", "classified_at": "2026-08-04T13:15:28.001218+00:00"}
+{"id": "2084400162944725037", "is_news": true, "player": "Caleb Houstan", "team": "New Orleans Pelicans", "event_class": "roster_move", "excluded_reason": null, "classified_at": "2026-08-04T13:15:29.687084+00:00"}
+{"id": "2084428517522227509", "is_news": true, "player": "Luka Doncic", "team": null, "event_class": "injury", "excluded_reason": null, "classified_at": "2026-08-04T13:15:31.126568+00:00"}
+{"id": "2084432687419236770", "is_news": true, "player": "Luka Doncic", "team": null, "event_class": "injury", "excluded_reason": null, "classified_at": "2026-08-04T13:15:32.555996+00:00"}
+{"id": "2084453712618279315", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-08-04T13:15:36.655604+00:00"}
+{"id": "2084463691895025817", "is_news": false, "player": "Luka Doncic", "team": null, "event_class": "other", "excluded_reason": "promo", "classified_at": "2026-08-04T13:15:38.088551+00:00"}
+{"id": "2084492111416807697", "is_news": false, "player": null, "team": "Sacramento Kings", "event_class": "roster_move", "excluded_reason": "no_player", "classified_at": "2026-08-04T13:15:39.343390+00:00"}
+{"id": "2084495154262728704", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-08-04T13:15:40.750520+00:00"}
