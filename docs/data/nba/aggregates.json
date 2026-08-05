@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-04T13:15:42.142330+00:00",
+  "generated_at": "2026-08-05T13:01:56.142460+00:00",
   "summary": {
     "matched": 12,
     "rotowire_first": 1,
@@ -7,7 +7,7 @@
     "median_lead_seconds": -390.0,
     "mean_lead_seconds": -394.8,
     "rotowire_only": 33,
-    "underdog_only": 61,
+    "underdog_only": 62,
     "rotowire_duplicate": 0,
     "underdog_duplicate": 7
   },
@@ -68,7 +68,7 @@
       "median_lead_seconds": -994,
       "mean_lead_seconds": -994,
       "rotowire_only": 0,
-      "underdog_only": 4,
+      "underdog_only": 5,
       "rotowire_duplicate": 0,
       "underdog_duplicate": 0
     }
@@ -94,7 +94,7 @@
       "median_lead_seconds": -641.5,
       "mean_lead_seconds": -641.5,
       "rotowire_only": 0,
-      "underdog_only": 7,
+      "underdog_only": 8,
       "rotowire_duplicate": 0,
       "underdog_duplicate": 1
     }
