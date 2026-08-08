@@ -1064,3 +1064,140 @@
 {"id": "2085341275708969091", "is_news": false, "player": "Rueben Bain Jr.", "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-08-06T12:58:43.655553+00:00"}
 {"id": "2085344728103424356", "is_news": true, "player": "Jahmyr Gibbs", "team": "Detroit Lions", "event_class": "status_change", "excluded_reason": null, "classified_at": "2026-08-06T12:58:45.574293+00:00"}
 {"id": "2085345636870680679", "is_news": true, "player": "Jahmyr Gibbs", "team": null, "event_class": "status_change", "excluded_reason": null, "classified_at": "2026-08-06T12:58:52.589462+00:00"}
+{"id": "2085349152767070553", "is_news": true, "player": "Jahmyr Gibbs", "team": "Detroit Lions", "event_class": "injury", "excluded_reason": null, "classified_at": "2026-08-08T11:26:08.965622+00:00"}
+{"id": "2085349442379518429", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-08-08T11:26:10.172059+00:00"}
+{"id": "2085351847380795874", "is_news": true, "player": "Jahmyr Gibbs", "team": "Detroit Lions", "event_class": "injury", "excluded_reason": null, "classified_at": "2026-08-08T11:26:11.809027+00:00"}
+{"id": "2085353143945097542", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "no_player", "classified_at": "2026-08-08T11:26:13.496691+00:00"}
+{"id": "2085353401836060853", "is_news": true, "player": "Emeka Egbuka", "team": null, "event_class": "injury", "excluded_reason": null, "classified_at": "2026-08-08T11:26:15.001663+00:00"}
+{"id": "2085355688574738795", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-08-08T11:26:16.568312+00:00"}
+{"id": "2085356244026482801", "is_news": true, "player": "CJ Gardner-Johnson", "team": "Buffalo Bills", "event_class": "injury", "excluded_reason": null, "classified_at": "2026-08-08T11:26:18.025761+00:00"}
+{"id": "2085362404469146094", "is_news": true, "player": "Peter Woods", "team": "Kansas City Chiefs", "event_class": "role_change", "excluded_reason": null, "classified_at": "2026-08-08T11:26:19.285590+00:00"}
+{"id": "2085371306128691471", "is_news": true, "player": "Kyler Murray", "team": "Arizona Cardinals", "event_class": "injury", "excluded_reason": null, "classified_at": "2026-08-08T11:26:20.656249+00:00"}
+{"id": "2085371724397269311", "is_news": false, "player": "Drew Allar", "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-08-08T11:26:21.922229+00:00"}
+{"id": "2085371817146101779", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-08-08T11:26:23.326168+00:00"}
+{"id": "2085372257845543243", "is_news": false, "player": null, "team": "Tampa Bay Buccaneers", "event_class": "injury", "excluded_reason": "no_player", "classified_at": "2026-08-08T11:26:26.504067+00:00"}
+{"id": "2085374223271231901", "is_news": true, "player": "Parker Washington", "team": "Jacksonville Jaguars", "event_class": "role_change", "excluded_reason": null, "classified_at": "2026-08-08T11:26:27.868325+00:00"}
+{"id": "2085377221078774153", "is_news": true, "player": "Kenyon Sadiq", "team": null, "event_class": "injury", "excluded_reason": null, "classified_at": "2026-08-08T11:26:29.448980+00:00"}
+{"id": "2085378813853127052", "is_news": true, "player": "Kenyon Sadiq", "team": null, "event_class": "injury", "excluded_reason": null, "classified_at": "2026-08-08T11:26:31.225941+00:00"}
+{"id": "2085380210757619818", "is_news": true, "player": "Vita Vea", "team": "Tampa Bay Buccaneers", "event_class": "roster_move", "excluded_reason": null, "classified_at": "2026-08-08T11:26:37.099971+00:00"}
+{"id": "2085381026122019242", "is_news": true, "player": "Isaiah Davis", "team": null, "event_class": "injury", "excluded_reason": null, "classified_at": "2026-08-08T11:26:38.443433+00:00"}
+{"id": "2085381380989673942", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-08-08T11:26:39.792333+00:00"}
+{"id": "2085382768729444453", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-08-08T11:26:42.104924+00:00"}
+{"id": "2085386208813695039", "is_news": true, "player": "Jadarian Price", "team": null, "event_class": "role_change", "excluded_reason": null, "classified_at": "2026-08-08T11:26:47.402722+00:00"}
+{"id": "2085386662327022048", "is_news": false, "player": "Baker Mayfield", "team": "Tampa Bay Buccaneers", "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-08-08T11:26:49.190959+00:00"}
+{"id": "2085388078290477135", "is_news": false, "player": "Geno Smith", "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-08-08T11:26:50.560196+00:00"}
+{"id": "2085390797264826374", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-08-08T11:26:52.214217+00:00"}
+{"id": "2085393556554813765", "is_news": true, "player": "Josh Jacobs", "team": null, "event_class": "injury", "excluded_reason": null, "classified_at": "2026-08-08T11:26:53.535085+00:00"}
+{"id": "2085394287257084261", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-08-08T11:26:55.016531+00:00"}
+{"id": "2085395680697143447", "is_news": true, "player": "Henry To'oTo'o", "team": "Houston Texans", "event_class": "roster_move", "excluded_reason": null, "classified_at": "2026-08-08T11:26:56.437175+00:00"}
+{"id": "2085395855155089908", "is_news": true, "player": "Jahmyr Gibbs", "team": "Detroit Lions", "event_class": "roster_move", "excluded_reason": null, "classified_at": "2026-08-08T11:26:57.945138+00:00"}
+{"id": "2085399807649030512", "is_news": true, "player": "Jahmyr Gibbs", "team": "Detroit Lions", "event_class": "roster_move", "excluded_reason": null, "classified_at": "2026-08-08T11:27:00.543824+00:00"}
+{"id": "2085402293277532389", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "no_player", "classified_at": "2026-08-08T11:27:03.388850+00:00"}
+{"id": "2085402873421066278", "is_news": true, "player": "Josh Downs", "team": "Indianapolis Colts", "event_class": "role_change", "excluded_reason": null, "classified_at": "2026-08-08T11:27:06.083231+00:00"}
+{"id": "2085403133522350437", "is_news": true, "player": "Jaylen Waddle", "team": "Miami Dolphins", "event_class": "injury", "excluded_reason": null, "classified_at": "2026-08-08T11:27:07.419674+00:00"}
+{"id": "2085403289143681483", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-08-08T11:27:08.986150+00:00"}
+{"id": "2085409216488226981", "is_news": false, "player": "Odell Beckham Jr.", "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-08-08T11:27:10.342634+00:00"}
+{"id": "2085411667819581863", "is_news": true, "player": "De'Zhaun Stribling", "team": null, "event_class": "status_change", "excluded_reason": null, "classified_at": "2026-08-08T11:27:12.777579+00:00"}
+{"id": "2085413210761445544", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-08-08T11:27:14.110748+00:00"}
+{"id": "2085413910669070783", "is_news": true, "player": "De'Zhaun Stribling", "team": null, "event_class": "injury", "excluded_reason": null, "classified_at": "2026-08-08T11:27:15.475463+00:00"}
+{"id": "2085416918266134648", "is_news": true, "player": "Stefon Diggs", "team": null, "event_class": "roster_move", "excluded_reason": null, "classified_at": "2026-08-08T11:27:16.765372+00:00"}
+{"id": "2085418542137024712", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-08-08T11:27:18.001688+00:00"}
+{"id": "2085419980636438734", "is_news": true, "player": "Chris Olave", "team": null, "event_class": "injury", "excluded_reason": null, "classified_at": "2026-08-08T11:27:19.547205+00:00"}
+{"id": "2085420387131588738", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-08-08T11:27:20.973573+00:00"}
+{"id": "2085423834782470484", "is_news": false, "player": "Parker Washington", "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-08-08T11:27:22.695053+00:00"}
+{"id": "2085426800327303461", "is_news": false, "player": "Garrett Wilson", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-08-08T11:27:24.197294+00:00"}
+{"id": "2085427728304488784", "is_news": true, "player": "Courtland Sutton", "team": "Denver Broncos", "event_class": "injury", "excluded_reason": null, "classified_at": "2026-08-08T11:27:25.529421+00:00"}
+{"id": "2085428188843319674", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-08-08T11:27:26.747915+00:00"}
+{"id": "2085433391827099704", "is_news": true, "player": "Courtland Sutton", "team": "Denver Broncos", "event_class": "injury", "excluded_reason": null, "classified_at": "2026-08-08T11:27:28.138095+00:00"}
+{"id": "2085433743892709410", "is_news": true, "player": "Jaylen Waddle", "team": "Miami Dolphins", "event_class": "injury", "excluded_reason": null, "classified_at": "2026-08-08T11:27:29.450884+00:00"}
+{"id": "2085433748623962259", "is_news": true, "player": "Jaylen Waddle", "team": null, "event_class": "injury", "excluded_reason": null, "classified_at": "2026-08-08T11:27:31.185273+00:00"}
+{"id": "2085434519776084054", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-08-08T11:27:34.962090+00:00"}
+{"id": "2085434921003213248", "is_news": false, "player": null, "team": "Tennessee Titans", "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-08-08T11:27:36.328382+00:00"}
+{"id": "2085436509251838084", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-08-08T11:27:37.639391+00:00"}
+{"id": "2085439344202945001", "is_news": false, "player": "Carnell Tate", "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-08-08T11:27:39.150709+00:00"}
+{"id": "2085444844839710936", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-08-08T11:27:41.301695+00:00"}
+{"id": "2085445655934161168", "is_news": true, "player": "Aaron Donald", "team": "Los Angeles Rams", "event_class": "roster_move", "excluded_reason": null, "classified_at": "2026-08-08T11:27:42.819657+00:00"}
+{"id": "2085454113559499018", "is_news": true, "player": "George Pickens", "team": null, "event_class": "status_change", "excluded_reason": null, "classified_at": "2026-08-08T11:27:44.435362+00:00"}
+{"id": "2085454612866224293", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-08-08T11:27:47.993724+00:00"}
+{"id": "2085469625953767469", "is_news": false, "player": "Ladd McConkey", "team": "Los Angeles Chargers", "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-08-08T11:27:50.120905+00:00"}
+{"id": "2085477508997079327", "is_news": true, "player": "Jahmyr Gibbs", "team": "Detroit Lions", "event_class": "roster_move", "excluded_reason": null, "classified_at": "2026-08-08T11:27:52.936476+00:00"}
+{"id": "2085477815080599643", "is_news": true, "player": "Jahmyr Gibbs", "team": "Detroit Lions", "event_class": "roster_move", "excluded_reason": null, "classified_at": "2026-08-08T11:27:54.290275+00:00"}
+{"id": "2085479086709698690", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-08-08T11:27:55.630626+00:00"}
+{"id": "2085481873380098485", "is_news": false, "player": "Kenneth Walker III", "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-08-08T11:27:57.019306+00:00"}
+{"id": "2085484360547905602", "is_news": true, "player": "Jalon Walker", "team": null, "event_class": "roster_move", "excluded_reason": null, "classified_at": "2026-08-08T11:27:58.915690+00:00"}
+{"id": "2085484400624488833", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-08-08T11:28:00.710255+00:00"}
+{"id": "2085486265181339845", "is_news": true, "player": "Barion Brown", "team": "Kansas City Chiefs", "event_class": "role_change", "excluded_reason": null, "classified_at": "2026-08-08T11:28:02.133740+00:00"}
+{"id": "2085495893474615468", "is_news": true, "player": "Jonah Coleman", "team": "Denver Broncos", "event_class": "role_change", "excluded_reason": null, "classified_at": "2026-08-08T11:28:03.467402+00:00"}
+{"id": "2085500033000972613", "is_news": false, "player": "Carnell Tate", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-08-08T11:28:04.966287+00:00"}
+{"id": "2085501152511025629", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "lineup_card", "classified_at": "2026-08-08T11:28:06.098288+00:00"}
+{"id": "2085501160555716834", "is_news": true, "player": "Malik Nabers", "team": null, "event_class": "status_change", "excluded_reason": null, "classified_at": "2026-08-08T11:28:07.181895+00:00"}
+{"id": "2085502292652949836", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "no_player", "classified_at": "2026-08-08T11:28:08.490488+00:00"}
+{"id": "2085505860894130272", "is_news": false, "player": "Jameson Williams", "team": "Detroit Lions", "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-08-08T11:28:10.718953+00:00"}
+{"id": "2085512735815536795", "is_news": false, "player": "Jayden Higgins", "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-08-08T11:28:12.025777+00:00"}
+{"id": "2085518101060149396", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-08-08T11:28:13.302520+00:00"}
+{"id": "2085522539644662205", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "no_player", "classified_at": "2026-08-08T11:28:14.575601+00:00"}
+{"id": "2085524230666371387", "is_news": false, "player": "Carson Beck", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-08-08T11:28:17.191811+00:00"}
+{"id": "2085530312566591585", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-08-08T11:28:18.533745+00:00"}
+{"id": "2085545621352538316", "is_news": false, "player": "Carson Beck", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-08-08T11:28:20.599237+00:00"}
+{"id": "2085556439527862581", "is_news": false, "player": "Carson Beck", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-08-08T11:28:23.070982+00:00"}
+{"id": "2085559431421362601", "is_news": false, "player": "Kenny Pickett", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-08-08T11:28:24.747132+00:00"}
+{"id": "2085562748562182234", "is_news": false, "player": "Haynes King", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-08-08T11:28:26.983937+00:00"}
+{"id": "2085568737097179314", "is_news": true, "player": "Xavier Legette", "team": null, "event_class": "injury", "excluded_reason": null, "classified_at": "2026-08-08T11:28:28.301150+00:00"}
+{"id": "2085569739263217821", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-08-08T11:28:29.466739+00:00"}
+{"id": "2085690713405088246", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "no_player", "classified_at": "2026-08-08T11:28:30.669903+00:00"}
+{"id": "2085703574315561090", "is_news": false, "player": null, "team": "Cleveland Browns", "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-08-08T11:28:31.877067+00:00"}
+{"id": "2085705247649861818", "is_news": true, "player": "O'Cyrus Torrence", "team": "Buffalo Bills", "event_class": "roster_move", "excluded_reason": null, "classified_at": "2026-08-08T11:28:33.575188+00:00"}
+{"id": "2085713076616126735", "is_news": true, "player": "Jaylin Noel", "team": null, "event_class": "roster_move", "excluded_reason": null, "classified_at": "2026-08-08T11:28:35.007293+00:00"}
+{"id": "2085714014646964595", "is_news": true, "player": "Jaylin Noel", "team": null, "event_class": "status_change", "excluded_reason": null, "classified_at": "2026-08-08T11:28:36.180435+00:00"}
+{"id": "2085714517594365969", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-08-08T11:28:37.491330+00:00"}
+{"id": "2085720704733810823", "is_news": true, "player": "Romeo Doubs", "team": null, "event_class": "status_change", "excluded_reason": null, "classified_at": "2026-08-08T11:28:39.154195+00:00"}
+{"id": "2085723484001300584", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-08-08T11:28:40.530802+00:00"}
+{"id": "2085728859110957418", "is_news": true, "player": "Cyrus Allen", "team": null, "event_class": "injury", "excluded_reason": null, "classified_at": "2026-08-08T11:28:41.766340+00:00"}
+{"id": "2085730065971589567", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-08-08T11:28:43.063979+00:00"}
+{"id": "2085731271829794882", "is_news": true, "player": "Stefon Diggs", "team": "Washington Commanders", "event_class": "roster_move", "excluded_reason": null, "classified_at": "2026-08-08T11:28:45.169482+00:00"}
+{"id": "2085732897827226027", "is_news": true, "player": "DeVonta Smith", "team": null, "event_class": "injury", "excluded_reason": null, "classified_at": "2026-08-08T11:28:46.407046+00:00"}
+{"id": "2085733523076382950", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-08-08T11:28:49.045254+00:00"}
+{"id": "2085734076254662670", "is_news": true, "player": "Makai Lemon", "team": null, "event_class": "injury", "excluded_reason": null, "classified_at": "2026-08-08T11:28:50.845615+00:00"}
+{"id": "2085734604133036308", "is_news": true, "player": "Malachi Fields", "team": "New York Giants", "event_class": "role_change", "excluded_reason": null, "classified_at": "2026-08-08T11:28:52.463607+00:00"}
+{"id": "2085735035638825115", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-08-08T11:28:53.844486+00:00"}
+{"id": "2085737171936235637", "is_news": false, "player": "Malachi Fields", "team": null, "event_class": "role_change", "excluded_reason": "not_news", "classified_at": "2026-08-08T11:28:55.264289+00:00"}
+{"id": "2085738081299112068", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-08-08T11:28:56.584645+00:00"}
+{"id": "2085742858431049760", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-08-08T11:28:57.794274+00:00"}
+{"id": "2085754875665633386", "is_news": true, "player": "Kyler Murray", "team": "Arizona Cardinals", "event_class": "role_change", "excluded_reason": null, "classified_at": "2026-08-08T11:28:59.302993+00:00"}
+{"id": "2085759555422597331", "is_news": true, "player": "KC Concepcion", "team": null, "event_class": "injury", "excluded_reason": null, "classified_at": "2026-08-08T11:29:00.806161+00:00"}
+{"id": "2085760251572146567", "is_news": true, "player": "Tankarius Dell", "team": "Houston Texans", "event_class": "status_change", "excluded_reason": null, "classified_at": "2026-08-08T11:29:02.170200+00:00"}
+{"id": "2085761025358368800", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-08-08T11:29:03.349846+00:00"}
+{"id": "2085763762594718079", "is_news": true, "player": "Patrick Mahomes", "team": "Kansas City Chiefs", "event_class": "status_change", "excluded_reason": null, "classified_at": "2026-08-08T11:29:04.699249+00:00"}
+{"id": "2085764321636646953", "is_news": true, "player": "Patrick Mahomes", "team": "Kansas City Chiefs", "event_class": "injury", "excluded_reason": null, "classified_at": "2026-08-08T11:29:06.080691+00:00"}
+{"id": "2085765216676003948", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-08-08T11:29:07.545301+00:00"}
+{"id": "2085769060743029015", "is_news": false, "player": "Luther Burden III", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-08-08T11:29:08.939939+00:00"}
+{"id": "2085774804947194146", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "promo", "classified_at": "2026-08-08T11:29:10.598025+00:00"}
+{"id": "2085776407137824860", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "promo", "classified_at": "2026-08-08T11:29:11.738382+00:00"}
+{"id": "2085779525149815003", "is_news": false, "player": "Parker Washington", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-08-08T11:29:13.036460+00:00"}
+{"id": "2085781061833773291", "is_news": false, "player": null, "team": "Jacksonville Jaguars", "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-08-08T11:29:14.578050+00:00"}
+{"id": "2085782466925600849", "is_news": true, "player": "Myles Garrett", "team": "Los Angeles Rams", "event_class": "injury", "excluded_reason": null, "classified_at": "2026-08-08T11:29:15.934246+00:00"}
+{"id": "2085785768325181868", "is_news": true, "player": "Bhayshul Tuten", "team": null, "event_class": "role_change", "excluded_reason": null, "classified_at": "2026-08-08T11:29:17.508333+00:00"}
+{"id": "2085786066112442453", "is_news": true, "player": "Marvin Mims Jr.", "team": null, "event_class": "injury", "excluded_reason": null, "classified_at": "2026-08-08T11:29:18.575363+00:00"}
+{"id": "2085796076443816098", "is_news": false, "player": "Geno Smith", "team": "Jets", "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-08-08T11:29:19.859957+00:00"}
+{"id": "2085797536778899786", "is_news": false, "player": "Deshaun Watson", "team": "Cleveland Browns", "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-08-08T11:29:21.205449+00:00"}
+{"id": "2085799225875366384", "is_news": true, "player": "Brashard Smith", "team": "Kansas City Chiefs", "event_class": "role_change", "excluded_reason": null, "classified_at": "2026-08-08T11:29:23.098229+00:00"}
+{"id": "2085807687430766648", "is_news": true, "player": "Peter Skoronski", "team": "Tennessee Titans", "event_class": "roster_move", "excluded_reason": null, "classified_at": "2026-08-08T11:29:24.580807+00:00"}
+{"id": "2085812000567763383", "is_news": false, "player": "Pop Douglas", "team": null, "event_class": "other", "excluded_reason": "recap", "classified_at": "2026-08-08T11:29:25.860415+00:00"}
+{"id": "2085817616992538853", "is_news": true, "player": "Cam Taylor-Britt", "team": "Indianapolis Colts", "event_class": "status_change", "excluded_reason": null, "classified_at": "2026-08-08T11:29:27.394997+00:00"}
+{"id": "2085818194573353371", "is_news": true, "player": "Cam Skattebo", "team": "New York Giants", "event_class": "injury", "excluded_reason": null, "classified_at": "2026-08-08T11:29:28.538932+00:00"}
+{"id": "2085820907134607566", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "promo", "classified_at": "2026-08-08T11:29:30.315998+00:00"}
+{"id": "2085822243414671700", "is_news": true, "player": "Cam Skattebo", "team": null, "event_class": "injury", "excluded_reason": null, "classified_at": "2026-08-08T11:29:32.492811+00:00"}
+{"id": "2085824278570598421", "is_news": true, "player": "Cam Skattebo", "team": null, "event_class": "injury", "excluded_reason": null, "classified_at": "2026-08-08T11:29:34.273696+00:00"}
+{"id": "2085826090228965767", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "no_player", "classified_at": "2026-08-08T11:29:36.086184+00:00"}
+{"id": "2085826534275785213", "is_news": false, "player": "Stefon Diggs", "team": "Commanders", "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-08-08T11:29:38.185425+00:00"}
+{"id": "2085841936242319424", "is_news": false, "player": "Stefon Diggs", "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-08-08T11:29:39.516801+00:00"}
+{"id": "2085853592393511301", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "no_player", "classified_at": "2026-08-08T11:29:41.190714+00:00"}
+{"id": "2085875628771782929", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "promo", "classified_at": "2026-08-08T11:29:42.522563+00:00"}
+{"id": "2085878978485813458", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "lineup_card", "classified_at": "2026-08-08T11:29:44.198335+00:00"}
+{"id": "2085894285837123849", "is_news": true, "player": "Josh Jacobs", "team": null, "event_class": "injury", "excluded_reason": null, "classified_at": "2026-08-08T11:29:45.763379+00:00"}
+{"id": "2085895201365610625", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "not_news", "classified_at": "2026-08-08T11:29:46.943304+00:00"}
+{"id": "2085908320116777067", "is_news": true, "player": "Tyjae Spears", "team": null, "event_class": "injury", "excluded_reason": null, "classified_at": "2026-08-08T11:29:48.304560+00:00"}
+{"id": "2085910145230311754", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "no_player", "classified_at": "2026-08-08T11:29:50.696933+00:00"}
+{"id": "2085911764181385504", "is_news": true, "player": "Tank Dell", "team": null, "event_class": "injury", "excluded_reason": null, "classified_at": "2026-08-08T11:29:51.955862+00:00"}
+{"id": "2085913322512060635", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "no_player", "classified_at": "2026-08-08T11:29:54.134002+00:00"}
+{"id": "2085959541582086266", "is_news": false, "player": null, "team": null, "event_class": "other", "excluded_reason": "promo", "classified_at": "2026-08-08T11:29:55.415892+00:00"}
